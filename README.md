@@ -11,7 +11,8 @@ Benchmarking tool for generating plots from textual descriptions.
 | `US-shooting-incidents.csv`             | 19         |
 | `titanic.csv`                           | 23         |
 | `winequality-red.csv`                   | 20         |
-| **TOTAL**                               | **101**    |
+| `us-cities-top-1k.csv`                  | 19         |
+| **TOTAL**                               | **120**    |
 
 ## Scripts Overview
 

@@ -705,5 +705,138 @@
         "language": "English",
         "complexity": "easy",
         "description": "Scatter plot comparing residual sugar content from 6 to 8 with alcohol percentages from 9 to 10"
+    },
+    {
+        "uuid": "8f8538bc9da384211f7073fe1f683d80",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of the top 5 most populous cities"
+    },
+    {
+        "uuid": "2c4fe6f59d5a33e07cea1a8a4856d164",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Area plot of populations for the top 5 cities"
+    },
+    {
+        "uuid": "991009090107bca3410f289dd54eb971",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of latitude versus longitude for top 5 most populous cities"
+    },
+    {
+        "uuid": "223948757000fc199ad2eac5b408d97e",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie chart showing the population distribution of the top 5 cities"
+    },
+    {
+        "uuid": "0bbaa8fc7030d01f1249a2615ce9d06d",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of the number of cities in each state"
+    },
+    {
+        "uuid": "9f77b74c823fc62f584e2cc476321878",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram of latitudes of the top 5 most populous cities"
+    },
+    {
+        "uuid": "4516966426c5ae676842df2ae0dd8308",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of population versus latitude for the top 10 most populous cities"
+    },
+    {
+        "uuid": "7b860b4b2f75d8254f3a04f379b4ae6f",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Hexagonal bin plot of latitude versus longitude for the top 5 most populous cities"
+    },
+    {
+        "uuid": "da0a49e0c0caab7075294b5eb4c458b5",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot showing populations of the top 5 most populous cities in California"
+    },
+    {
+        "uuid": "52faa13a37663e3c9aa9b6edc8be77eb",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of populations for the top 5 most populous cities in Texas"
+    },
+    {
+        "uuid": "be05f57767fd0ada7577c996af773a9d",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Area plot of populations for the top 5 most populous cities in Florida"
+    },
+    {
+        "uuid": "1c5807c72a68814699e2fa8ea09ed592",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie chart of the number of cities in the top 5 states"
+    },
+    {
+        "uuid": "37404fec67c0bb6638000e894fddb6d7",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of the least populous 8 cities"
+    },
+    {
+        "uuid": "a7e6fdfcb15c7b2ae7149f5d1ea06bf6",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of latitudes for cities in New York state"
+    },
+    {
+        "uuid": "2356b7471d4ea0e3cb820212a0e8d364",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Area plot of populations for the bottom 10 cities"
+    },
+    {
+        "uuid": "cb2210b6af5e4630178766ac0c815c8d",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Hexagonal bin plot of population versus latitude for the top 5 most populous cities"
+    },
+    {
+        "uuid": "8e168c98f3c64ccc7e6928f5eb434994",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Mapbox density map showing the top 10 most populous cities"
+    },
+    {
+        "uuid": "676b2b6aab147c7252209f98e1a36f8d",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Mapbox density map showing the top 5 most populous cities in California"
+    },
+    {
+        "uuid": "dac34e39533e967da9ffad96913afc81",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Pie chart showing the population distribution of most populous city in each of the top 5 states"
     }
 ]

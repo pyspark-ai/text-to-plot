@@ -24,7 +24,8 @@ DATASETS = [
     "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-    "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv"
+    "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
+    "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
 ]
 
 
@@ -223,6 +224,39 @@ def gen_test_case(dataset):
             # "Scatter plot with a color gradient based on wine quality, comparing salt content with sulphate levels.",
             # "Hexagonal bin plot comparing volatile acidity with fixed acidity.",
             # "Scatter plot with a color gradient based on wine quality, comparing density with alcohol content."
+        ]
+    elif "us-cities-top-1k.csv" in dataset:
+        easy_descriptions = [
+            "Bar plot of the top 5 most populous cities",
+            "Area plot of populations for the top 5 cities",
+            "Scatter plot of latitude versus longitude for top 5 most populous cities",
+            "Pie chart showing the population distribution of the top 5 cities",
+            "Bar plot of the number of cities in each state",
+            "Histogram of latitudes of the top 5 most populous cities",
+            "Scatter plot of population versus latitude for the top 10 most populous cities",
+            "Hexagonal bin plot of latitude versus longitude for the top 5 most populous cities",
+            "Bar plot showing populations of the top 5 most populous cities in California",
+            "Boxplot of populations for the top 5 most populous cities in Texas",
+            "Area plot of populations for the top 5 most populous cities in Florida",
+            "Pie chart of the number of cities in the top 5 states",
+            "Bar plot of the least populous 8 cities",
+            "Boxplot of latitudes for cities in New York state",
+            "Area plot of populations for the bottom 10 cities",
+            "Hexagonal bin plot of population versus latitude for the top 5 most populous cities",
+            "Mapbox density map showing the top 10 most populous cities"
+            "Mapbox density map showing the top 5 most populous cities in California"
+        ]
+
+        hard_descriptions = [
+            # "Scatter plot of latitude versus longitude for cities, colored by population",
+            # "Hexagonal bin plot of latitude versus longitude for cities in California, with population as density",
+            # "Area plot of populations for the top 3 cities in Texas and California separately",
+            # "Scatter plot of population versus latitude for cities, sized by longitude",
+            # "Bar plot of the number of cities in each state, colored by average population of cities in that state",
+            # "Boxplot of populations for cities, grouped by their geographical region (East, West, North, South)",
+            # "Hexagonal bin plot of population versus latitude for cities in the northern US, with longitude as density",
+            # "Scatter plot of latitude versus longitude for cities in New York and California, colored by population",
+            "Pie chart showing the population distribution of most populous city in each of the top 5 states",
         ]
     else:
         raise ValueError("No automation of test cases curation for the given dataset.")
