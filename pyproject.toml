@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "text-to-plot"
+version = "0.1.0"
+description = ""
+authors = ["Xinrong Meng <xinrong@apache.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+pyspark-ai = {git = "https://github.com/pyspark-ai/pyspark-ai.git"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
