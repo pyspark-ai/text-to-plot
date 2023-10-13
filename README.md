@@ -3,16 +3,16 @@ Benchmarking tool for generating plots from textual descriptions.
 
 ## Datasets and Test Cases
 
-| Dataset                                 | Test Cases |
-|-----------------------------------------|------------|
-| `1962_2006_walmart_store_openings.csv`  | 12         |
-| `2011_february_aa_flight_paths.csv`     | 11         |
-| `2011_us_ag_exports.csv`                | 16         |
-| `US-shooting-incidents.csv`             | 19         |
-| `titanic.csv`                           | 23         |
-| `winequality-red.csv`                   | 20         |
-| `us-cities-top-1k.csv`                  | 19         |
-| **TOTAL**                               | **120**    |
+| Dataset                                 | Test Cases | Easy       | Hard       |
+|-----------------------------------------|------------|------------|------------|
+| `1962_2006_walmart_store_openings.csv`  | 17         | 12         | 5          |
+| `2011_february_aa_flight_paths.csv`     | 14         | 11         | 3          |
+| `2011_us_ag_exports.csv`                | 21         | 16         | 5          |
+| `US-shooting-incidents.csv`             | 24         | 19         | 5          |
+| `titanic.csv`                           | 29         | 23         | 6          |
+| `winequality-red.csv`                   | 25         | 20         | 5          |
+| `us-cities-top-1k.csv`                  | 24         | 19         | 5          |
+| **TOTAL**                               | **154**    | 120        | 34         |
 
 ## Scripts Overview
 
