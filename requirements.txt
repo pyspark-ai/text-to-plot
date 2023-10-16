@@ -1,0 +1,3 @@
+git+https://github.com/pyspark-ai/pyspark-ai.git@master
+click
+pyspark
