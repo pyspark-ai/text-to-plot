@@ -22,6 +22,12 @@ jobs:
       - name: Set Environment Variable (Not Recommended)
         run: echo "OPENAI_API_KEY=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" >> $GITHUB_ENV
 
+      - name: List files in current directory
+        run: ls -la
+
+      - name: Print Python Path
+        run: python -c "import sys; print(sys.path)"
+
       - name: Evaluate Complexity (Easy)
         run: python src/evaluate.py --complexity easy
 
