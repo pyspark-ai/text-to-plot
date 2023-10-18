@@ -2,13 +2,12 @@ import contextlib
 import hashlib
 import io
 import json
-import logging
+import re
+
 import pandas as pd
-from io import StringIO
+
 from pyspark.sql import SparkSession
 from pyspark_ai import SparkAI
-from pyspark_ai.ai_utils import AIUtils
-from src.util import substitute_show_to_json
 
 # Constants
 INCLUDE_KEYS = [
@@ -27,6 +26,10 @@ DATASETS = [
     "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
 ]
+
+
+def substitute_show_to_json(string):
+    return re.sub(r'(\w+)\.show\(\)', r'print(\1.to_json())', string)
 
 
 def generate_id(dataset, description):

@@ -2,13 +2,12 @@ import contextlib
 import io
 import json
 import logging
+import re
 
 import click
 import pandas as pd
 from pyspark.sql import SparkSession
 from pyspark_ai import SparkAI
-
-from src.util import substitute_show_to_json
 
 # Set up logging configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
@@ -27,6 +26,10 @@ plot_type_fields = {
     'pie': {'labels', 'type', 'values', 'domain'},
     'densitymapbox': {'z', 'lat', 'lon', 'subplot', 'type'}
 }
+
+
+def substitute_show_to_json(string):
+    return re.sub(r'(\w+)\.show\(\)', r'print(\1.to_json())', string)
 
 
 def is_same_mapping(golden_keys, golden_values, predicted_keys, predicted_values):
