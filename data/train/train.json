@@ -756,11 +756,11 @@
         "description": "Area plot representing the amount of residual sugar across different wine samples."
     },
     {
-        "uuid": "d836d2b4ea22829e696bdd1de362b00f",
+        "uuid": "1f23c327b441b77171638e87f20c6446",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Pie chart showing the proportion of wines with different pH levels."
+        "description": "Pie chart showing the proportion of wines with top 5 pH."
     },
     {
         "uuid": "6191b86230e7b0dfdcee47719362d3f7",
@@ -777,11 +777,11 @@
         "description": "Bar plot indicating the average citric acid content in wines of varying quality."
     },
     {
-        "uuid": "9239e9c3cb0922a98b3d021cd5c145c0",
+        "uuid": "e82efeee4cad83c973365cecc5e8e949",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plot representing the distribution of sulphate levels across wine samples."
+        "description": "Area plot representing the distribution of top 5 sulphate across wine samples."
     },
     {
         "uuid": "07dea19627a24a243b81fac551f3b729",
