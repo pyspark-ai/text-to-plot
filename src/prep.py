@@ -17,7 +17,7 @@ INCLUDE_KEYS = [
     "xbingroup", "ybingroup",  # bin
 ]
 
-DATASETS = [
+TRAIN_DATASETS = [
     "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
@@ -25,6 +25,10 @@ DATASETS = [
     "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+]
+
+TEST_DATASETS = [
+
 ]
 
 
@@ -52,7 +56,7 @@ def filter_golden_json_data(json_string, include_keys=None):
     return {'data': filtered_data}
 
 
-def gen_test_case(dataset):
+def gen_test_case(dataset, is_train=True):
     """
     Generate test cases with uuid -> test.json
     """
@@ -278,12 +282,17 @@ def gen_test_case(dataset):
         }
         combined_list.append(item)
 
+    if is_train:
+        test_case_path = 'data/train/train.json'
+    else:
+        test_case_path = 'data/test/test.json'
+
     # Convert the combined list to JSON
-    with open('data/train/train.json', 'w') as file:
+    with open(test_case_path, 'w') as file:
         json.dump(combined_list, file, indent=4)
 
 
-def gen_golden(dataset):
+def gen_golden(dataset, is_train=True):
     """
     Generate:
         - code that generates golden plots -> train-code.json
@@ -300,7 +309,16 @@ def gen_golden(dataset):
     golden_codes = []
     golden_jsons = []
 
-    with open('data/train/train.json', 'r') as file:
+    if is_train:
+        code_path = 'data/train/train-code.json'
+        golden_path = 'data/train/train-golden.json'
+        test_case_path = 'data/train/train.json'
+    else:
+        code_path = 'data/test/test-code.json'
+        golden_path = 'data/test/test-golden.json'
+        test_case_path = 'data/test/test.json'
+
+    with open(test_case_path, 'r') as file:
         test_cases = json.load(file)
 
     for test_case in test_cases:
@@ -330,16 +348,19 @@ def gen_golden(dataset):
                 continue
 
     # Convert the golden_codes list to JSON
-    with open('data/train/train-code.json', 'w') as file:
+    with open(code_path, 'w') as file:
         json.dump(golden_codes, file, indent=4)
 
     # Convert the golden_jsons list to JSON
-    with open('data/train/train-golden.json', 'w') as file:
+    with open(golden_path, 'w') as file:
         json.dump(golden_jsons, file, indent=4)
 
 
 if __name__ == "__main__":
-    # for dataset in DATASETS:
-    # gen_test_case(dataset)
-    # gen_golden(dataset)
+    # for dataset in TRAIN_DATASETS:
+    #     gen_test_case(dataset)
+    #     gen_golden(dataset)
+    # for dataset in TEST_DATASETS:
+    #     gen_test_case(dataset, is_train=False)
+    #     gen_golden(dataset, is_train=False)
     pass
