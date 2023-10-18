@@ -1,0 +1,29 @@
+name: Evaluate Complexity
+
+on: [push, pull_request]
+
+jobs:
+  run-evaluation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Set Environment Variable (Not Recommended)
+        run: echo "OPENAI_API_KEY=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" >> $GITHUB_ENV
+
+      - name: Evaluate Complexity (Easy)
+        run: python src/evaluate.py --complexity easy
+
+      - name: Evaluate Complexity (Hard)
+        run: python src/evaluate.py --complexity hard
