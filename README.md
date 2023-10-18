@@ -20,4 +20,3 @@ Benchmarking tool for generating plots from textual descriptions.
 |-----------------|-------------|
 | `src/prep.py`   | Generates test cases, golden plot codes, and saves golden plots in JSON format. |
 | `src/evaluate.py` | Runs test cases and compares the output plots with the golden versions. |
-| `src/util.py`   | Provides utility functions to support benchmarking tasks. |
