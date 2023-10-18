@@ -1,6 +1,7 @@
 import contextlib
 import io
 import json
+import logging
 
 import click
 import pandas as pd
@@ -8,6 +9,10 @@ from pyspark.sql import SparkSession
 from pyspark_ai import SparkAI
 
 from src.util import substitute_show_to_json
+
+# Set up logging configuration
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
+                    handlers=[logging.FileHandler('app.log'), logging.StreamHandler()])
 
 # Mapping of plot type to fields for comparison
 plot_type_fields = {
@@ -71,7 +76,7 @@ def is_same_mapping_3(golden_keys1, golden_keys2, golden_values, predicted_keys1
     return set(golden_dict.items()) == set(predicted_dict.items())
 
 
-def evaluate(golden, predicted):
+def evaluate(golden, predicted, is_hard=False):
     """
     Compare the golden and predicted plot metadata.
 
@@ -82,38 +87,60 @@ def evaluate(golden, predicted):
     3. For other plot types, it verifies 'x', 'y', 'lat', 'lon', 'labels', and 'values' fields if any.
     4. It also checks other fields specified in plot_type_fields for exact match.
     """
-    if predicted['type'] != golden['type']:
-        return False
-
     golden_type = golden['type']
 
-    # Define a helper function to simplify the field check process.
-    def check_fields(field1, field2):
-        return set([field1, field2]).issubset(plot_type_fields[golden_type]) and \
-               not is_same_mapping(golden[field1], golden[field2], predicted[field1],
-                                   predicted[field2])
+    def fields_match(field1, field2):
+        direct_match = set([field1, field2]).issubset(plot_type_fields[golden_type]) and \
+                       is_same_mapping(golden[field1], golden[field2], predicted[field1],
+                                       predicted[field2])
 
-    if golden_type == 'densitymapbox':
-        if not is_same_mapping_3(golden['lat'], golden['lon'], golden['z'],
-                                 predicted['lat'], predicted['lon'], predicted['z']):
-            return False
+        if direct_match:
+            return True
+
+        # Check for swapped values
+        if field1 == 'x' and field2 == 'y':
+            return is_same_mapping(golden[field1], golden[field2], predicted[field2],
+                                   predicted[field1])
+
+        return False
+
+    def check_densitymapbox_fields():
+        return is_same_mapping_3(golden['lat'], golden['lon'], golden['z'],
+                                 predicted['lat'], predicted['lon'], predicted['z'])
+
+    def check_standard_fields():
+        return any(
+            [fields_match('x', 'y'), fields_match('lat', 'lon'), fields_match('labels', 'values')])
+
+    def check_additional_fields():
+        for field in plot_type_fields[golden_type]:
+            if field not in {'x', 'y', 'z', 'lat', 'lon', 'labels', 'values'} and \
+                    (field not in predicted or predicted[field] != golden[field]):
+                return False
+        return True
+
+    if is_hard:
+        return check_standard_fields()
     else:
-        if any([check_fields('x', 'y'), check_fields('lat', 'lon'),
-                check_fields('labels', 'values')]):
+        if predicted['type'] != golden_type:
             return False
 
-    # Check other fields
-    for field in plot_type_fields[golden_type]:
-        if field not in ['x', 'y', 'z', 'lat', 'lon', 'labels', 'values']:
-            if field not in predicted or predicted[field] != golden[field]:
+        if golden_type == 'densitymapbox':
+            if not check_densitymapbox_fields():
+                return False
+        else:
+            if not check_standard_fields():
                 return False
 
-    return True
+        return check_additional_fields()
 
 
 @click.command()
-@click.argument("dataset_url", type=str, default=None)
-def main(dataset_url):
+@click.option("--test-id", type=str, default=None, help="UUID of the test")
+@click.option("--dataset-url", type=str, default=None, help="URL of the dataset")
+@click.option("--complexity", type=click.Choice(["easy", "hard"]), default=None,
+              help="Test mode (easy, hard)")
+def main(test_id, dataset_url, complexity):
     spark = SparkSession.builder.getOrCreate()
     spark_ai = SparkAI(spark_session=spark, verbose=True)
     spark_ai.activate()
@@ -124,12 +151,14 @@ def main(dataset_url):
     with open('data/train/train.json', 'r') as test_file:
         all_test_cases = json.load(test_file)
 
-    if dataset_url is not None:
-        # Filter test_cases to only include those with matching dataset field
-        test_cases = [test_case for test_case in all_test_cases if
-                      test_case['dataset'] == dataset_url]
-    else:
-        test_cases = all_test_cases
+    test_cases = [
+        test_case for test_case in all_test_cases
+        if (not test_id or test_case['uuid'] == test_id)  # Filter based on test_id if provided.
+           and (not dataset_url or test_case[
+            'dataset'] == dataset_url)  # Filter based on dataset_url if provided.
+           and (not complexity or test_case.get('complexity') == complexity)
+        # Filter based on complexity if provided.
+    ]
 
     golden_plots = {golden_plot['uuid']: golden_plot['plot_json'] for golden_plot in golden_data}
 
@@ -140,6 +169,7 @@ def main(dataset_url):
         buffer.truncate(0)  # Clear the buffer's contents.
 
         uuid, dataset, plot_desc = test_case['uuid'], test_case['dataset'], test_case['description']
+        is_hard = test_case['complexity'] == "hard"
         pdf = pd.read_csv(dataset)
         df = spark_ai._spark.createDataFrame(pdf)
 
@@ -152,23 +182,23 @@ def main(dataset_url):
             captured_output = buffer.getvalue()[:-1]
             predicted = json.loads(captured_output)
 
-            if not evaluate(golden_plots[uuid]['data'], predicted['data'][0]):
-                print(f"[ERROR] {uuid}")
-                print("[PREDICTED]")
-                print(predicted['data'][0])
-                print("[GOLDEN]")
-                print(golden_plots[uuid]['data'])
+            if not evaluate(golden_plots[uuid]['data'], predicted['data'][0], is_hard=is_hard):
+                logging.error(f"[ERROR] {uuid}")
+                logging.info("[PREDICTED]")
+                logging.info(predicted['data'][0])
+                logging.info("[GOLDEN]")
+                logging.info(golden_plots[uuid]['data'])
                 err_cnt += 1
 
         except Exception as e:
-            print(f"An error occurred while processing test case {uuid}: {str(e)}")
+            logging.error(f"An error occurred while processing test case {uuid}: {str(e)}")
             err_cnt += 1
 
     buffer.close()
-    print(f"{err_cnt} errors detected")
+    logging.info(f"{err_cnt} errors detected")
     total_cases = len(test_cases)
     pass_rate = ((total_cases - err_cnt) / total_cases) * 100
-    print(f"Pass rate: {pass_rate:.2f}%")
+    logging.info(f"Pass rate: {pass_rate:.2f}%")
 
 
 if __name__ == '__main__':
