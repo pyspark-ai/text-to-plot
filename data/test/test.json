@@ -1,0 +1,415 @@
+[
+    {
+        "uuid": "f0f63c49d0aa944b7cd443694d74f244",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram of the distribution of national election turnouts for Central/Eastern region countries."
+    },
+    {
+        "uuid": "40bd3ede9950603b4e334e9cfaad3cd9",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of the variation in European election turnouts for Western region countries."
+    },
+    {
+        "uuid": "0c7932ba93c11b23b030e5058ce9d2ca",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of the correlation between population size and national election turnout for Central/Eastern region countries"
+    },
+    {
+        "uuid": "5690628120a45b219fed3b9c25f470d9",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Mapbox density plot across Mediterranean region based on European election turnouts."
+    },
+    {
+        "uuid": "15956a908c59445bbf4992ef3f55698a",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie chart of populations in Central/Eastern region countries."
+    },
+    {
+        "uuid": "b9fe7090d93a09847c5e64806d786063",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "National turnouts comparison for Western region countries."
+    },
+    {
+        "uuid": "985bab0ef7790a4c89b11350af17302a",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Countries with a greater population than Austria's."
+    },
+    {
+        "uuid": "8993aaa0299fb508e00f4111652ba1f0",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Relationship between population size and voter turnout for Central/Eastern countries."
+    },
+    {
+        "uuid": "42a59ce425f642c541bc4b15071cc9de",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Number of countries breakdown by region."
+    },
+    {
+        "uuid": "52fcf5d3c22208abaa31b8cc30022a06",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Line plot of the progression of average miles per gallon across distinct model years"
+    },
+    {
+        "uuid": "ec73adc6934ff4f4cff10edd5e5c1b17",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar chart comparing the average horsepower across unique cylinder configurations."
+    },
+    {
+        "uuid": "34e87e52e74581a8990985e605e37ad9",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of the relationship between a vehicle's weight and its miles per gallon for the model year 80."
+    },
+    {
+        "uuid": "ddf74488a1fce4a6dfdafde276eda711",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot representing the proportion of vehicles based on their horsepower, focusing on the top 5 horsepower values."
+    },
+    {
+        "uuid": "8e9da47ee132852084c40ac9765d3bcd",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of the distribution of acceleration values for the vehicles with the model year 70."
+    },
+    {
+        "uuid": "2a246a32815bf6054eec04f118940efa",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Area plot of the count of cars across model years."
+    },
+    {
+        "uuid": "da3d0c00b47b4a560e9b968194221e51",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Hexagonal bin plot of cylinders versus acceleration for vehicles with the top 5 miles per gallon."
+    },
+    {
+        "uuid": "69cd29f7676e8f43281d20c55e558453",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Proportion of vehicles by cylinder configurations."
+    },
+    {
+        "uuid": "0c8cb74c8ddbd3c1eda2208f9bb88fc1",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Trend of average vehicle weight over distinct model years."
+    },
+    {
+        "uuid": "922c684ef13a0a72cebd8a3389dfa0c9",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Relationship between vehicles' miles per gallon and their acceleration capabilities for the model year 80."
+    },
+    {
+        "uuid": "10f3262cf38b852376d89c3b60b5937d",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of number of countries breakdown by continent."
+    },
+    {
+        "uuid": "d38386edacc0f2071ced78d9ef74099b",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of population versus GDP in 10 African nations with the lowest GDP."
+    },
+    {
+        "uuid": "7c1f9d4e8eea35ad7119b1e74fe1e432",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of life expectancy versus population for 10 European countries with the highest GDP."
+    },
+    {
+        "uuid": "c7d0799261278e49d6dc6382a14893a8",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram of GDP values in 10,000 intervals for Asian countries."
+    },
+    {
+        "uuid": "aa8596d0908727281f7ae7acdbcdfffd",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Box plot of life expectancy distribution for Asian countries."
+    },
+    {
+        "uuid": "10b262adf02fadf8943ee74d78aed733",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of population of top 5 European nations."
+    },
+    {
+        "uuid": "f15f25520b76179b859e72e04b6bb94e",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Population comparison for the 5 most populous countries"
+    },
+    {
+        "uuid": "beebd4e77842206db87034cae7d3074a",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Population breakdown by continent."
+    },
+    {
+        "uuid": "e9fadf2db6491f9f663a151b11a34abd",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Top eight countries by GDP."
+    },
+    {
+        "uuid": "8992063e1128109a5747800723a68c1e",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Trend of average life expectancy across continents"
+    },
+    {
+        "uuid": "a0e8593c8be15334f65562d335b12d14",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Relationship between GDP and life expectancy in 5 Americas countries with the lowest GDP"
+    },
+    {
+        "uuid": "9384e18dc2100b4e1372d13f2380ff21",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Density of European countries based on GDP and population"
+    },
+    {
+        "uuid": "93da7c6b4b0eb8bfdb22ffe31cc50158",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of average total payments for California's top 8 hospitals by average total payments."
+    },
+    {
+        "uuid": "5b78a7fa7d68663547aa97dcd7665b8e",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram showing the distribution of reimbursement rates for California hospitals."
+    },
+    {
+        "uuid": "32bf3fb592c9e2c527e96f0211528e60",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of average total payments across California hospitals."
+    },
+    {
+        "uuid": "1f97c28534939f7a2a4bf23fe91ac9ca",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of hospital proportions in the top 5 states by average total payments."
+    },
+    {
+        "uuid": "fee98b8102100a5effbbee64e6d603ea",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar chart of medical record counts in California vs. Texas."
+    },
+    {
+        "uuid": "d6b0a172533f76983d33081263c9969d",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram showing the distribution of number of providers across California cities."
+    },
+    {
+        "uuid": "ab58fd97c40edd68fece25203ed86f1f",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of average covered charges across Texas hospitals"
+    },
+    {
+        "uuid": "56b60ea661dae09fd826948bbfc2ffb4",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Average total payment comparison across Wisconsin hospitals."
+    },
+    {
+        "uuid": "69bcbf6e3f16621a2d5c5349f1748783",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Breakdown of record count by medical classification."
+    },
+    {
+        "uuid": "80fdcc3be66903118308ef1dcc5ab7ee",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "List provider names with reimbursement rate over 1."
+    },
+    {
+        "uuid": "12617b723a019f944da00a16ad5597bd",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Proportion of 'Alcohol and Drug Use' records in top 5 states, based on the number of hospitals."
+    },
+    {
+        "uuid": "91215b07f0670529164a5ec147efd12b",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Number of Alcohol and Drug Use records comparison in California vs. Texas."
+    },
+    {
+        "uuid": "9d9033683d033462b41aa2170bbf1dbf",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of the 5 countries with the most volcanoes listed."
+    },
+    {
+        "uuid": "d4134bb91a4b8bb73378abc4a018a5fd",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Line plot showing the elevation trend of the 8 highest volcanoes in Japan."
+    },
+    {
+        "uuid": "dc75a9216f65bf1642e27181ddf79f06",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram of the distribution of volcano elevations for volcanoes in China."
+    },
+    {
+        "uuid": "f7ed0b0b21f2e3f870b94e46090312b0",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of the elevation distribution of volcanoes in the United States."
+    },
+    {
+        "uuid": "d1dd56ec1aac7e419c34db69401bca19",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Area plot of the elevation progression of the 8 highest volcanoes in Russia."
+    },
+    {
+        "uuid": "b1e7a0df0e30a0a2cd487b8ad96cbb6b",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of latitude versus longitude for volcanoes in Peru."
+    },
+    {
+        "uuid": "0a631ab7a5a2e0b7b511fa39270c0f51",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Mapbox density map of the concentration of volcanoes in Mexico."
+    },
+    {
+        "uuid": "5a43048f0d2064558debc4933bbc521d",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of the distribution of volcano types in China."
+    },
+    {
+        "uuid": "ecb89636cd86865c9b57bab5dd670440",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of the distribution of volcano status."
+    },
+    {
+        "uuid": "208b9e8526928ad817eeae0b9ab060a0",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Breakdown of volcano types in the United States."
+    },
+    {
+        "uuid": "9eb1889d22d91b67db0a00a5a5adc502",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Distribution of volcano elevations in Mexico."
+    },
+    {
+        "uuid": "57b912fbc2f994e0e565072c9bc16d0c",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Relationship between latitude and elevation for the 8 southernmost volcanoes."
+    },
+    {
+        "uuid": "42d090ca01f86f45a77bbfdfdc6ba56a",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Comparison of the number of volcanoes in the top 5 countries."
+    },
+    {
+        "uuid": "389e4875f5a7851b30abbd9c78203584",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Trend of volcano elevations in the 5 highest volcanoes in Mexico."
+    },
+    {
+        "uuid": "865010d949ec55e10ed3f72793271609",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Volcanoes with elevations above 4000."
+    },
+    {
+        "uuid": "e6f301f203d78073e726ef9db986b893",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Breakdown of volcano status in the United States."
+    }
+]
