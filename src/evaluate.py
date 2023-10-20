@@ -143,15 +143,17 @@ def evaluate(golden, predicted, is_hard=False):
 @click.option("--dataset-url", type=str, default=None, help="URL of the dataset")
 @click.option("--complexity", type=click.Choice(["easy", "hard"]), default=None,
               help="Test mode (easy, hard)")
-def main(test_id, dataset_url, complexity):
+@click.option("--mode", type=click.Choice(["train", "test"]), default=None,
+              help="Mode (train, test)")
+def main(test_id, dataset_url, complexity, mode):
     spark = SparkSession.builder.getOrCreate()
     spark_ai = SparkAI(spark_session=spark, verbose=True)
     spark_ai.activate()
 
-    with open('data/train/train-golden.json', 'r') as golden_file:
+    with open(f'data/{mode}/{mode}-golden.json', 'r') as golden_file:
         golden_data = json.load(golden_file)
 
-    with open('data/train/train.json', 'r') as test_file:
+    with open(f'data/{mode}/{mode}.json', 'r') as test_file:
         all_test_cases = json.load(test_file)
 
     test_cases = [
@@ -198,10 +200,16 @@ def main(test_id, dataset_url, complexity):
             err_cnt += 1
 
     buffer.close()
+
     logging.info(f"{err_cnt} errors detected")
     total_cases = len(test_cases)
     pass_rate = ((total_cases - err_cnt) / total_cases) * 100
-    logging.info(f"Pass rate: {pass_rate:.2f}%")
+    desc = ""
+    if mode:
+        desc += f'{mode} | '
+    if complexity:
+        desc += f'{complexity} | '
+    logging.info(f"{desc}Pass rate: {pass_rate:.2f}%")
 
 
 if __name__ == '__main__':
