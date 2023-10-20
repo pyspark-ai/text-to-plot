@@ -17,7 +17,7 @@ INCLUDE_KEYS = [
     "xbingroup", "ybingroup",  # bin
 ]
 
-DATASETS = [
+TRAIN_DATASETS = [
     "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
@@ -25,6 +25,14 @@ DATASETS = [
     "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+]
+
+TEST_DATASETS = [
+    "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+    "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+    "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+    "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+    "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
 ]
 
 
@@ -52,7 +60,7 @@ def filter_golden_json_data(json_string, include_keys=None):
     return {'data': filtered_data}
 
 
-def gen_test_case(dataset):
+def gen_test_case(dataset, mode="train"):
     """
     Generate test cases with uuid -> test.json
     """
@@ -254,6 +262,90 @@ def gen_test_case(dataset):
             "Cities with a population greater than 1 million",
             "Population comparison of cities in South Carolina and Nevada"
         ]
+    elif "european_turnout.csv" in dataset:
+        easy_descriptions = [
+            "Histogram of the distribution of national election turnouts for Central/Eastern region countries.",
+            "Boxplot of the variation in European election turnouts for Western region countries.",
+            "Scatter plot of the correlation between population size and national election turnout for Central/Eastern region countries",
+            "Mapbox density plot across Mediterranean region based on European election turnouts.",
+            "Pie chart of populations in Central/Eastern region countries."
+        ]
+        hard_descriptions = [
+            "National turnouts comparison for Western region countries.",
+            "Countries with a greater population than Austria's.",
+            "Relationship between population size and voter turnout for Central/Eastern countries.",
+            "Number of countries breakdown by region."
+        ]
+    elif "mpg.csv" in dataset:
+        easy_descriptions = [
+            "Line plot of the progression of average miles per gallon across distinct model years",
+            "Bar chart comparing the average horsepower across unique cylinder configurations.",
+            "Scatter plot of the relationship between a vehicle's weight and its miles per gallon for the model year 80.",
+            "Pie plot representing the proportion of vehicles based on their horsepower, focusing on the top 5 horsepower values.",
+            "Boxplot of the distribution of acceleration values for the vehicles with the model year 70.",
+            "Area plot of the count of cars across model years.",
+            "Hexagonal bin plot of cylinders versus acceleration for vehicles with the top 5 miles per gallon.",
+        ]
+        hard_descriptions = [
+            "Proportion of vehicles by cylinder configurations.",
+            "Trend of average vehicle weight over distinct model years.",
+            "Relationship between vehicles' miles per gallon and their acceleration capabilities for the model year 80.",
+        ]
+    elif "gapminder2007.csv" in dataset:
+        easy_descriptions = [
+            "Pie plot of number of countries breakdown by continent.",
+            "Scatter plot of population versus GDP in 10 African nations with the lowest GDP.",
+            "Scatter plot of life expectancy versus population for 10 European countries with the highest GDP.",
+            "Histogram of GDP values in 10,000 intervals for Asian countries.",
+            "Box plot of life expectancy distribution for Asian countries.",
+            "Bar plot of population of top 5 European nations.",
+        ]
+        hard_descriptions = [
+            "Population comparison for the 5 most populous countries",
+            "Population breakdown by continent.",
+            "Top eight countries by GDP.",
+            "Trend of average life expectancy across continents",
+            "Relationship between GDP and life expectancy in 5 Americas countries with the lowest GDP",
+            "Density of European countries based on GDP and population"
+        ]
+    elif "medicare.csv" in dataset:
+        easy_descriptions = [
+            "Bar plot of average total payments for California's top 8 hospitals by average total payments.",
+            "Histogram showing the distribution of reimbursement rates for California hospitals.",
+            "Boxplot of average total payments across California hospitals.",
+            "Pie plot of hospital proportions in the top 5 states by average total payments.",
+            "Bar chart of medical record counts in California vs. Texas.",
+            "Histogram showing the distribution of number of providers across California cities.",
+            "Boxplot of average covered charges across Texas hospitals",
+        ]
+        hard_descriptions = [
+            "Average total payment comparison across Wisconsin hospitals.",
+            "Breakdown of record count by medical classification.",
+            "List provider names with reimbursement rate over 1.",
+            "Proportion of 'Alcohol and Drug Use' records in top 5 states, based on the number of hospitals.",
+            "Number of Alcohol and Drug Use records comparison in California vs. Texas."
+        ]
+    elif "volcano_db.csv" in dataset:
+        easy_descriptions = [
+            "Bar plot of the 5 countries with the most volcanoes listed.",
+            "Line plot showing the elevation trend of the 8 highest volcanoes in Japan.",
+            "Histogram of the distribution of volcano elevations for volcanoes in China.",
+            "Boxplot of the elevation distribution of volcanoes in the United States.",
+            "Area plot of the elevation progression of the 8 highest volcanoes in Russia.",
+            "Scatter plot of latitude versus longitude for volcanoes in Peru.",
+            "Mapbox density map of the concentration of volcanoes in Mexico.",
+            "Pie plot of the distribution of volcano types in China.",
+            "Pie plot of the distribution of volcano status.",
+        ]
+        hard_descriptions = [
+            "Breakdown of volcano types in the United States.",
+            "Distribution of volcano elevations in Mexico.",
+            "Relationship between latitude and elevation for the 8 southernmost volcanoes.",
+            "Comparison of the number of volcanoes in the top 5 countries.",
+            "Trend of volcano elevations in the 5 highest volcanoes in Mexico.",
+            "Volcanoes with elevations above 4000.",
+            "Breakdown of volcano status in the United States.",
+        ]
     else:
         raise ValueError("No automation of test cases curation for the given dataset.")
 
@@ -278,12 +370,14 @@ def gen_test_case(dataset):
         }
         combined_list.append(item)
 
+    test_case_path = f'data/{mode}/{mode}.json'
+
     # Convert the combined list to JSON
-    with open('data/train/train.json', 'w') as file:
+    with open(test_case_path, 'w') as file:
         json.dump(combined_list, file, indent=4)
 
 
-def gen_golden(dataset):
+def gen_golden(dataset, mode="train"):
     """
     Generate:
         - code that generates golden plots -> train-code.json
@@ -300,7 +394,11 @@ def gen_golden(dataset):
     golden_codes = []
     golden_jsons = []
 
-    with open('data/train/train.json', 'r') as file:
+    code_path = f'data/{mode}/{mode}-code.json'
+    golden_path = f'data/{mode}/{mode}-golden.json'
+    test_case_path = f'data/{mode}/{mode}.json'
+
+    with open(test_case_path, 'r') as file:
         test_cases = json.load(file)
 
     for test_case in test_cases:
@@ -330,16 +428,19 @@ def gen_golden(dataset):
                 continue
 
     # Convert the golden_codes list to JSON
-    with open('data/train/train-code.json', 'w') as file:
+    with open(code_path, 'w') as file:
         json.dump(golden_codes, file, indent=4)
 
     # Convert the golden_jsons list to JSON
-    with open('data/train/train-golden.json', 'w') as file:
+    with open(golden_path, 'w') as file:
         json.dump(golden_jsons, file, indent=4)
 
 
 if __name__ == "__main__":
-    # for dataset in DATASETS:
-    # gen_test_case(dataset)
-    # gen_golden(dataset)
+    # for dataset in TRAIN_DATASETS:
+    #     gen_test_case(dataset)
+    #     gen_golden(dataset)
+    # for dataset in TEST_DATASETS:
+    #     gen_test_case(dataset, mode="test")
+    #     gen_golden(dataset, mode="test")
     pass

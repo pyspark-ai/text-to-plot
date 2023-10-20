@@ -3,7 +3,7 @@ Benchmarking tool for generating plots from textual descriptions.
 
 ## Datasets and Test Cases
 
-| Dataset                                 | Test Cases | Easy       | Hard       |
+| Train Datasets                          | Test Cases | Easy       | Hard       |
 |-----------------------------------------|------------|------------|------------|
 | `1962_2006_walmart_store_openings.csv`  | 17         | 12         | 5          |
 | `2011_february_aa_flight_paths.csv`     | 14         | 11         | 3          |
@@ -13,6 +13,15 @@ Benchmarking tool for generating plots from textual descriptions.
 | `winequality-red.csv`                   | 25         | 20         | 5          |
 | `us-cities-top-1k.csv`                  | 24         | 19         | 5          |
 | **TOTAL**                               | **154**    | 120        | 34         |
+
+| Test Datasets                           | Test Cases | Easy       | Hard       |
+|-----------------------------------------|------------|------------|------------|
+| `european_turnout.csv`                  | 9          | 5          | 4          |
+| `mpg.csv`                               | 10         | 7          | 3          |
+| `gapminder2007.csv`                     | 12         | 6          | 6          |
+| `medicare.csv`                          | 12         | 7          | 5          |
+| `volcano_db.csv`                        | 16         | 9          | 7          |
+| **TOTAL**                               | **59**     | 34         | 25         |
 
 ## Scripts Overview
 
