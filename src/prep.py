@@ -60,7 +60,7 @@ def filter_golden_json_data(json_string, include_keys=None):
     return {'data': filtered_data}
 
 
-def gen_test_case(dataset, is_train=True):
+def gen_test_case(dataset, mode="train"):
     """
     Generate test cases with uuid -> test.json
     """
@@ -370,17 +370,14 @@ def gen_test_case(dataset, is_train=True):
         }
         combined_list.append(item)
 
-    if is_train:
-        test_case_path = 'data/train/train.json'
-    else:
-        test_case_path = 'data/test/test.json'
+    test_case_path = f'data/{mode}/{mode}.json'
 
     # Convert the combined list to JSON
     with open(test_case_path, 'w') as file:
         json.dump(combined_list, file, indent=4)
 
 
-def gen_golden(dataset, is_train=True):
+def gen_golden(dataset, mode="train"):
     """
     Generate:
         - code that generates golden plots -> train-code.json
@@ -397,14 +394,9 @@ def gen_golden(dataset, is_train=True):
     golden_codes = []
     golden_jsons = []
 
-    if is_train:
-        code_path = 'data/train/train-code.json'
-        golden_path = 'data/train/train-golden.json'
-        test_case_path = 'data/train/train.json'
-    else:
-        code_path = 'data/test/test-code.json'
-        golden_path = 'data/test/test-golden.json'
-        test_case_path = 'data/test/test.json'
+    code_path = f'data/{mode}/{mode}-code.json'
+    golden_path = f'data/{mode}/{mode}-golden.json'
+    test_case_path = f'data/{mode}/{mode}.json'
 
     with open(test_case_path, 'r') as file:
         test_cases = json.load(file)
@@ -449,6 +441,6 @@ if __name__ == "__main__":
     #     gen_test_case(dataset)
     #     gen_golden(dataset)
     # for dataset in TEST_DATASETS:
-    #     gen_test_case(dataset, is_train=False)
-    #     gen_golden(dataset, is_train=False)
+    #     gen_test_case(dataset, mode="test")
+    #     gen_golden(dataset, mode="test")
     pass
