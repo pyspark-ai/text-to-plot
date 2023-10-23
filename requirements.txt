@@ -1,4 +1,4 @@
-git+https://github.com/pyspark-ai/pyspark-ai.git@master#egg=pyspark-ai[plot]
+pyspark-ai[plot] @ git+https://github.com/pyspark-ai/pyspark-ai.git@master
 click
 pyspark
 pandas
