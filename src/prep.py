@@ -387,7 +387,10 @@ def gen_golden(dataset, mode="train"):
     spark_ai = SparkAI(spark_session=spark, verbose=True)
     spark_ai.activate()
 
-    pdf = pd.read_csv(dataset)
+    if "volcano_db.csv" in dataset:
+        pdf = pd.read_csv(dataset, encoding='ISO-8859-1')
+    else:
+        pdf = pd.read_csv(dataset)
     df = spark_ai._spark.createDataFrame(pdf)
 
     include_keys = INCLUDE_KEYS

@@ -1,4 +1,5 @@
-git+https://github.com/pyspark-ai/pyspark-ai.git@master
+pyspark-ai[plot] @ git+https://github.com/pyspark-ai/pyspark-ai.git@master
 click
 pyspark
+plotly
 pandas
