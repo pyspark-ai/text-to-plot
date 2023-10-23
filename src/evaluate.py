@@ -175,7 +175,10 @@ def main(test_id, dataset_url, complexity, mode):
 
         uuid, dataset, plot_desc = test_case['uuid'], test_case['dataset'], test_case['description']
         is_hard = test_case['complexity'] == "hard"
-        pdf = pd.read_csv(dataset)
+        if "volcano_db.csv" in dataset:
+            pdf = pd.read_csv(dataset, encoding='ISO-8859-1')
+        else:
+            pdf = pd.read_csv(dataset)
         df = spark_ai._spark.createDataFrame(pdf)
 
         try:
