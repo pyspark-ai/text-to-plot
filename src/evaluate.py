@@ -32,6 +32,25 @@ def substitute_show_to_json(string):
     return re.sub(r'(\w+)\.show\(\)', r'print(\1.to_json())', string)
 
 
+def eq(obj1, obj2):
+    if isinstance(obj1, (int, float, complex)) and isinstance(obj2, (int, float, complex)):
+        return round(obj1, 3) == round(obj2, 3)
+    elif isinstance(obj1, str) and isinstance(obj2, str):
+        return obj1.lower() == obj2.lower()
+    return obj1 == obj2
+
+
+def items_equal(dict1, dict2):
+    if len(dict1) != len(dict2):
+        return False
+    for k1, v1 in dict1.items():
+        if k1 not in dict2:
+            return False
+        if not eq(v1, dict2[k1]):
+            return False
+    return True
+
+
 def is_same_mapping(golden_keys, golden_values, predicted_keys, predicted_values):
     """
     Compares two key-value mappings. If the keys in the golden mapping are strings,
@@ -49,14 +68,7 @@ def is_same_mapping(golden_keys, golden_values, predicted_keys, predicted_values
         matched = False
 
         for p_key, p_value in predicted_dict.items():
-            # Check if the key is a string and then do a case-insensitive comparison.
-            # Otherwise, do a direct comparison.
-            if isinstance(g_key, str) and isinstance(p_key, str):
-                keys_match = g_key.lower() == p_key.lower()
-            else:
-                keys_match = g_key == p_key
-
-            if keys_match and g_value == p_value:
+            if eq(g_key, p_key) and eq(g_value, p_value):
                 matched = True
                 break
 
@@ -75,8 +87,7 @@ def is_same_mapping_3(golden_keys1, golden_keys2, golden_values, predicted_keys1
     predicted_dict = {(k1, k2): v for k1, k2, v in
                       zip(predicted_keys1, predicted_keys2, predicted_values)}
 
-    # Check if both dictionaries have the same keys and values, disregarding order.
-    return set(golden_dict.items()) == set(predicted_dict.items())
+    return items_equal(golden_dict, predicted_dict)
 
 
 def evaluate(golden, predicted, is_hard=False):
