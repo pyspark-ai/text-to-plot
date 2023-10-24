@@ -8,8 +8,8 @@
         "code": "# Import necessary libraries\nfrom pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is the DataFrame\n# Filter the DataFrame for Western region countries\ndf_western = df.filter(df.region == 'Western')\n\n# Aggregate the DataFrame\ndf_agg = df_western.groupBy('country').agg({'euro_turnout': 'mean'})\n\n# Convert the DataFrame to Pandas\ndf_pandas = df_agg.toPandas()\n\n# Create a boxplot\nfig = px.box(df_pandas, y=\"avg(euro_turnout)\", title=\"Variation in European Election Turnouts for Western Region Countries\")\n\n# Display the plot\nprint(fig.to_json())"
     },
     {
-        "uuid": "0c7932ba93c11b23b030e5058ce9d2ca",
-        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Filter data for Central/Eastern region countries\ndf_central_eastern = df.filter(df.region == 'Central/Eastern')\n\n# Aggregate data\ndf_agg = df_central_eastern.groupBy('country').agg({'population': 'sum', 'nat_turnout': 'avg'})\n\n# Convert to pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Rename columns\ndf_pandas.columns = ['country', 'total_population', 'avg_nat_turnout']\n\n# Create scatter plot\nfig = px.scatter(df_pandas, x='total_population', y='avg_nat_turnout', color='country', title='Correlation between Population Size and National Election Turnout for Central/Eastern Region Countries')\n\n# Display plot\nprint(fig.to_json())"
+        "uuid": "80082e5f6ccad0458c63c5bc3e5b2213",
+        "code": "# Import necessary libraries\nfrom pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is your DataFrame\n# Aggregate population by region\ndf_agg = df.filter(df['region'] == 'Central/Eastern').groupBy('country').agg({'population': 'sum'})\n\n# Convert Spark DataFrame to Pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Create a new column for proportion of population\ndf_pandas['proportion'] = df_pandas['sum(population)'] / df_pandas['sum(population)'].sum()\n\n# Create pie chart using Plotly\nfig = px.pie(df_pandas, values='proportion', names='country', title='Proportion of Population for Central/Eastern Region Countries')\nprint(fig.to_json())"
     },
     {
         "uuid": "5690628120a45b219fed3b9c25f470d9",
@@ -60,8 +60,8 @@
         "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is the DataFrame\n# Aggregate df\ndf_agg = df.groupBy('model-year').count().orderBy('model-year')\n\n# Convert to pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Create area plot\nfig = px.area(df_pandas, x='model-year', y='count', title='Count of Cars Across Model Years')\n\n# Display the plot\nprint(fig.to_json())"
     },
     {
-        "uuid": "da3d0c00b47b4a560e9b968194221e51",
-        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Aggregation: Get top 5 vehicles by mpg\ndf_top5_mpg = df.orderBy(df['mpg'].desc()).limit(5)\n\n# Convert to pandas DataFrame\ndf_top5_mpg_pd = df_top5_mpg.toPandas()\n\n# Hexagonal bin plot of cylinders versus acceleration\nfig = px.density_heatmap(df_top5_mpg_pd, x='cylinders', y='acceleration', nbinsx=20, nbinsy=20, color_continuous_scale=\"Viridis\")\n\n# Display the plot\nprint(fig.to_json())"
+        "uuid": "e3e611c3b77094e91c258c3e722d884b",
+        "code": "import pandas as pd\nimport plotly.express as px\nfrom pyspark.sql import SparkSession\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Filter df for vehicles with 25 miles per gallon\ndf_filtered = df.filter(df.mpg == 25)\n\n# Convert Spark DataFrame to Pandas DataFrame\npandas_df = df_filtered.select('cylinders', 'acceleration').toPandas()\n\n# Create hexagonal bin plot\nfig = px.density_heatmap(pandas_df, x='cylinders', y='acceleration', nbinsx=20, nbinsy=20)\n\n# Display the plot\nprint(fig.to_json())"
     },
     {
         "uuid": "69cd29f7676e8f43281d20c55e558453",
