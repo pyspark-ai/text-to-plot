@@ -188,12 +188,12 @@ def main(test_id, dataset_url, complexity, mode):
             with contextlib.redirect_stdout(buffer):
                 exec(compile(code, "plot_df-CodeGen-benchmark", "exec"))
             captured_output = buffer.getvalue()[:-1]
-            predicted = json.loads(captured_output)
+            predicted = filter_json_data(captured_output)
 
-            if not evaluate(golden_plots[uuid]['data'], predicted['data'][0], is_hard=is_hard):
+            if not evaluate(golden_plots[uuid]['data'], predicted['data'], is_hard=is_hard):
                 logging.error(f"[ERROR] {uuid}")
                 logging.info("[PREDICTED]")
-                logging.info(predicted['data'][0])
+                logging.info(predicted['data'])
                 logging.info("[GOLDEN]")
                 logging.info(golden_plots[uuid]['data'])
                 err_cnt += 1
@@ -213,6 +213,53 @@ def main(test_id, dataset_url, complexity, mode):
     if complexity:
         desc += f'{complexity} | '
     logging.info(f"{desc}Pass rate: {pass_rate:.2f}%")
+
+
+def filter_json_data(json_string, include_keys=None):
+    data_dict = json.loads(json_string)
+
+    if 'data' not in data_dict:
+        raise ValueError("'data' field does not exist in the provided JSON string.")
+
+    if len(data_dict['data']) == 1:
+        data_content = data_dict['data'][0]
+        if include_keys is None:
+            filtered_data = {key: data_content[key] for key in data_content}
+        else:
+            filtered_data = {key: data_content[key] for key in include_keys if key in data_content}
+    else:
+        x_values = []
+        y_values = []
+        plot_type = None
+        xaxis = None
+        yaxis = None
+        orientation = None
+
+        for item in data_dict['data']:
+            if 'x' in item:
+                x_values.extend(item['x'])
+            if 'y' in item:
+                y_values.extend(item['y'])
+            if plot_type is None and 'type' in item:
+                plot_type = item['type']
+            if xaxis is None and 'xaxis' in item:
+                xaxis = item['xaxis']
+            if yaxis is None and 'yaxis' in item:
+                yaxis = item['yaxis']
+            if orientation is None and 'orientation' in item:
+                orientation = item['orientation']
+
+        filtered_data = {
+            'x': x_values,
+            'y': y_values,
+            'type': plot_type,
+            'xaxis': xaxis,
+            'yaxis': yaxis,
+            'orientation': orientation
+        }
+
+    return {'data': filtered_data}
+
 
 
 if __name__ == '__main__':

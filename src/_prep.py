@@ -16,6 +16,7 @@ INCLUDE_KEYS = [
     "domain", "labels", "values",  # pie
     "xbingroup", "ybingroup",  # bin
 ]
+# INCLUDE_KEYS = None
 
 TRAIN_DATASETS = [
     "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
@@ -293,34 +294,11 @@ def gen_test_case(dataset, mode="train"):
             "Cities with a population greater than 1 million",
             "Population comparison of cities in South Carolina and Nevada"
         ]
-    elif "european_turnout.csv" in dataset:
-        easy_descriptions = [
-            "Histogram of the distribution of national election turnouts for Central/Eastern region countries.",
-            "Boxplot of the variation in European election turnouts for Western region countries.",
-            "Pie plot of the proportion of population for Central/Eastern region countries.",
-            "Mapbox density plot across Mediterranean region based on European election turnouts.",
-            "Pie chart of populations in Central/Eastern region countries."
-        ]
-        hard_descriptions = [
-            "National turnouts comparison for Western region countries.",
-            "Countries with a greater population than Austria's.",
-            "Relationship between population size and voter turnout for Central/Eastern countries.",
-            "Number of countries breakdown by region."
-        ]
     elif "mpg.csv" in dataset:
         easy_descriptions = [
-            "Line plot of the progression of average miles per gallon across distinct model years",
-            "Bar chart comparing the average horsepower across unique cylinder configurations.",
-            "Scatter plot of the relationship between a vehicle's weight and its miles per gallon for the model year 80.",
-            "Pie plot representing the proportion of vehicles based on their horsepower, focusing on the top 5 horsepower values.",
-            "Boxplot of the distribution of acceleration values for the vehicles with the model year 70.",
-            "Area plot of the count of cars across model years.",
             "Hexagonal bin plot of cylinders versus acceleration for vehicles with 25 miles per gallon.",
         ]
         hard_descriptions = [
-            "Proportion of vehicles by cylinder configurations.",
-            "Trend of average vehicle weight over distinct model years.",
-            "Relationship between vehicles' miles per gallon and their acceleration capabilities for the model year 80.",
         ]
     elif "gapminder2007.csv" in dataset:
         easy_descriptions = [
@@ -401,7 +379,7 @@ def gen_test_case(dataset, mode="train"):
         }
         combined_list.append(item)
 
-    test_case_path = f'data/{mode}/{mode}.json'
+    test_case_path = f'_data/{mode}/{mode}.json'
 
     # Convert the combined list to JSON
     with open(test_case_path, 'w') as file:
@@ -428,9 +406,9 @@ def gen_golden(dataset, mode="train"):
     golden_codes = []
     golden_jsons = []
 
-    code_path = f'data/{mode}/{mode}-code.json'
-    golden_path = f'data/{mode}/{mode}-golden.json'
-    test_case_path = f'data/{mode}/{mode}.json'
+    code_path = f'_data/{mode}/{mode}-code.json'
+    golden_path = f'_data/{mode}/{mode}-golden.json'
+    test_case_path = f'_data/{mode}/{mode}.json'
 
     with open(test_case_path, 'r') as file:
         test_cases = json.load(file)
@@ -471,10 +449,7 @@ def gen_golden(dataset, mode="train"):
 
 
 if __name__ == "__main__":
-    # for dataset in TRAIN_DATASETS:
-    #     gen_test_case(dataset)
-    #     gen_golden(dataset)
-    # for dataset in TEST_DATASETS:
-    #     gen_test_case(dataset, mode="test")
-    #     gen_golden(dataset, mode="test")
+    dataset = "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv"
+    gen_test_case(dataset, mode="test")
+    gen_golden(dataset, mode="test")
     pass
