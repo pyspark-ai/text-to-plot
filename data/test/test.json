@@ -126,11 +126,11 @@
         "description": "Trend of average vehicle weight over distinct model years."
     },
     {
-        "uuid": "922c684ef13a0a72cebd8a3389dfa0c9",
+        "uuid": "95de169b1baceeaa1162a026276ff3dc",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
         "complexity": "hard",
-        "description": "Relationship between vehicles' miles per gallon and their acceleration capabilities for the model year 80."
+        "description": "Relationship between individual miles per gallon and acceleration capabilities for vehicles from the 80 model year."
     },
     {
         "uuid": "10f3262cf38b852376d89c3b60b5937d",

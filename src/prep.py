@@ -321,7 +321,7 @@ def gen_test_case(dataset, mode="train"):
         hard_descriptions = [
             "Proportion of vehicles by cylinder configurations.",
             "Trend of average vehicle weight over distinct model years.",
-            "Relationship between vehicles' miles per gallon and their acceleration capabilities for the model year 80.",
+            "Relationship between individual miles per gallon and acceleration capabilities for vehicles from the 80 model year.",
         ]
     elif "gapminder2007.csv" in dataset:
         easy_descriptions = [
