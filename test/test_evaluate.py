@@ -1,5 +1,5 @@
 import unittest
-from src.evaluate import is_same_mapping, is_same_mapping_3, evaluate
+from src.evaluate import is_same_mapping, is_same_mapping_3, evaluate, eq, items_equal
 
 
 class TestPlotEvaluation(unittest.TestCase):
@@ -47,6 +47,41 @@ class TestPlotEvaluation(unittest.TestCase):
                              'lon': ['lon1', 'lon2'], 'z': ['z1', 'z2'], 'subplot': 'p1',
                              'type': 'densitymapbox'}
         self.assertTrue(evaluate(golden_density, predicted_density))
+
+    def test_eq(self):
+        self.assertTrue(eq(25.09310344827585, 25.09310344827586))
+        self.assertTrue(eq("hello", "HELLO"))
+        self.assertTrue(eq("Hello", "hello"))
+        self.assertFalse(eq(5, "5"))
+        self.assertTrue(eq(5, 5))
+        self.assertFalse(eq(5, 6))
+        self.assertTrue(eq(5.123456, 5.123457))
+        self.assertFalse(eq(5.123456, 5.123459))
+        self.assertTrue(eq("HELLO", "hello"))
+        self.assertFalse(eq("HELLO", "world"))
+        self.assertTrue(eq(1 + 2j, 1 + 2j))
+        self.assertFalse(eq(1 + 2j, 2 + 2j))
+
+    def test_items_equal(self):
+        dict1 = {'a': 25.09310344827585, 'b': "hello"}
+        dict2 = {'a': 25.09310344827586, 'b': "HELLO"}
+        self.assertTrue(items_equal(dict1, dict2))
+
+        dict1 = {'a': 5, 'b': "hello"}
+        dict2 = {'a': 6, 'b': "HELLO"}
+        self.assertFalse(items_equal(dict1, dict2))
+
+        dict1 = {'a': 5, 'b': "hello"}
+        dict2 = {'a': 5, 'b': "world"}
+        self.assertFalse(items_equal(dict1, dict2))
+
+        dict1 = {'a': 5, 'b': "hello"}
+        dict2 = {'a': 5}
+        self.assertFalse(items_equal(dict1, dict2))
+
+        dict1 = {'a': 5}
+        dict2 = {'a': 5, 'b': "hello"}
+        self.assertFalse(items_equal(dict1, dict2))
 
 
 if __name__ == '__main__':

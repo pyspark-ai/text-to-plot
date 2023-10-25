@@ -32,6 +32,25 @@ def substitute_show_to_json(string):
     return re.sub(r'(\w+)\.show\(\)', r'print(\1.to_json())', string)
 
 
+def eq(obj1, obj2):
+    if isinstance(obj1, (int, float, complex)) and isinstance(obj2, (int, float, complex)):
+        return round(obj1, 3) == round(obj2, 3)
+    elif isinstance(obj1, str) and isinstance(obj2, str):
+        return obj1.lower() == obj2.lower()
+    return obj1 == obj2
+
+
+def items_equal(dict1, dict2):
+    if len(dict1) != len(dict2):
+        return False
+    for k1, v1 in dict1.items():
+        if k1 not in dict2:
+            return False
+        if not eq(v1, dict2[k1]):
+            return False
+    return True
+
+
 def is_same_mapping(golden_keys, golden_values, predicted_keys, predicted_values):
     """
     Compares two key-value mappings. If the keys in the golden mapping are strings,
@@ -49,14 +68,7 @@ def is_same_mapping(golden_keys, golden_values, predicted_keys, predicted_values
         matched = False
 
         for p_key, p_value in predicted_dict.items():
-            # Check if the key is a string and then do a case-insensitive comparison.
-            # Otherwise, do a direct comparison.
-            if isinstance(g_key, str) and isinstance(p_key, str):
-                keys_match = g_key.lower() == p_key.lower()
-            else:
-                keys_match = g_key == p_key
-
-            if keys_match and g_value == p_value:
+            if eq(g_key, p_key) and eq(g_value, p_value):
                 matched = True
                 break
 
@@ -75,8 +87,7 @@ def is_same_mapping_3(golden_keys1, golden_keys2, golden_values, predicted_keys1
     predicted_dict = {(k1, k2): v for k1, k2, v in
                       zip(predicted_keys1, predicted_keys2, predicted_values)}
 
-    # Check if both dictionaries have the same keys and values, disregarding order.
-    return set(golden_dict.items()) == set(predicted_dict.items())
+    return items_equal(golden_dict, predicted_dict)
 
 
 def evaluate(golden, predicted, is_hard=False):
@@ -188,12 +199,12 @@ def main(test_id, dataset_url, complexity, mode):
             with contextlib.redirect_stdout(buffer):
                 exec(compile(code, "plot_df-CodeGen-benchmark", "exec"))
             captured_output = buffer.getvalue()[:-1]
-            predicted = json.loads(captured_output)
+            predicted = filter_json_data(captured_output)
 
-            if not evaluate(golden_plots[uuid]['data'], predicted['data'][0], is_hard=is_hard):
+            if not evaluate(golden_plots[uuid]['data'], predicted['data'], is_hard=is_hard):
                 logging.error(f"[ERROR] {uuid}")
                 logging.info("[PREDICTED]")
-                logging.info(predicted['data'][0])
+                logging.info(predicted['data'])
                 logging.info("[GOLDEN]")
                 logging.info(golden_plots[uuid]['data'])
                 err_cnt += 1
@@ -213,6 +224,53 @@ def main(test_id, dataset_url, complexity, mode):
     if complexity:
         desc += f'{complexity} | '
     logging.info(f"{desc}Pass rate: {pass_rate:.2f}%")
+
+
+def filter_json_data(json_string, include_keys=None):
+    data_dict = json.loads(json_string)
+
+    if 'data' not in data_dict:
+        raise ValueError("'data' field does not exist in the provided JSON string.")
+
+    if len(data_dict['data']) == 1:
+        data_content = data_dict['data'][0]
+        if include_keys is None:
+            filtered_data = {key: data_content[key] for key in data_content}
+        else:
+            filtered_data = {key: data_content[key] for key in include_keys if key in data_content}
+    else:
+        x_values = []
+        y_values = []
+        plot_type = None
+        xaxis = None
+        yaxis = None
+        orientation = None
+
+        for item in data_dict['data']:
+            if 'x' in item:
+                x_values.extend(item['x'])
+            if 'y' in item:
+                y_values.extend(item['y'])
+            if plot_type is None and 'type' in item:
+                plot_type = item['type']
+            if xaxis is None and 'xaxis' in item:
+                xaxis = item['xaxis']
+            if yaxis is None and 'yaxis' in item:
+                yaxis = item['yaxis']
+            if orientation is None and 'orientation' in item:
+                orientation = item['orientation']
+
+        filtered_data = {
+            'x': x_values,
+            'y': y_values,
+            'type': plot_type,
+            'xaxis': xaxis,
+            'yaxis': yaxis,
+            'orientation': orientation
+        }
+
+    return {'data': filtered_data}
+
 
 
 if __name__ == '__main__':

@@ -14,11 +14,11 @@
         "description": "Boxplot of the variation in European election turnouts for Western region countries."
     },
     {
-        "uuid": "0c7932ba93c11b23b030e5058ce9d2ca",
+        "uuid": "80082e5f6ccad0458c63c5bc3e5b2213",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Scatter plot of the correlation between population size and national election turnout for Central/Eastern region countries"
+        "description": "Pie plot of the proportion of population for Central/Eastern region countries."
     },
     {
         "uuid": "5690628120a45b219fed3b9c25f470d9",
@@ -105,11 +105,11 @@
         "description": "Area plot of the count of cars across model years."
     },
     {
-        "uuid": "da3d0c00b47b4a560e9b968194221e51",
+        "uuid": "e3e611c3b77094e91c258c3e722d884b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot of cylinders versus acceleration for vehicles with the top 5 miles per gallon."
+        "description": "Hexagonal bin plot of cylinders versus acceleration for vehicles with 25 miles per gallon."
     },
     {
         "uuid": "69cd29f7676e8f43281d20c55e558453",

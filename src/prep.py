@@ -50,12 +50,43 @@ def filter_golden_json_data(json_string, include_keys=None):
 
     if 'data' not in data_dict:
         raise ValueError("'data' field does not exist in the provided JSON string.")
-    data_content = data_dict['data'][0]
 
-    if include_keys is None:
-        filtered_data = {key: data_content[key] for key in data_content}
+    if len(data_dict['data']) == 1:
+        data_content = data_dict['data'][0]
+        if include_keys is None:
+            filtered_data = {key: data_content[key] for key in data_content}
+        else:
+            filtered_data = {key: data_content[key] for key in include_keys if key in data_content}
     else:
-        filtered_data = {key: data_content[key] for key in include_keys if key in data_content}
+        x_values = []
+        y_values = []
+        plot_type = None
+        xaxis = None
+        yaxis = None
+        orientation = None
+
+        for item in data_dict['data']:
+            if 'x' in item:
+                x_values.extend(item['x'])
+            if 'y' in item:
+                y_values.extend(item['y'])
+            if plot_type is None and 'type' in item:
+                plot_type = item['type']
+            if xaxis is None and 'xaxis' in item:
+                xaxis = item['xaxis']
+            if yaxis is None and 'yaxis' in item:
+                yaxis = item['yaxis']
+            if orientation is None and 'orientation' in item:
+                orientation = item['orientation']
+
+        filtered_data = {
+            'x': x_values,
+            'y': y_values,
+            'type': plot_type,
+            'xaxis': xaxis,
+            'yaxis': yaxis,
+            'orientation': orientation
+        }
 
     return {'data': filtered_data}
 
@@ -266,7 +297,7 @@ def gen_test_case(dataset, mode="train"):
         easy_descriptions = [
             "Histogram of the distribution of national election turnouts for Central/Eastern region countries.",
             "Boxplot of the variation in European election turnouts for Western region countries.",
-            "Scatter plot of the correlation between population size and national election turnout for Central/Eastern region countries",
+            "Pie plot of the proportion of population for Central/Eastern region countries.",
             "Mapbox density plot across Mediterranean region based on European election turnouts.",
             "Pie chart of populations in Central/Eastern region countries."
         ]
@@ -284,7 +315,7 @@ def gen_test_case(dataset, mode="train"):
             "Pie plot representing the proportion of vehicles based on their horsepower, focusing on the top 5 horsepower values.",
             "Boxplot of the distribution of acceleration values for the vehicles with the model year 70.",
             "Area plot of the count of cars across model years.",
-            "Hexagonal bin plot of cylinders versus acceleration for vehicles with the top 5 miles per gallon.",
+            "Hexagonal bin plot of cylinders versus acceleration for vehicles with 25 miles per gallon.",
         ]
         hard_descriptions = [
             "Proportion of vehicles by cylinder configurations.",
