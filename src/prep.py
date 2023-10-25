@@ -371,7 +371,7 @@ def gen_test_case(dataset, mode="train"):
         hard_descriptions = [
             "Breakdown of volcano types in the United States.",
             "Distribution of volcano elevations in Mexico.",
-            "Relationship between latitude and elevation for the 8 southernmost volcanoes.",
+            "Relationship between latitude and elevation for the 5 southernmost volcanoes.",
             "Comparison of the number of volcanoes in the top 5 countries.",
             "Trend of volcano elevations in the 5 highest volcanoes in Mexico.",
             "Volcanoes with elevations above 4000.",

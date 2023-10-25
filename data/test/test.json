@@ -378,11 +378,11 @@
         "description": "Distribution of volcano elevations in Mexico."
     },
     {
-        "uuid": "57b912fbc2f994e0e565072c9bc16d0c",
+        "uuid": "ccff80f7966bfba8b9f3e7f38a8cf05e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
         "complexity": "hard",
-        "description": "Relationship between latitude and elevation for the 8 southernmost volcanoes."
+        "description": "Relationship between latitude and elevation for the 5 southernmost volcanoes."
     },
     {
         "uuid": "42d090ca01f86f45a77bbfdfdc6ba56a",
