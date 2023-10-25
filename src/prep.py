@@ -352,7 +352,7 @@ def gen_test_case(dataset, mode="train"):
         hard_descriptions = [
             "Average total payment comparison across Wisconsin hospitals.",
             "Breakdown of record count by medical classification.",
-            "List provider names with reimbursement rate over 1.",
+            "List how many times each provider has a reimbursement rate greater than 1.",
             "Proportion of 'Alcohol and Drug Use' records in top 5 states, based on the number of hospitals.",
             "Number of Alcohol and Drug Use records comparison in California vs. Texas."
         ]

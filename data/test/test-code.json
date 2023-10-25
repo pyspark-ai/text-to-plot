@@ -160,8 +160,8 @@
         "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is your DataFrame\n# Aggregate data\ndf_agg = df.groupBy('Classification').count()\n\n# Convert to pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Plot data\nfig = px.pie(df_pandas, values='count', names='Classification', title='Breakdown of Record Count by Medical Classification')\nprint(fig.to_json())"
     },
     {
-        "uuid": "80fdcc3be66903118308ef1dcc5ab7ee",
-        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is your DataFrame\n# Filter DataFrame where Reimbursement Rate is over 1\ndf_filtered = df.filter(df['Reimbursement Rate'] > 1)\n\n# Group by Provider Name and calculate average Reimbursement Rate\ndf_grouped = df_filtered.groupBy('Provider Name').avg('Reimbursement Rate')\n\n# Convert Spark DataFrame to Pandas DataFrame for plotting\npandas_df = df_grouped.toPandas()\n\n# Create bar plot with Plotly\nfig = px.bar(pandas_df, x='Provider Name', y='avg(Reimbursement Rate)', title='Provider Names with Reimbursement Rate over 1')\n\n# Display the plot\nprint(fig.to_json())"
+        "uuid": "f5baa2b6f221b37cb3b43d91a6536d18",
+        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Filter df where Reimbursement Rate is greater than 1\ndf_filtered = df.filter(df['Reimbursement Rate'] > 1)\n\n# Group by Provider Name and count\ndf_grouped = df_filtered.groupBy('Provider Name').count()\n\n# Convert to pandas DataFrame\npandas_df = df_grouped.toPandas()\n\n# Create bar plot with Plotly\nfig = px.bar(pandas_df, x='Provider Name', y='count', title='Number of times each provider has a reimbursement rate greater than 1')\nprint(fig.to_json())"
     },
     {
         "uuid": "12617b723a019f944da00a16ad5597bd",

@@ -280,11 +280,11 @@
         "description": "Breakdown of record count by medical classification."
     },
     {
-        "uuid": "80fdcc3be66903118308ef1dcc5ab7ee",
+        "uuid": "f5baa2b6f221b37cb3b43d91a6536d18",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
         "complexity": "hard",
-        "description": "List provider names with reimbursement rate over 1."
+        "description": "List how many times each provider has a reimbursement rate greater than 1."
     },
     {
         "uuid": "12617b723a019f944da00a16ad5597bd",
