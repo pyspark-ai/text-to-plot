@@ -3,6 +3,7 @@ import hashlib
 import io
 import json
 import re
+import traceback
 
 import pandas as pd
 
@@ -459,6 +460,7 @@ def gen_golden(dataset, mode="train"):
                 })
             except Exception as e:
                 print(f"Test case with UUID {uuid} failed due to: {str(e)}")
+                print(traceback.format_exc())
                 continue
 
     # Convert the golden_codes list to JSON
