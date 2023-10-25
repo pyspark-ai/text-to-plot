@@ -49,11 +49,11 @@
         "description": "Countries with a greater population than Austria's."
     },
     {
-        "uuid": "8993aaa0299fb508e00f4111652ba1f0",
+        "uuid": "d230fdb5dc0ae99ddabf2696f0ddc1ba",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
         "complexity": "hard",
-        "description": "Relationship between population size and voter turnout for Central/Eastern countries."
+        "description": "List population size for Central/Eastern countries."
     },
     {
         "uuid": "42a59ce425f642c541bc4b15071cc9de",

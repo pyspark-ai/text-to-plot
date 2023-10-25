@@ -304,7 +304,7 @@ def gen_test_case(dataset, mode="train"):
         hard_descriptions = [
             "National turnouts comparison for Western region countries.",
             "Countries with a greater population than Austria's.",
-            "Relationship between population size and voter turnout for Central/Eastern countries.",
+            "List population size for Central/Eastern countries.",
             "Number of countries breakdown by region."
         ]
     elif "mpg.csv" in dataset:
