@@ -469,11 +469,11 @@
         "description": "Histogram showing the distribution of incidents based on state."
     },
     {
-        "uuid": "c19b466254affba48b2e70d887d00e93",
+        "uuid": "f1f4bb7a302ec08e2cb3a28e7dbb426a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Line plot indicating the trend of incidents based on cause over the years."
+        "description": "Line plot indicating the trend of incidents because of 'Struck by vehicle' over the years following 2000."
     },
     {
         "uuid": "48460af82e836e50c15ca259570c8cf5",
@@ -490,11 +490,11 @@
         "description": "Boxplot showing the distribution of incidents based on cause."
     },
     {
-        "uuid": "4d17f2ffdad22da0312055f878ca8524",
+        "uuid": "4fa22e5ece43d96c043e2ea05ab44574",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plot representing the number of incidents in each state over the years."
+        "description": "Area plot representing the cumulative number of incidents over the years following 2000."
     },
     {
         "uuid": "4133ed43c50977ac645bcaa9465ae55a",

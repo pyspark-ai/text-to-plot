@@ -185,10 +185,10 @@ def gen_test_case(dataset, mode="train"):
             "Hexagonal bin plot of latitude versus longitude to visualize incident density.",
             "Pie chart representing the distribution of incidents based on whether it involved a canine or not.",
             "Histogram showing the distribution of incidents based on state.",
-            "Line plot indicating the trend of incidents based on cause over the years.",
+            "Line plot indicating the trend of incidents because of 'Struck by vehicle' over the years following 2000.",
             "Scatter plot showing the distribution of incidents in different states based on latitude and longitude.",
             "Boxplot showing the distribution of incidents based on cause.",
-            "Area plot representing the number of incidents in each state over the years.",
+            "Area plot representing the cumulative number of incidents over the years following 2000.",
         ]
         hard_descriptions = [
             "Yearly trend of incidents.",
