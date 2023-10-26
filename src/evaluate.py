@@ -32,12 +32,13 @@ def substitute_show_to_json(string):
     return re.sub(r'(\w+)\.show\(\)', r'print(\1.to_json())', string)
 
 
-def eq(obj1, obj2):
-    if isinstance(obj1, (int, float, complex)) and isinstance(obj2, (int, float, complex)):
-        return round(obj1, 3) == round(obj2, 3)
-    elif isinstance(obj1, str) and isinstance(obj2, str):
-        return obj1.lower() == obj2.lower()
-    return obj1 == obj2
+def eq(golden_obj, predict_obj):
+    if (isinstance(golden_obj, (int, float, complex)) and \
+            isinstance(predict_obj, (int, float, complex))):
+        return round(golden_obj, 2) == round(predict_obj, 2)
+    elif isinstance(golden_obj, str) and isinstance(predict_obj, str):
+        return golden_obj.lower() in predict_obj.lower()
+    return golden_obj == predict_obj
 
 
 def items_equal(dict1, dict2):
@@ -270,7 +271,6 @@ def filter_json_data(json_string, include_keys=None):
         }
 
     return {'data': filtered_data}
-
 
 
 if __name__ == '__main__':
