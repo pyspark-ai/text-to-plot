@@ -217,18 +217,11 @@
         "description": "Proportion of top 5 flights based on their starting airports."
     },
     {
-        "uuid": "976acb0eb0ce1cb1ae3e858d0abec73e",
+        "uuid": "04b62709691092e8d81dd855e2d16d8d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plot comparing beef exports across states."
-    },
-    {
-        "uuid": "9ae082e1e5cb6d6a614ae2d82418a655",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Histogram showing the distribution of poultry exports."
+        "description": "Bar chart comparing beef exports across 8 states with the highest poultry exports."
     },
     {
         "uuid": "27088b4ae28469078a0b2ed35530b7c0",
@@ -238,95 +231,102 @@
         "description": "Boxplot representing the spread of dairy exports."
     },
     {
-        "uuid": "8822f28f4a2d5e1a42f67eff44b4ebe5",
+        "uuid": "4cef45b8c7415e7435a14ad550dca0a9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plot indicating the trend of wheat exports by state."
+        "description": "Pie plot of the proportion of top 5 states based on corn exports."
     },
     {
-        "uuid": "ae95ce5cd9b0f0104f48cf647697e1a3",
+        "uuid": "3e64143768134b9d6187f23641ce21d5",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot showing the relationship between fruits fresh and fruits processed exports."
+        "description": "Area chart of cumulative exports of fresh and processed fruits for 8 states with the highest fruit exports."
     },
     {
-        "uuid": "32857fbb5cb3264d3e69c797ed910d89",
+        "uuid": "761e39592bd1b7511f2323991746b116",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Pie chart representing the share of total veggies exported by each state."
+        "description": "Scatter plot depicting the relationship between beef and pork exports for 8 states with the highest total exports."
     },
     {
-        "uuid": "6c041a5c225d005d2a0f717590bccffc",
+        "uuid": "30ea96f39e805cf8199259662a2443aa",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plot of pork exports for each state."
+        "description": "Pie chart representing the share of beef exports among 8 states with the highest beef exports."
     },
     {
-        "uuid": "22e23513b6cce92b4c5ea6dedd4a83dd",
+        "uuid": "390fe5ec42505e81681b0f12bd82349b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Histogram of beef exports distribution."
+        "description": "Line plot tracing the trend of total vegetable exports across 8 states with the highest vegetable exports."
     },
     {
-        "uuid": "2a919343b09ba64d4b84be42b5a6b989",
+        "uuid": "799b28f0b8e9272d9116ee7b25dfd687",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Boxplot of wheat exports for each state."
+        "description": "Scatter plot of the correlation between dairy and beef exports for states with total exports over 1000."
     },
     {
-        "uuid": "b3c5d2667295fbd7f0ae4fb9cd345d78",
+        "uuid": "cab3320e8142e774ab335800a8aa64e5",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot for the relationship between beef and pork exports."
+        "description": "Bar plot of top 5 states based on total exports."
     },
     {
-        "uuid": "d3131f4dac5906bc214ef95cbea3f7cf",
+        "uuid": "db02a88f3a9614e28c27a187bb213526",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Pie chart of the share of dairy exports by state."
+        "description": "Scatter plot illustrating the relationship between fresh vegetable and processed vegetable exports for 8 states with the highest vegetable exports."
     },
     {
-        "uuid": "709835076fce67179e16294175668ed3",
+        "uuid": "b4a958cc1ead3872095ae669b2955edc",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plot comparing cotton exports across states."
+        "description": "Hexagonal bin plot showing the density of beef versus poultry exports for 8 states with the highest combined beef and poultry exports."
+    },
+      {
+        "uuid": "ef688c3065b9877e47006ea8fef4e2eb",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of the distribution of total exports."
     },
     {
-        "uuid": "be5a21b84f50845620c3e6f4c28d7aca",
+        "uuid": "ccd5c4d39b13f10349a319589cc33bb4",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot illustrating the correlation between fresh and processed fruit exports."
+        "description": "Pie plot of the proportion of top 5 states based on total exports."
     },
     {
-        "uuid": "13df4bb49f1d7bbe75f2025fa58f2c99",
+        "uuid": "2f086afb5bd2c0a0b29e5ad12e186ba8",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Boxplot showcasing the range and outliers of total exports for the southern states."
+        "description": "Bar chart of the top 5 states by their poultry exports."
     },
     {
-        "uuid": "ce3760b208738aa4d7ede60e30dd6f89",
+        "uuid": "3a48815e403487a3d32c7f3beabd427c",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plot stacked by category showing the trend of exports for a selected group of states."
+        "description": "Line plot tracing the trend of total vegetable exports across 5 states with the highest total exports."
     },
     {
-        "uuid": "f66de355c35106fa51cae8478221cc3c",
+        "uuid": "7e14ea424874459b91bb56e49e45ea75",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot contrasting the exports of fresh fruits against dairy products."
+        "description": "Line plot tracing the trend of total exports across 5 states with the highest corn exports."
     },
     {
         "uuid": "f8c1a8d7f6024475ce53701bf58c1697",

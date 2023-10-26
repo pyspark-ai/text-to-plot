@@ -143,22 +143,22 @@ def gen_test_case(dataset, mode="train"):
         ]
     elif "2011_us_ag_exports.csv" in dataset:
         easy_descriptions = [
-            "Bar plot comparing beef exports across states.",
-            "Histogram showing the distribution of poultry exports.",
+            "Bar chart comparing beef exports across 8 states with the highest poultry exports.",
             "Boxplot representing the spread of dairy exports.",
-            "Area plot indicating the trend of wheat exports by state.",
-            "Hexagonal bin plot showing the relationship between fruits fresh and fruits processed exports.",
-            "Pie chart representing the share of total veggies exported by each state.",
-            "Bar plot of pork exports for each state.",
-            "Histogram of beef exports distribution.",
-            "Boxplot of wheat exports for each state.",
-            "Hexagonal bin plot for the relationship between beef and pork exports.",
-            "Pie chart of the share of dairy exports by state.",
-            "Bar plot comparing cotton exports across states.",
-            "Hexagonal bin plot illustrating the correlation between fresh and processed fruit exports.",
-            "Boxplot showcasing the range and outliers of total exports for the southern states.",
-            "Area plot stacked by category showing the trend of exports for a selected group of states.",
-            "Hexagonal bin plot contrasting the exports of fresh fruits against dairy products.",
+            "Pie plot of the proportion of top 5 states based on corn exports.",
+            "Area chart of cumulative exports of fresh and processed fruits for 8 states with the highest fruit exports.",
+            "Scatter plot depicting the relationship between beef and pork exports for 8 states with the highest total exports.",
+            "Pie chart representing the share of beef exports among 8 states with the highest beef exports.",
+            "Line plot tracing the trend of total vegetable exports across 8 states with the highest vegetable exports.",
+            "Scatter plot of the correlation between dairy and beef exports for states with total exports over 1000.",
+            "Bar plot of top 5 states based on total exports.",
+            "Scatter plot illustrating the relationship between fresh vegetable and processed vegetable exports for 8 states with the highest vegetable exports.",
+            "Hexagonal bin plot showing the density of beef versus poultry exports for 8 states with the highest combined beef and poultry exports.",
+            "Boxplot of the distribution of total exports.",
+            "Pie plot of the proportion of top 5 states based on total exports.",
+            "Bar chart of the top 5 states by their poultry exports.",
+            "Line plot tracing the trend of total vegetable exports across 5 states with the highest total exports.",
+            "Line plot tracing the trend of total exports across 5 states with the highest corn exports.",
         ]
 
         hard_descriptions = [
