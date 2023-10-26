@@ -77,11 +77,11 @@
         "description": "Boxplot comparing the distribution of store openings by month, separated by store type."
     },
     {
-        "uuid": "c312088992565618f4f4a3812bb5a9c5",
+        "uuid": "ac6500a0a4a37c80d3f9fd335bb1bf67",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plot representing the cumulative number of Walmart stores, with each type of store shaded differently."
+        "description": "Area plot representing the cumulative number of Walmart stores from 2000 to 2006."
     },
     {
         "uuid": "c298ebba2c257a692bbd672b638fc2a2",
