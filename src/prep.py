@@ -107,7 +107,7 @@ def gen_test_case(dataset, mode="train"):
             "Pie chart showing the proportion of different types of Walmart stores.",
             "Bar plot representing the number of Walmart stores opened each month.",
             "Line plot illustrating the trend of store conversions over the years.",
-            "Hexagonal bin plot showing the density of Walmart store locations using latitude and longitude.",
+            "A hexagonal bin plot visualizes the density of Walmart stores opened in August 1984 based on their latitude and longitude.",
             "Scatter plot with a color gradient representing the year of opening, plotted against latitude and longitude.",
             "Boxplot comparing the distribution of store openings by month, separated by store type.",
             "Density plot illustrating the distribution of store conversions, segmented by state.",

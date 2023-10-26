@@ -56,11 +56,11 @@
         "description": "Bar plot representing the number of Walmart stores opened each month."
     },
     {
-        "uuid": "b03c942c04a3d0372bdda03bed011f76",
+        "uuid": "c58ba5f7f97b00d47baaa21382c5007e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot showing the density of Walmart store locations using latitude and longitude."
+        "description": "A hexagonal bin plot visualizes the density of Walmart stores opened in August 1984 based on their latitude and longitude."
     },
     {
         "uuid": "414356baec7526b48e7acf593d333500",
