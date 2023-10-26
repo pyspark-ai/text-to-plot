@@ -40,8 +40,8 @@
         "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is already a DataFrame with the specified columns\n\n# Filter for stores in CA that opened in 1990\ndf_filtered = df.filter((df['STRSTATE'] == 'CA') & (df['YEAR'] == 1990))\n\n# Convert to pandas DataFrame\ndf_pandas = df_filtered.toPandas()\n\n# Create scatter plot\nfig = px.scatter(df_pandas, x='LON', y='LAT', color='storenum', title='Walmart stores in CA that opened in 1990')\n\n# Display the plot\nprint(fig.to_json())"
     },
     {
-        "uuid": "e6435c72d6f675d90b7f461f653cab6e",
-        "code": "# Import necessary libraries\nfrom pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.appName('store_openings').getOrCreate()\n\n# Perform aggregation on Spark DataFrame\ndf_agg = df.groupBy('MONTH', 'type_store').count()\n\n# Convert Spark DataFrame to Pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Create boxplot using plotly\nfig = px.box(df_pandas, x='MONTH', y='count', color='type_store', title='Store Openings by Month and Store Type')\n\n# Display the plot\nprint(fig.to_json())"
+        "uuid": "e61b8fa799b49e019f302cd2864c9d64",
+        "code": "# Import necessary libraries\nfrom pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is your DataFrame\n# Aggregate data\ndf_agg = df.groupBy('storenum').agg({'LAT': 'mean'})\n\n# Convert to pandas DataFrame\ndf_pd = df_agg.toPandas()\n\n# Create boxplot\nfig = px.box(df_pd, y=\"avg(LAT)\", title=\"Distribution of Store Location Latitudes\")\n\n# Display plot\nprint(fig.to_json())"
     },
     {
         "uuid": "ac6500a0a4a37c80d3f9fd335bb1bf67",

@@ -70,11 +70,11 @@
         "description": "Scatter plot illustrating Walmart stores in CA that opened in 1990, plotted using latitude and longitude."
     },
     {
-        "uuid": "e6435c72d6f675d90b7f461f653cab6e",
+        "uuid": "e61b8fa799b49e019f302cd2864c9d64",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Boxplot comparing the distribution of store openings by month, separated by store type."
+        "description": "Boxplot of the distribution of store location latitudes."
     },
     {
         "uuid": "ac6500a0a4a37c80d3f9fd335bb1bf67",

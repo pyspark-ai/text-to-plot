@@ -109,7 +109,7 @@ def gen_test_case(dataset, mode="train"):
             "Line plot illustrating the trend of store conversions over the years.",
             "A hexagonal bin plot visualizes the density of Walmart stores opened in August 1984 based on their latitude and longitude.",
             "Scatter plot illustrating Walmart stores in CA that opened in 1990, plotted using latitude and longitude.",
-            "Boxplot comparing the distribution of store openings by month, separated by store type.",
+            "Boxplot of the distribution of store location latitudes.",
             "Density plot illustrating the distribution of store conversions, segmented by state.",
             "Area plot representing the cumulative number of Walmart stores from 2000 to 2006."
         ]
