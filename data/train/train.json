@@ -35,11 +35,11 @@
         "description": "Area plot highlighting the cumulative number of Walmart stores opened from 1962 to 2006."
     },
     {
-        "uuid": "88c56c6c3af65705b116fa82b5351423",
+        "uuid": "527deec4702c92cb015b2905eb8a7553",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Scatter plot of Walmart store locations using latitude and longitude."
+        "description": "Scatter plot of Walmart store opened in 1969 using latitude and longitude."
     },
     {
         "uuid": "9cc1c15b64b427df4c8e5908c4d2407c",
@@ -63,11 +63,11 @@
         "description": "A hexagonal bin plot visualizes the density of Walmart stores opened in August 1984 based on their latitude and longitude."
     },
     {
-        "uuid": "414356baec7526b48e7acf593d333500",
+        "uuid": "ff776c3009bc2d7a4ce8125489ccdcf9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Scatter plot with a color gradient representing the year of opening, plotted against latitude and longitude."
+        "description": "Scatter plot illustrating Walmart stores in CA that opened in 1990, plotted using latitude and longitude."
     },
     {
         "uuid": "e6435c72d6f675d90b7f461f653cab6e",
