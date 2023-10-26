@@ -124,14 +124,14 @@ def gen_test_case(dataset, mode="train"):
     elif "2011_february_aa_flight_paths.csv" in dataset:
         easy_descriptions = [
             'Bar plots showcasing the frequency of AA flights from different starting airports.',
-            'Bar plots representing the distribution of ending locations for AA flights.',
+            'Bar plots representing the distribution of ending airport for AA flights.',
             'Histogram illustrating the common starting longitudes for the flights.',
             'Histogram depicting the popular ending latitudes for AA flights.',
             'Boxplot summarizing the range of starting latitudes for all AA flights.',
             'Boxplot visualizing the range of ending longitudes for these flights.',
             'Density plots highlighting the concentration of starting locations.',
             'Density plots emphasizing the concentration of ending locations.',
-            'Area plots comparing the frequency of flights based on starting and ending latitudes.',
+            'Bar plots representing the five most frequent starting airports.',
             'Scatter plots visualizing the correlation between starting and ending locations for the flights.',
             'Pie plots representing the proportion of flights based on their starting airports.'
         ]

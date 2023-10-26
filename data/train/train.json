@@ -126,11 +126,11 @@
         "description": "Bar plots showcasing the frequency of AA flights from different starting airports."
     },
     {
-        "uuid": "5872b155227404346e8e30780e3aedc2",
+        "uuid": "53c0a58f938c04a828fcf07d869ce228",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plots representing the distribution of ending locations for AA flights."
+        "description": "Bar plots representing the distribution of ending airport for AA flights."
     },
     {
         "uuid": "181d553ea8b968026dbeaa6523024243",
@@ -175,11 +175,11 @@
         "description": "Density plots emphasizing the concentration of ending locations."
     },
     {
-        "uuid": "bfd12ad945b6c169ecaba2e5478d98da",
+        "uuid": "609e2269bc7133058cf3a0f324366f0e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plots comparing the frequency of flights based on starting and ending latitudes."
+        "description": "Bar plots representing the five most frequent starting airports."
     },
     {
         "uuid": "984dfb990989236454e16e26e226edaf",
