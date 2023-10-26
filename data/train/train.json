@@ -504,11 +504,11 @@
         "description": "Yearly trend of incidents."
     },
     {
-        "uuid": "157d5103815583a0021a9ea19090872e",
+        "uuid": "d954e4304593478b9088ac866939ff56",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
         "complexity": "hard",
-        "description": "Top 5 departments with the highest incidents in 2001."
+        "description": "Top 3 departments with the highest incidents in 2001."
     },
     {
         "uuid": "134e44c38a311e39866cde77c0387d23",

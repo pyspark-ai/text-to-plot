@@ -192,7 +192,7 @@ def gen_test_case(dataset, mode="train"):
         ]
         hard_descriptions = [
             "Yearly trend of incidents.",
-            "Top 5 departments with the highest incidents in 2001.",
+            "Top 3 departments with the highest incidents in 2001.",
             "Proportion of incidents by top 5 casuse of death.",
             "Top 5 casuse of death in 2001.",
             "Cumulative incidents from 2000 to 2005.",

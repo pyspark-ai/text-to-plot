@@ -288,8 +288,8 @@
         "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is your DataFrame\n# Aggregate data\ndf_agg = df.groupBy(\"year\").count().orderBy(\"year\")\n\n# Convert to pandas DataFrame\npdf = df_agg.toPandas()\n\n# Plot data\nfig = px.line(pdf, x='year', y='count', title='Yearly Trend of Incidents')\nprint(fig.to_json())"
     },
     {
-        "uuid": "157d5103815583a0021a9ea19090872e",
-        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Do aggregation against df\ndf_agg = df.filter(df['year'] == 2001).groupBy('dept_name').count().orderBy('count', ascending=False).limit(5)\n\n# Convert the df to a pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Create a bar plot\nfig = px.bar(df_pandas, x='dept_name', y='count', title='Top 5 departments with the highest incidents in 2001')\n\n# Display the plot\nprint(fig.to_json())"
+        "uuid": "d954e4304593478b9088ac866939ff56",
+        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is the DataFrame\n# Filter the DataFrame for the year 2001\ndf_2001 = df.filter(df['year'] == 2001)\n\n# Aggregate the data by department and count the number of incidents\ndf_agg = df_2001.groupBy('dept').count().orderBy('count', ascending=False)\n\n# Convert the aggregated Spark DataFrame to a pandas DataFrame\ndf_pd = df_agg.toPandas()\n\n# Select the top 3 departments\ndf_top3 = df_pd.head(3)\n\n# Create a bar plot using Plotly\nfig = px.bar(df_top3, x='dept', y='count', title='Top 3 Departments with Highest Incidents in 2001')\nprint(fig.to_json())"
     },
     {
         "uuid": "134e44c38a311e39866cde77c0387d23",

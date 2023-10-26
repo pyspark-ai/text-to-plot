@@ -32029,22 +32029,18 @@
     }
   },
   {
-    "uuid": "157d5103815583a0021a9ea19090872e",
+    "uuid": "d954e4304593478b9088ac866939ff56",
     "plot_json": {
       "data": {
         "x": [
-          "Port Authority of New York and New Jersey Police Department",
-          "New York City Police Department",
-          "New York State Office of Tax Enforcement - Revenue Crimes Bureau",
-          "New York State Office of Court Administration",
-          "Chicago Police Department"
+          "Port Authority of New York and New Jersey Police Department, NY",
+          "New York City Police Department, NY",
+          "New York State Office of Tax Enforcement - Revenue Crimes Bureau, NY"
         ],
         "y": [
           38,
           23,
-          4,
-          3,
-          3
+          4
         ],
         "xaxis": "x",
         "yaxis": "y",
