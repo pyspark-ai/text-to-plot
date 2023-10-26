@@ -3,6 +3,7 @@ import hashlib
 import io
 import json
 import re
+import traceback
 
 import pandas as pd
 
@@ -304,7 +305,7 @@ def gen_test_case(dataset, mode="train"):
         hard_descriptions = [
             "National turnouts comparison for Western region countries.",
             "Countries with a greater population than Austria's.",
-            "Relationship between population size and voter turnout for Central/Eastern countries.",
+            "List population size for Central/Eastern countries.",
             "Number of countries breakdown by region."
         ]
     elif "mpg.csv" in dataset:
@@ -320,7 +321,7 @@ def gen_test_case(dataset, mode="train"):
         hard_descriptions = [
             "Proportion of vehicles by cylinder configurations.",
             "Trend of average vehicle weight over distinct model years.",
-            "Relationship between vehicles' miles per gallon and their acceleration capabilities for the model year 80.",
+            "Relationship between individual miles per gallon and acceleration capabilities for vehicles from the 80 model year.",
         ]
     elif "gapminder2007.csv" in dataset:
         easy_descriptions = [
@@ -352,7 +353,7 @@ def gen_test_case(dataset, mode="train"):
         hard_descriptions = [
             "Average total payment comparison across Wisconsin hospitals.",
             "Breakdown of record count by medical classification.",
-            "List provider names with reimbursement rate over 1.",
+            "List how many times each provider has a reimbursement rate greater than 1.",
             "Proportion of 'Alcohol and Drug Use' records in top 5 states, based on the number of hospitals.",
             "Number of Alcohol and Drug Use records comparison in California vs. Texas."
         ]
@@ -371,7 +372,7 @@ def gen_test_case(dataset, mode="train"):
         hard_descriptions = [
             "Breakdown of volcano types in the United States.",
             "Distribution of volcano elevations in Mexico.",
-            "Relationship between latitude and elevation for the 8 southernmost volcanoes.",
+            "Relationship between latitude and elevation for the 5 southernmost volcanoes.",
             "Comparison of the number of volcanoes in the top 5 countries.",
             "Trend of volcano elevations in the 5 highest volcanoes in Mexico.",
             "Volcanoes with elevations above 4000.",
@@ -459,6 +460,7 @@ def gen_golden(dataset, mode="train"):
                 })
             except Exception as e:
                 print(f"Test case with UUID {uuid} failed due to: {str(e)}")
+                print(traceback.format_exc())
                 continue
 
     # Convert the golden_codes list to JSON
