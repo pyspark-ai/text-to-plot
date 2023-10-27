@@ -319,6 +319,9 @@ def gen_test_case(dataset, mode="train"):
             "Pie plot representing the proportion of vehicles based on their horsepower, focusing on the top 5 horsepower values.",
             "Boxplot of the distribution of acceleration values for the vehicles with the model year 70.",
             "Area plot of the count of cars across model years.",
+            "Area plot of the cumulative count of cars across model years.",
+            "Boxplot of the distribution of horsepower.",
+            "Pie plot of the proportion of vehicles based on their cylinders.",
             "Hexagonal bin plot of cylinders versus acceleration for vehicles with 25 miles per gallon.",
         ]
         hard_descriptions = [

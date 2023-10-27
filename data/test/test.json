@@ -126,6 +126,27 @@
         "description": "Area plot of the count of cars across model years."
     },
     {
+        "uuid": "a3df096615fd32644b3648b6aaba1888",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Area plot of the cumulative count of cars across model years."
+    },
+    {
+        "uuid": "18cd554f41627b50b95dd07b62b7fbbd",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of the distribution of horsepower."
+    },
+    {
+        "uuid": "21203369b9aaaa1a7bb99a96ee139ba8",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of the proportion of vehicles based on their cylinders."
+    },
+    {
         "uuid": "e3e611c3b77094e91c258c3e722d884b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",

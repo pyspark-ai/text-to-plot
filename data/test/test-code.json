@@ -69,7 +69,19 @@
     },
     {
         "uuid": "2a246a32815bf6054eec04f118940efa",
-        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is the DataFrame\n# Aggregate df\ndf_agg = df.groupBy('model-year').count().orderBy('model-year')\n\n# Convert to pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Create area plot\nfig = px.area(df_pandas, x='model-year', y='count', title='Count of Cars Across Model Years')\n\n# Display the plot\nprint(fig.to_json())"
+        "code": "import pandas as pd\nimport plotly.express as px\nfrom pyspark.sql import SparkSession\nfrom pyspark.sql.functions import col\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is the DataFrame\n# Aggregate the data\ndf_agg = df.groupBy('model-year').count().orderBy('model-year')\n\n# Convert the Spark DataFrame to a Pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Create the area plot\nfig = px.area(df_pandas, x='model-year', y='count', title='Count of Cars Across Model Years')\n\n# Display the plot\nprint(fig.to_json())"
+    },
+    {
+        "uuid": "a3df096615fd32644b3648b6aaba1888",
+        "code": "import pyspark.sql.functions as F\nfrom pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Aggregation: Count of cars per model year\ndf_agg = df.groupBy('model-year').agg(F.count('*').alias('count'))\n\n# Convert to pandas DataFrame\ndf_pd = df_agg.orderBy('model-year').toPandas()\n\n# Calculate cumulative count\ndf_pd['cumulative_count'] = df_pd['count'].cumsum()\n\n# Plot\nfig = px.area(df_pd, x='model-year', y='cumulative_count', title='Cumulative count of cars across model years')\nprint(fig.to_json())"
+    },
+    {
+        "uuid": "18cd554f41627b50b95dd07b62b7fbbd",
+        "code": "import pandas as pd\nimport plotly.express as px\nfrom pyspark.sql import SparkSession\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is the Spark DataFrame\n# Convert Spark DataFrame to Pandas DataFrame\npandas_df = df.toPandas()\n\n# Create boxplot of horsepower distribution\nfig = px.box(pandas_df, y='horsepower')\n\n# Display the plot\nprint(fig.to_json())"
+    },
+    {
+        "uuid": "21203369b9aaaa1a7bb99a96ee139ba8",
+        "code": "import pyspark.sql.functions as F\nfrom pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Aggregation\ndf_agg = df.groupBy('cylinders').count()\n\n# Convert to pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Create pie plot\nfig = px.pie(df_pandas, values='count', names='cylinders', title='Proportion of Vehicles Based on Their Cylinders')\nprint(fig.to_json())"
     },
     {
         "uuid": "e3e611c3b77094e91c258c3e722d884b",
