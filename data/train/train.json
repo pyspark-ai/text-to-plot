@@ -644,11 +644,11 @@
         "description": "Bar plot showing the survival rate for each gender."
     },
     {
-        "uuid": "98954654dded1f6a9a76ff6121d0ca06",
+        "uuid": "6664f0f208e6bd2e55c52181e322e85f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Boxplot displaying the age distribution for survivors and non-survivors."
+        "description": "Boxplot displaying the age distribution for survivors."
     },
     {
         "uuid": "97217dfee3e96a76a71b4cf6cc10d04f",
@@ -672,11 +672,11 @@
         "description": "Bar plot indicating the number of parents/children each passenger had aboard."
     },
     {
-        "uuid": "8eaaa33ebb84332de96cbdc8681c55f9",
+        "uuid": "41a1f6b3aa3dbbfe83aeba68a7df43ea",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Histogram showcasing the age distribution of male and female passengers."
+        "description": "Boxplot displaying the age distribution for non-survivors."
     },
     {
         "uuid": "a218fdbb97d1e1d12dee83f815ed3f2c",

@@ -215,11 +215,11 @@ def gen_test_case(dataset, mode="train"):
             "Pie plot showcasing the number of females in each class.",
             "Pie chart representing the distribution of passengers based on their embarkation port.",
             "Bar plot showing the survival rate for each gender.",
-            "Boxplot displaying the age distribution for survivors and non-survivors.",
+            "Boxplot displaying the age distribution for survivors.",
             "Area plot illustrating the fare distribution over different embarkation ports.",
             "Scatter plot of age against the number of siblings/spouses.",
             "Bar plot indicating the number of parents/children each passenger had aboard.",
-            "Histogram showcasing the age distribution of male and female passengers.",
+            "Boxplot displaying the age distribution for non-survivors.",
             "Pie chart representing the survival rate for each passenger class.",
             "Bar plot showing the number of passengers in each lifeboat."
         ]
