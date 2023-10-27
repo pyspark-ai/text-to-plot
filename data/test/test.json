@@ -21,11 +21,32 @@
         "description": "Pie plot of the proportion of population for Central/Eastern region countries."
     },
     {
-        "uuid": "5690628120a45b219fed3b9c25f470d9",
+        "uuid": "4e4cb46f45ac6b4ad1657d95105732e6",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Mapbox density plot across Mediterranean region based on European election turnouts."
+        "description": "Bar plot of population for Western region countries."
+    },
+    {
+        "uuid": "5388ec90576ed2c04222b89b642f0ed0",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of European election turnouts for Western region countries."
+    },
+    {
+        "uuid": "13e890746e6272be0a4d1265ee8eef1a",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of the population against European election turnouts for Central/Eastern region countries."
+    },
+    {
+        "uuid": "f122a485004508c8447e123a8868fde7",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of the distribution of countries based on their region."
     },
     {
         "uuid": "15956a908c59445bbf4992ef3f55698a",

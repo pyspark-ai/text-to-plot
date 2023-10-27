@@ -299,7 +299,10 @@ def gen_test_case(dataset, mode="train"):
             "Histogram of the distribution of national election turnouts for Central/Eastern region countries.",
             "Boxplot of the variation in European election turnouts for Western region countries.",
             "Pie plot of the proportion of population for Central/Eastern region countries.",
-            "Mapbox density plot across Mediterranean region based on European election turnouts.",
+            "Bar plot of population for Western region countries.",
+            "Bar plot of European election turnouts for Western region countries.",
+            "Scatter plot of the population against European election turnouts for Central/Eastern region countries.",
+            "Pie plot of the distribution of countries based on their region.",
             "Pie chart of populations in Central/Eastern region countries."
         ]
         hard_descriptions = [

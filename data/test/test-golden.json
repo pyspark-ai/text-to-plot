@@ -87,24 +87,124 @@
         }
     },
     {
-        "uuid": "5690628120a45b219fed3b9c25f470d9",
+        "uuid": "4e4cb46f45ac6b4ad1657d95105732e6",
         "plot_json": {
             "data": {
-                "type": "densitymapbox",
-                "lat": [
-                    41.8719,
-                    40.4637,
-                    39.0742
+                "x": [
+                    "Austria",
+                    "Belgium",
+                    "France",
+                    "Germany",
+                    "Luxembourg",
+                    "Netherlands"
                 ],
-                "lon": [
-                    12.5674,
-                    -3.7492,
-                    21.8243
+                "y": [
+                    8754413,
+                    11647253,
+                    67106161,
+                    80594017,
+                    605764,
+                    17084719
                 ],
-                "z": [
-                    54.5,
-                    60.73,
-                    58.69
+                "xaxis": "x",
+                "yaxis": "y",
+                "type": "bar",
+                "orientation": "v"
+            }
+        }
+    },
+    {
+        "uuid": "5388ec90576ed2c04222b89b642f0ed0",
+        "plot_json": {
+            "data": {
+                "x": [
+                    "Austria",
+                    "Belgium",
+                    "France",
+                    "Germany",
+                    "Luxembourg",
+                    "Netherlands"
+                ],
+                "y": [
+                    59.8,
+                    88.47,
+                    50.12,
+                    61.38,
+                    84.24,
+                    41.93
+                ],
+                "xaxis": "x",
+                "yaxis": "y",
+                "type": "bar",
+                "orientation": "v"
+            }
+        }
+    },
+    {
+        "uuid": "13e890746e6272be0a4d1265ee8eef1a",
+        "plot_json": {
+            "data": {
+                "x": [
+                    7144653,
+                    4470534,
+                    10686269,
+                    1236641,
+                    9825704,
+                    2762485,
+                    1923559,
+                    38301885,
+                    5445802,
+                    21729871,
+                    1965706
+                ],
+                "y": [
+                    32.64,
+                    29.86,
+                    28.72,
+                    37.6,
+                    43.36,
+                    53.48,
+                    33.53,
+                    45.68,
+                    22.74,
+                    51.07,
+                    28.89
+                ],
+                "type": "scatter",
+                "xaxis": "x",
+                "yaxis": "y",
+                "orientation": "v"
+            }
+        }
+    },
+    {
+        "uuid": "f122a485004508c8447e123a8868fde7",
+        "plot_json": {
+            "data": {
+                "type": "pie",
+                "domain": {
+                    "x": [
+                        0.0,
+                        1.0
+                    ],
+                    "y": [
+                        0.0,
+                        1.0
+                    ]
+                },
+                "labels": [
+                    "Western",
+                    "Central/Eastern",
+                    "Mediterranean",
+                    "Northern",
+                    "British"
+                ],
+                "values": [
+                    6,
+                    11,
+                    6,
+                    3,
+                    2
                 ]
             }
         }
