@@ -567,11 +567,11 @@
         "description": "Area plot illustrating the fare distribution over different passenger classes."
     },
     {
-        "uuid": "5a71d71d2f15c8f931925f4ef5539150",
+        "uuid": "546c0ade2ca7760710cf80225e2adfca",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Scatter plot of age against fare to see if there's a correlation."
+        "description": "Scatter plot of age (ranging from 35 to 40) against fare."
     },
     {
         "uuid": "58d14c4cdc071c0fd2e63548a63b2c8f",
@@ -616,18 +616,18 @@
         "description": "Area plot representing the age distribution of survivors and non-survivors."
     },
     {
-        "uuid": "4a820c3c36395fc6d5f4c1d92a3d31b6",
+        "uuid": "970e3a6d13dae80b46f35f3f26e1486f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Scatter plot of siblings/spouses against parents/children to see family size."
+        "description": "Scatter plot of age (ranging from 0 to 10) against fare."
     },
     {
-        "uuid": "27a597a93daf34f19344657ca97515e0",
+        "uuid": "d9088e91a9eff3c2edc812a72c866ede",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plot showcasing the number of passengers with and without cabins."
+        "description": "Pie plot showcasing the number of females in each class."
     },
     {
         "uuid": "3adde3cbc94e43206c4f06eb43a31456",
