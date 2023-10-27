@@ -104,15 +104,15 @@ def gen_test_case(dataset, mode="train"):
             "Boxplot representing the distribution of store conversions.",
             "Density plot showcasing the distribution of Walmart store openings over the years.",
             "Area plot highlighting the cumulative number of Walmart stores opened from 1962 to 2006.",
-            "Scatter plot of Walmart store locations using latitude and longitude.",
+            "Scatter plot of Walmart store opened in 1969 using latitude and longitude.",
             "Pie chart showing the proportion of different types of Walmart stores.",
             "Bar plot representing the number of Walmart stores opened each month.",
             "Line plot illustrating the trend of store conversions over the years.",
-            "Hexagonal bin plot showing the density of Walmart store locations using latitude and longitude.",
-            "Scatter plot with a color gradient representing the year of opening, plotted against latitude and longitude.",
-            "Boxplot comparing the distribution of store openings by month, separated by store type.",
+            "A hexagonal bin plot visualizes the density of Walmart stores opened in August 1984 based on their latitude and longitude.",
+            "Scatter plot illustrating Walmart stores in CA that opened in 1990, plotted using latitude and longitude.",
+            "Boxplot of the distribution of store location latitudes.",
             "Density plot illustrating the distribution of store conversions, segmented by state.",
-            "Area plot representing the cumulative number of Walmart stores, with each type of store shaded differently."
+            "Area plot representing the cumulative number of Walmart stores from 2000 to 2006."
         ]
 
         hard_descriptions = [
@@ -125,14 +125,14 @@ def gen_test_case(dataset, mode="train"):
     elif "2011_february_aa_flight_paths.csv" in dataset:
         easy_descriptions = [
             'Bar plots showcasing the frequency of AA flights from different starting airports.',
-            'Bar plots representing the distribution of ending locations for AA flights.',
+            'Bar plots representing the distribution of ending airport for AA flights.',
             'Histogram illustrating the common starting longitudes for the flights.',
             'Histogram depicting the popular ending latitudes for AA flights.',
             'Boxplot summarizing the range of starting latitudes for all AA flights.',
             'Boxplot visualizing the range of ending longitudes for these flights.',
             'Density plots highlighting the concentration of starting locations.',
             'Density plots emphasizing the concentration of ending locations.',
-            'Area plots comparing the frequency of flights based on starting and ending latitudes.',
+            'Bar plots representing the five most frequent starting airports.',
             'Scatter plots visualizing the correlation between starting and ending locations for the flights.',
             'Pie plots representing the proportion of flights based on their starting airports.'
         ]
@@ -144,22 +144,22 @@ def gen_test_case(dataset, mode="train"):
         ]
     elif "2011_us_ag_exports.csv" in dataset:
         easy_descriptions = [
-            "Bar plot comparing beef exports across states.",
-            "Histogram showing the distribution of poultry exports.",
+            "Bar chart comparing beef exports across 8 states with the highest poultry exports.",
             "Boxplot representing the spread of dairy exports.",
-            "Area plot indicating the trend of wheat exports by state.",
-            "Hexagonal bin plot showing the relationship between fruits fresh and fruits processed exports.",
-            "Pie chart representing the share of total veggies exported by each state.",
-            "Bar plot of pork exports for each state.",
-            "Histogram of beef exports distribution.",
-            "Boxplot of wheat exports for each state.",
-            "Hexagonal bin plot for the relationship between beef and pork exports.",
-            "Pie chart of the share of dairy exports by state.",
-            "Bar plot comparing cotton exports across states.",
-            "Hexagonal bin plot illustrating the correlation between fresh and processed fruit exports.",
-            "Boxplot showcasing the range and outliers of total exports for the southern states.",
-            "Area plot stacked by category showing the trend of exports for a selected group of states.",
-            "Hexagonal bin plot contrasting the exports of fresh fruits against dairy products.",
+            "Pie plot of the proportion of top 5 states based on corn exports.",
+            "Area chart of cumulative exports of fresh and processed fruits for 8 states with the highest fruit exports.",
+            "Scatter plot depicting the relationship between beef and pork exports for 8 states with the highest total exports.",
+            "Pie chart representing the share of beef exports among 8 states with the highest beef exports.",
+            "Line plot tracing the trend of total vegetable exports across 8 states with the highest vegetable exports.",
+            "Scatter plot of the correlation between dairy and beef exports for states with total exports over 1000.",
+            "Bar plot of top 5 states based on total exports.",
+            "Scatter plot illustrating the relationship between fresh vegetable and processed vegetable exports for 8 states with the highest vegetable exports.",
+            "Hexagonal bin plot showing the density of beef versus poultry exports for 8 states with the highest combined beef and poultry exports.",
+            "Boxplot of the distribution of total exports.",
+            "Pie plot of the proportion of top 5 states based on total exports.",
+            "Bar chart of the top 5 states by their poultry exports.",
+            "Line plot tracing the trend of total vegetable exports across 5 states with the highest total exports.",
+            "Line plot tracing the trend of total exports across 5 states with the highest corn exports.",
         ]
 
         hard_descriptions = [
@@ -186,14 +186,14 @@ def gen_test_case(dataset, mode="train"):
             "Hexagonal bin plot of latitude versus longitude to visualize incident density.",
             "Pie chart representing the distribution of incidents based on whether it involved a canine or not.",
             "Histogram showing the distribution of incidents based on state.",
-            "Line plot indicating the trend of incidents based on cause over the years.",
+            "Line plot indicating the trend of incidents because of 'Struck by vehicle' over the years following 2000.",
             "Scatter plot showing the distribution of incidents in different states based on latitude and longitude.",
             "Boxplot showing the distribution of incidents based on cause.",
-            "Area plot representing the number of incidents in each state over the years.",
+            "Area plot representing the cumulative number of incidents over the years following 2000.",
         ]
         hard_descriptions = [
             "Yearly trend of incidents.",
-            "Top 5 departments with the highest incidents in 2001.",
+            "Top 3 departments with the highest incidents in 2001.",
             "Proportion of incidents by top 5 casuse of death.",
             "Top 5 casuse of death in 2001.",
             "Cumulative incidents from 2000 to 2005.",
@@ -205,22 +205,22 @@ def gen_test_case(dataset, mode="train"):
             "Pie chart representing the gender distribution aboard the Titanic.",
             "Bar plot indicating the number of survivors and non-survivors.",
             "Area plot illustrating the fare distribution over different passenger classes.",
-            "Scatter plot of age against fare to see if there's a correlation.",
+            "Scatter plot of age (ranging from 35 to 40) against fare.",
             "Bar plot showing the number of passengers boarding from each embarkation port.",
             "Histogram displaying the distribution of fares paid by passengers.",
             "Pie chart showcasing the distribution of passengers in lifeboats.",
             "Bar plot indicating the number of siblings/spouses each passenger had aboard.",
             "Boxplot showing the fare distribution for male and female passengers.",
             "Area plot representing the age distribution of survivors and non-survivors.",
-            "Scatter plot of siblings/spouses against parents/children to see family size.",
-            "Bar plot showcasing the number of passengers with and without cabins.",
+            "Scatter plot of age (ranging from 0 to 10) against fare.",
+            "Pie plot showcasing the number of females in each class.",
             "Pie chart representing the distribution of passengers based on their embarkation port.",
             "Bar plot showing the survival rate for each gender.",
-            "Boxplot displaying the age distribution for survivors and non-survivors.",
+            "Boxplot displaying the age distribution for survivors.",
             "Area plot illustrating the fare distribution over different embarkation ports.",
             "Scatter plot of age against the number of siblings/spouses.",
             "Bar plot indicating the number of parents/children each passenger had aboard.",
-            "Histogram showcasing the age distribution of male and female passengers.",
+            "Boxplot displaying the age distribution for non-survivors.",
             "Pie chart representing the survival rate for each passenger class.",
             "Bar plot showing the number of passengers in each lifeboat."
         ]

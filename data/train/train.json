@@ -35,11 +35,11 @@
         "description": "Area plot highlighting the cumulative number of Walmart stores opened from 1962 to 2006."
     },
     {
-        "uuid": "88c56c6c3af65705b116fa82b5351423",
+        "uuid": "527deec4702c92cb015b2905eb8a7553",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Scatter plot of Walmart store locations using latitude and longitude."
+        "description": "Scatter plot of Walmart store opened in 1969 using latitude and longitude."
     },
     {
         "uuid": "9cc1c15b64b427df4c8e5908c4d2407c",
@@ -56,32 +56,32 @@
         "description": "Bar plot representing the number of Walmart stores opened each month."
     },
     {
-        "uuid": "b03c942c04a3d0372bdda03bed011f76",
+        "uuid": "c58ba5f7f97b00d47baaa21382c5007e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot showing the density of Walmart store locations using latitude and longitude."
+        "description": "A hexagonal bin plot visualizes the density of Walmart stores opened in August 1984 based on their latitude and longitude."
     },
     {
-        "uuid": "414356baec7526b48e7acf593d333500",
+        "uuid": "ff776c3009bc2d7a4ce8125489ccdcf9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Scatter plot with a color gradient representing the year of opening, plotted against latitude and longitude."
+        "description": "Scatter plot illustrating Walmart stores in CA that opened in 1990, plotted using latitude and longitude."
     },
     {
-        "uuid": "e6435c72d6f675d90b7f461f653cab6e",
+        "uuid": "e61b8fa799b49e019f302cd2864c9d64",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Boxplot comparing the distribution of store openings by month, separated by store type."
+        "description": "Boxplot of the distribution of store location latitudes."
     },
     {
-        "uuid": "c312088992565618f4f4a3812bb5a9c5",
+        "uuid": "ac6500a0a4a37c80d3f9fd335bb1bf67",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plot representing the cumulative number of Walmart stores, with each type of store shaded differently."
+        "description": "Area plot representing the cumulative number of Walmart stores from 2000 to 2006."
     },
     {
         "uuid": "c298ebba2c257a692bbd672b638fc2a2",
@@ -126,11 +126,11 @@
         "description": "Bar plots showcasing the frequency of AA flights from different starting airports."
     },
     {
-        "uuid": "5872b155227404346e8e30780e3aedc2",
+        "uuid": "53c0a58f938c04a828fcf07d869ce228",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plots representing the distribution of ending locations for AA flights."
+        "description": "Bar plots representing the distribution of ending airport for AA flights."
     },
     {
         "uuid": "181d553ea8b968026dbeaa6523024243",
@@ -175,11 +175,11 @@
         "description": "Density plots emphasizing the concentration of ending locations."
     },
     {
-        "uuid": "bfd12ad945b6c169ecaba2e5478d98da",
+        "uuid": "609e2269bc7133058cf3a0f324366f0e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plots comparing the frequency of flights based on starting and ending latitudes."
+        "description": "Bar plots representing the five most frequent starting airports."
     },
     {
         "uuid": "984dfb990989236454e16e26e226edaf",
@@ -217,18 +217,11 @@
         "description": "Proportion of top 5 flights based on their starting airports."
     },
     {
-        "uuid": "976acb0eb0ce1cb1ae3e858d0abec73e",
+        "uuid": "04b62709691092e8d81dd855e2d16d8d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plot comparing beef exports across states."
-    },
-    {
-        "uuid": "9ae082e1e5cb6d6a614ae2d82418a655",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Histogram showing the distribution of poultry exports."
+        "description": "Bar chart comparing beef exports across 8 states with the highest poultry exports."
     },
     {
         "uuid": "27088b4ae28469078a0b2ed35530b7c0",
@@ -238,95 +231,102 @@
         "description": "Boxplot representing the spread of dairy exports."
     },
     {
-        "uuid": "8822f28f4a2d5e1a42f67eff44b4ebe5",
+        "uuid": "4cef45b8c7415e7435a14ad550dca0a9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plot indicating the trend of wheat exports by state."
+        "description": "Pie plot of the proportion of top 5 states based on corn exports."
     },
     {
-        "uuid": "ae95ce5cd9b0f0104f48cf647697e1a3",
+        "uuid": "3e64143768134b9d6187f23641ce21d5",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot showing the relationship between fruits fresh and fruits processed exports."
+        "description": "Area chart of cumulative exports of fresh and processed fruits for 8 states with the highest fruit exports."
     },
     {
-        "uuid": "32857fbb5cb3264d3e69c797ed910d89",
+        "uuid": "761e39592bd1b7511f2323991746b116",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Pie chart representing the share of total veggies exported by each state."
+        "description": "Scatter plot depicting the relationship between beef and pork exports for 8 states with the highest total exports."
     },
     {
-        "uuid": "6c041a5c225d005d2a0f717590bccffc",
+        "uuid": "30ea96f39e805cf8199259662a2443aa",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plot of pork exports for each state."
+        "description": "Pie chart representing the share of beef exports among 8 states with the highest beef exports."
     },
     {
-        "uuid": "22e23513b6cce92b4c5ea6dedd4a83dd",
+        "uuid": "390fe5ec42505e81681b0f12bd82349b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Histogram of beef exports distribution."
+        "description": "Line plot tracing the trend of total vegetable exports across 8 states with the highest vegetable exports."
     },
     {
-        "uuid": "2a919343b09ba64d4b84be42b5a6b989",
+        "uuid": "799b28f0b8e9272d9116ee7b25dfd687",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Boxplot of wheat exports for each state."
+        "description": "Scatter plot of the correlation between dairy and beef exports for states with total exports over 1000."
     },
     {
-        "uuid": "b3c5d2667295fbd7f0ae4fb9cd345d78",
+        "uuid": "cab3320e8142e774ab335800a8aa64e5",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot for the relationship between beef and pork exports."
+        "description": "Bar plot of top 5 states based on total exports."
     },
     {
-        "uuid": "d3131f4dac5906bc214ef95cbea3f7cf",
+        "uuid": "db02a88f3a9614e28c27a187bb213526",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Pie chart of the share of dairy exports by state."
+        "description": "Scatter plot illustrating the relationship between fresh vegetable and processed vegetable exports for 8 states with the highest vegetable exports."
     },
     {
-        "uuid": "709835076fce67179e16294175668ed3",
+        "uuid": "b4a958cc1ead3872095ae669b2955edc",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plot comparing cotton exports across states."
+        "description": "Hexagonal bin plot showing the density of beef versus poultry exports for 8 states with the highest combined beef and poultry exports."
+    },
+      {
+        "uuid": "ef688c3065b9877e47006ea8fef4e2eb",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of the distribution of total exports."
     },
     {
-        "uuid": "be5a21b84f50845620c3e6f4c28d7aca",
+        "uuid": "ccd5c4d39b13f10349a319589cc33bb4",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot illustrating the correlation between fresh and processed fruit exports."
+        "description": "Pie plot of the proportion of top 5 states based on total exports."
     },
     {
-        "uuid": "13df4bb49f1d7bbe75f2025fa58f2c99",
+        "uuid": "2f086afb5bd2c0a0b29e5ad12e186ba8",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Boxplot showcasing the range and outliers of total exports for the southern states."
+        "description": "Bar chart of the top 5 states by their poultry exports."
     },
     {
-        "uuid": "ce3760b208738aa4d7ede60e30dd6f89",
+        "uuid": "3a48815e403487a3d32c7f3beabd427c",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plot stacked by category showing the trend of exports for a selected group of states."
+        "description": "Line plot tracing the trend of total vegetable exports across 5 states with the highest total exports."
     },
     {
-        "uuid": "f66de355c35106fa51cae8478221cc3c",
+        "uuid": "7e14ea424874459b91bb56e49e45ea75",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Hexagonal bin plot contrasting the exports of fresh fruits against dairy products."
+        "description": "Line plot tracing the trend of total exports across 5 states with the highest corn exports."
     },
     {
         "uuid": "f8c1a8d7f6024475ce53701bf58c1697",
@@ -469,11 +469,11 @@
         "description": "Histogram showing the distribution of incidents based on state."
     },
     {
-        "uuid": "c19b466254affba48b2e70d887d00e93",
+        "uuid": "f1f4bb7a302ec08e2cb3a28e7dbb426a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Line plot indicating the trend of incidents based on cause over the years."
+        "description": "Line plot indicating the trend of incidents because of 'Struck by vehicle' over the years following 2000."
     },
     {
         "uuid": "48460af82e836e50c15ca259570c8cf5",
@@ -490,11 +490,11 @@
         "description": "Boxplot showing the distribution of incidents based on cause."
     },
     {
-        "uuid": "4d17f2ffdad22da0312055f878ca8524",
+        "uuid": "4fa22e5ece43d96c043e2ea05ab44574",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Area plot representing the number of incidents in each state over the years."
+        "description": "Area plot representing the cumulative number of incidents over the years following 2000."
     },
     {
         "uuid": "4133ed43c50977ac645bcaa9465ae55a",
@@ -504,11 +504,11 @@
         "description": "Yearly trend of incidents."
     },
     {
-        "uuid": "157d5103815583a0021a9ea19090872e",
+        "uuid": "d954e4304593478b9088ac866939ff56",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
         "complexity": "hard",
-        "description": "Top 5 departments with the highest incidents in 2001."
+        "description": "Top 3 departments with the highest incidents in 2001."
     },
     {
         "uuid": "134e44c38a311e39866cde77c0387d23",
@@ -567,11 +567,11 @@
         "description": "Area plot illustrating the fare distribution over different passenger classes."
     },
     {
-        "uuid": "5a71d71d2f15c8f931925f4ef5539150",
+        "uuid": "546c0ade2ca7760710cf80225e2adfca",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Scatter plot of age against fare to see if there's a correlation."
+        "description": "Scatter plot of age (ranging from 35 to 40) against fare."
     },
     {
         "uuid": "58d14c4cdc071c0fd2e63548a63b2c8f",
@@ -616,18 +616,18 @@
         "description": "Area plot representing the age distribution of survivors and non-survivors."
     },
     {
-        "uuid": "4a820c3c36395fc6d5f4c1d92a3d31b6",
+        "uuid": "970e3a6d13dae80b46f35f3f26e1486f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Scatter plot of siblings/spouses against parents/children to see family size."
+        "description": "Scatter plot of age (ranging from 0 to 10) against fare."
     },
     {
-        "uuid": "27a597a93daf34f19344657ca97515e0",
+        "uuid": "d9088e91a9eff3c2edc812a72c866ede",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plot showcasing the number of passengers with and without cabins."
+        "description": "Pie plot showcasing the number of females in each class."
     },
     {
         "uuid": "3adde3cbc94e43206c4f06eb43a31456",
@@ -644,11 +644,11 @@
         "description": "Bar plot showing the survival rate for each gender."
     },
     {
-        "uuid": "98954654dded1f6a9a76ff6121d0ca06",
+        "uuid": "6664f0f208e6bd2e55c52181e322e85f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Boxplot displaying the age distribution for survivors and non-survivors."
+        "description": "Boxplot displaying the age distribution for survivors."
     },
     {
         "uuid": "97217dfee3e96a76a71b4cf6cc10d04f",
@@ -672,11 +672,11 @@
         "description": "Bar plot indicating the number of parents/children each passenger had aboard."
     },
     {
-        "uuid": "8eaaa33ebb84332de96cbdc8681c55f9",
+        "uuid": "41a1f6b3aa3dbbfe83aeba68a7df43ea",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Histogram showcasing the age distribution of male and female passengers."
+        "description": "Boxplot displaying the age distribution for non-survivors."
     },
     {
         "uuid": "a218fdbb97d1e1d12dee83f815ed3f2c",
