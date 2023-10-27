@@ -196,11 +196,60 @@
         "description": "Scatter plot of life expectancy versus population for 10 European countries with the highest GDP."
     },
     {
-        "uuid": "c7d0799261278e49d6dc6382a14893a8",
+        "uuid": "a197ad507eeb76f61ec72dd08dd7f4b4",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Histogram of GDP values in 10,000 intervals for Asian countries."
+        "description": "Scatter plot of life expectancy versus population for 5 Asian countries with the highest GDP."
+    },
+    {
+        "uuid": "b64d57c3940f467db7c050ee8df651d9",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Box plot of population distribution for African countries."
+    },
+    {
+        "uuid": "f691b585aabaed6f5b1256e6d2c3adb2",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of life expectancy of China, India and Japan."
+    },
+    {
+        "uuid": "648abc259f9d642dea61c3e5accba19e",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of proportion of population based on countries in Asia."
+    },
+    {
+        "uuid": "2d75e4e08f5d120c1774003e83fe73ef",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of population of United States, Brazil and Mexico."
+    },
+    {
+        "uuid": "7af25dfe4a8cced137336357adf62fbc",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Box plot of population distribution for countries in Asia."
+    },
+    {
+        "uuid": "e27ae1591d9b680fef733f5c792b27d4",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram of population for 5 Asian countries with the highest GDP."
+    },
+    {
+        "uuid": "f9344e7169fa2ab7934ea057b2d4a4cf",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of population breakdown for 4 European countries with the highest GDP."
     },
     {
         "uuid": "aa8596d0908727281f7ae7acdbcdfffd",
