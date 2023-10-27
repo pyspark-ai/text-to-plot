@@ -381,6 +381,13 @@ def gen_test_case(dataset, mode="train"):
             "Mapbox density map of the concentration of volcanoes in Mexico.",
             "Pie plot of the distribution of volcano types in China.",
             "Pie plot of the distribution of volcano status.",
+            "Scatter plot of latitude versus longitude for volcanoes in France.",
+            "Pie plot of volcano types breakdown in Turkey.",
+            "Pie plot of the distribution of volcano status in China.",
+            "Boxplot of the elevation distribution of volcanoes.",
+            "Bar plot of the 5 countries with the least volcanoes listed, showing the number of volcanoes.",
+            "Mapbox density map showing the 5 lowest volcanoes in China.",
+            "Mapbox density map of the 5 lowest volcanoes in the United States."
         ]
         hard_descriptions = [
             "Breakdown of volcano types in the United States.",

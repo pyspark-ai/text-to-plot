@@ -260,6 +260,34 @@
         "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is already a DataFrame with the specified columns\n\n# Aggregate the data\ndf_agg = df.groupBy('Status').count()\n\n# Convert the Spark DataFrame to a Pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Create a pie plot of the distribution of volcano status\nfig = px.pie(df_pandas, values='count', names='Status', title='Distribution of Volcano Status')\n\n# Display the plot\nprint(fig.to_json())"
     },
     {
+        "uuid": "18b11a17d6a1aec8965c0a78a81c83a3",
+        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Filter the DataFrame for volcanoes in France\ndf_france = df.filter(df['Country'] == 'France')\n\n# Convert the Spark DataFrame to a pandas DataFrame\ndf_pandas = df_france.toPandas()\n\n# Create a scatter plot of latitude versus longitude\nfig = px.scatter(df_pandas, x='Longitude', y='Latitude', \n                 title='Scatter plot of latitude versus longitude for volcanoes in France')\n\n# Display the plot\nprint(fig.to_json())"
+    },
+    {
+        "uuid": "d7f745254e7841f6da6d5bd9bed0093b",
+        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Filter the DataFrame for Turkey\ndf_turkey = df.filter(df['Country'] == 'Turkey')\n\n# Aggregate the DataFrame by volcano type\ndf_agg = df_turkey.groupBy('Type').count()\n\n# Convert the Spark DataFrame to a pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Create a pie plot of volcano types breakdown in Turkey\nfig = px.pie(df_pandas, values='count', names='Type', title='Volcano Types Breakdown in Turkey')\n\n# Display the plot\nprint(fig.to_json())"
+    },
+    {
+        "uuid": "6c6e8d9bea0cc9361370897035d39202",
+        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Filter the DataFrame to only include volcanoes in China\ndf_china = df.filter(df['Country'] == 'China')\n\n# Aggregate the DataFrame by volcano status\ndf_agg = df_china.groupBy('Status').count()\n\n# Convert the Spark DataFrame to a pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Create a pie plot of the distribution of volcano status in China\nfig = px.pie(df_pandas, values='count', names='Status', title='Distribution of Volcano Status in China')\n\n# Display the plot\nprint(fig.to_json())"
+    },
+    {
+        "uuid": "84cafe5df2beab045a5a0805b9696e8c",
+        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is the DataFrame\n# No aggregation is needed for a boxplot\n\n# Convert Spark DataFrame to Pandas DataFrame\npandas_df = df.toPandas()\n\n# Create boxplot\nfig = px.box(pandas_df, y=\"Elev\")\n\n# Display plot\nprint(fig.to_json())"
+    },
+    {
+        "uuid": "71bda5f69955fb5bc5dc73bb73d034d7",
+        "code": "# Import necessary libraries\nfrom pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Perform aggregation to get the count of volcanoes per country\ndf_agg = df.groupBy('Country').count().orderBy('count')\n\n# Convert the Spark DataFrame to a pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Select the 5 countries with the least volcanoes\ndf_least_volcanoes = df_pandas.head(5)\n\n# Create a bar plot using plotly\nfig = px.bar(df_least_volcanoes, x='Country', y='count', title='5 Countries with the Least Volcanoes')\n\n# Display the plot\nprint(fig.to_json())"
+    },
+    {
+        "uuid": "67715b39560ad737e9479754f9f57737",
+        "code": "import pandas as pd\nimport plotly.express as px\nfrom pyspark.sql import SparkSession\nfrom pyspark.sql.functions import col\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Filter the DataFrame to only include volcanoes in China\ndf_china = df.filter(col('Country') == 'China')\n\n# Sort the DataFrame by elevation and select the 5 lowest volcanoes\ndf_lowest = df_china.sort('Elev').limit(5)\n\n# Convert the Spark DataFrame to a pandas DataFrame\ndf_pandas = df_lowest.toPandas()\n\n# Create a density map using plotly\nfig = px.density_mapbox(df_pandas, lat='Latitude', lon='Longitude', z='Elev', radius=10,\n                        center=dict(lat=35, lon=105), zoom=3,\n                        mapbox_style=\"stamen-terrain\", title='5 Lowest Volcanoes in China')\n\nprint(fig.to_json())"
+    },
+    {
+        "uuid": "402b5a1b1aa1d3592eccbd58e68bec74",
+        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is the DataFrame with the given columns\n\n# Filter for volcanoes in the United States and sort by elevation\ndf_us = df.filter(df['Country'] == 'United States').sort('Elev')\n\n# Select the 5 lowest volcanoes\ndf_lowest = df_us.limit(5)\n\n# Convert to pandas DataFrame\ndf_pd = df_lowest.toPandas()\n\n# Create Mapbox density map\nfig = px.density_mapbox(df_pd, lat='Latitude', lon='Longitude', z='Elev', radius=10,\n                        center=dict(lat=40, lon=-100), zoom=3,\n                        mapbox_style=\"stamen-terrain\")\n\nprint(fig.to_json())"
+    },
+    {
         "uuid": "208b9e8526928ad817eeae0b9ab060a0",
         "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is the DataFrame\n# Filter for volcanoes in the United States\ndf_us = df.filter(df['Country'] == 'United States')\n\n# Aggregate to get count of each volcano type\ndf_agg = df_us.groupBy('Type').count()\n\n# Convert to pandas DataFrame\npdf = df_agg.toPandas()\n\n# Create pie chart\nfig = px.pie(pdf, values='count', names='Type', title='Breakdown of Volcano Types in the United States')\n\n# Display the plot\nprint(fig.to_json())"
     },

@@ -455,6 +455,55 @@
         "description": "Pie plot of the distribution of volcano status."
     },
     {
+        "uuid": "18b11a17d6a1aec8965c0a78a81c83a3",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of latitude versus longitude for volcanoes in France."
+    },
+    {
+        "uuid": "d7f745254e7841f6da6d5bd9bed0093b",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of volcano types breakdown in Turkey."
+    },
+    {
+        "uuid": "6c6e8d9bea0cc9361370897035d39202",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of the distribution of volcano status in China."
+    },
+    {
+        "uuid": "84cafe5df2beab045a5a0805b9696e8c",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of the elevation distribution of volcanoes."
+    },
+    {
+        "uuid": "71bda5f69955fb5bc5dc73bb73d034d7",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of the 5 countries with the least volcanoes listed, showing the number of volcanoes."
+    },
+    {
+        "uuid": "67715b39560ad737e9479754f9f57737",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Mapbox density map showing the 5 lowest volcanoes in China."
+    },
+    {
+        "uuid": "402b5a1b1aa1d3592eccbd58e68bec74",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Mapbox density map of the 5 lowest volcanoes in the United States."
+    },
+    {
         "uuid": "208b9e8526928ad817eeae0b9ab060a0",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",

@@ -35,8 +35,8 @@ levels, with the testing dataset having a higher percentage of hard cases (~42%)
 | `mpg.csv`                               | 13         | 10         | 3          |
 | `gapminder2007.csv`                     | 19         | 13         | 6          |
 | `medicare.csv`                          | 12         | 7          | 5          |
-| `volcano_db.csv`                        | 16         | 9          | 7          |
-| **TOTAL**                               | **72**     | 47         | 25         |
+| `volcano_db.csv`                        | 23         | 16         | 7          |
+| **TOTAL**                               | **79**     | 54         | 25         |
 
 **TOTAL**: 59 (34 Easy, 25 Hard)
 
