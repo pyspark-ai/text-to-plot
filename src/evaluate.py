@@ -210,8 +210,8 @@ def main(test_id, dataset_url, complexity, mode):
                 logging.info(golden_plots[uuid]['data'])
                 err_cnt += 1
 
-        except Exception as e:
-            logging.error(f"An error occurred while processing test case {uuid}: {str(e)}")
+        except Exception:
+            logging.error(f"An error occurred while processing test case {uuid}", exc_info=True)
             err_cnt += 1
 
     buffer.close()
