@@ -15,10 +15,10 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # Mapping of plot type to fields for comparison
 plot_type_fields = {
-    'scatter': {'x', 'y', 'orientation', 'xaxis', 'yaxis', 'type'},
-    'bar': {'x', 'y', 'orientation', 'xaxis', 'yaxis', 'type'},
-    'histogram': {'x', 'y', 'orientation', 'xaxis', 'yaxis', 'type'},
-    'box': {'x', 'y', 'orientation', 'xaxis', 'yaxis', 'type'},
+    'scatter': {'x', 'y', 'xaxis', 'yaxis', 'type'},
+    'bar': {'x', 'y', 'xaxis', 'yaxis', 'type'},
+    'histogram': {'x', 'y', 'xaxis', 'yaxis', 'type'},
+    'box': {'x', 'y', 'xaxis', 'yaxis', 'type'},
     'histogram2d': {'x', 'y', 'xbingroup', 'xaxis', 'ybingroup', 'yaxis', 'type'},
     'histogram2dcontour': {'x', 'y', 'xaxis', 'yaxis', 'type'},
     'scattergl': {'x', 'y', 'xaxis', 'yaxis', 'type'},
@@ -245,7 +245,6 @@ def filter_json_data(json_string, include_keys=None):
         plot_type = None
         xaxis = None
         yaxis = None
-        orientation = None
 
         for item in data_dict['data']:
             if 'x' in item:
@@ -258,8 +257,6 @@ def filter_json_data(json_string, include_keys=None):
                 xaxis = item['xaxis']
             if yaxis is None and 'yaxis' in item:
                 yaxis = item['yaxis']
-            if orientation is None and 'orientation' in item:
-                orientation = item['orientation']
 
         filtered_data = {
             'x': x_values,
@@ -267,7 +264,6 @@ def filter_json_data(json_string, include_keys=None):
             'type': plot_type,
             'xaxis': xaxis,
             'yaxis': yaxis,
-            'orientation': orientation
         }
 
     return {'data': filtered_data}

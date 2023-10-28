@@ -12,7 +12,7 @@ from pyspark_ai import SparkAI
 
 # Constants
 INCLUDE_KEYS = [
-    "x", "y", "xaxis", "yaxis", "type", "orientation",
+    "x", "y", "xaxis", "yaxis", "type",
     "lat", "lon", "z",  # density_mapbox
     "domain", "labels", "values",  # pie
     "xbingroup", "ybingroup",  # bin
@@ -64,7 +64,6 @@ def filter_golden_json_data(json_string, include_keys=None):
         plot_type = None
         xaxis = None
         yaxis = None
-        orientation = None
 
         for item in data_dict['data']:
             if 'x' in item:
@@ -77,8 +76,6 @@ def filter_golden_json_data(json_string, include_keys=None):
                 xaxis = item['xaxis']
             if yaxis is None and 'yaxis' in item:
                 yaxis = item['yaxis']
-            if orientation is None and 'orientation' in item:
-                orientation = item['orientation']
 
         filtered_data = {
             'x': x_values,
@@ -86,7 +83,6 @@ def filter_golden_json_data(json_string, include_keys=None):
             'type': plot_type,
             'xaxis': xaxis,
             'yaxis': yaxis,
-            'orientation': orientation
         }
 
     return {'data': filtered_data}
