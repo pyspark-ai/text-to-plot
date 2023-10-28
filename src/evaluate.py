@@ -57,24 +57,29 @@ def is_same_mapping(golden_keys, golden_values, predicted_keys, predicted_values
     Compares two key-value mappings. If the keys in the golden mapping are strings,
     they are matched in a case-insensitive manner to keys in the predicted mapping.
     """
+    if golden_keys is None and predicted_keys is not None:
+        return False
 
-    # Convert the key-value lists to dictionaries
-    golden_dict = {key: value for key, value in zip(golden_keys, golden_values)}
-    predicted_dict = {key: value for key, value in zip(predicted_keys, predicted_values)}
+    if golden_values is None and predicted_values is not None:
+        return False
 
-    # For each key in the golden dictionary, we need to ensure:
-    # 1. There's a corresponding key in the predicted dictionary
-    # 2. The values match for these keys.
-    for g_key, g_value in golden_dict.items():
-        matched = False
+    if golden_keys is not None and golden_values is not None:
+        golden_dict = {key: value for key, value in zip(golden_keys, golden_values)}
+        predicted_dict = {key: value for key, value in zip(predicted_keys, predicted_values)}
 
-        for p_key, p_value in predicted_dict.items():
-            if eq(g_key, p_key) and eq(g_value, p_value):
-                matched = True
-                break
+        # For each key in the golden dictionary, we need to ensure:
+        # 1. There's a corresponding key in the predicted dictionary
+        # 2. The values match for these keys.
+        for g_key, g_value in golden_dict.items():
+            matched = False
 
-        if not matched:
-            return False
+            for p_key, p_value in predicted_dict.items():
+                if eq(g_key, p_key) and eq(g_value, p_value):
+                    matched = True
+                    break
+
+            if not matched:
+                return False
 
     return True
 
@@ -98,24 +103,28 @@ def evaluate(golden, predicted, is_hard=False):
     This function performs a series of checks to determine if the predicted plot metadata
     matches the golden standard. Specifically, it checks:
     1. If the plot types match.
-    2. For the 'densitymapbox' plot type, it checks if 'lat', 'lon', and 'z' fields match.
+    2. For the 'densitymapbox' plot type, it checks only if 'lat', 'lon', and 'z' fields match.
     3. For other plot types, it verifies 'x', 'y', 'lat', 'lon', 'labels', and 'values' fields if any.
     4. It also checks other fields specified in plot_type_fields for exact match.
     """
     golden_type = golden['type']
 
     def fields_match(field1, field2):
+        golden_field1 = golden.get(field1)
+        golden_field2 = golden.get(field2)
+        predicted_field1 = predicted.get(field1)
+        predicted_field2 = predicted.get(field2)
         direct_match = set([field1, field2]).issubset(plot_type_fields[golden_type]) and \
-                       is_same_mapping(golden[field1], golden[field2], predicted[field1],
-                                       predicted[field2])
+                       is_same_mapping(golden_field1, golden_field2, predicted_field1,
+                                       predicted_field2)
 
         if direct_match:
             return True
 
         # Check for swapped values
         if field1 == 'x' and field2 == 'y':
-            return is_same_mapping(golden[field1], golden[field2], predicted[field2],
-                                   predicted[field1])
+            return is_same_mapping(golden_field1, golden_field2, predicted_field2,
+                                   predicted_field1)
 
         return False
 
