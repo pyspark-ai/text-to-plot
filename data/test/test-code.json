@@ -276,8 +276,8 @@
         "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Assuming df is the DataFrame\n# No aggregation is needed for a boxplot\n\n# Convert Spark DataFrame to Pandas DataFrame\npandas_df = df.toPandas()\n\n# Create boxplot\nfig = px.box(pandas_df, y=\"Elev\")\n\n# Display plot\nprint(fig.to_json())"
     },
     {
-        "uuid": "71bda5f69955fb5bc5dc73bb73d034d7",
-        "code": "# Import necessary libraries\nfrom pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Perform aggregation to get the count of volcanoes per country\ndf_agg = df.groupBy('Country').count().orderBy('count')\n\n# Convert the Spark DataFrame to a pandas DataFrame\ndf_pandas = df_agg.toPandas()\n\n# Select the 5 countries with the least volcanoes\ndf_least_volcanoes = df_pandas.head(5)\n\n# Create a bar plot using plotly\nfig = px.bar(df_least_volcanoes, x='Country', y='count', title='5 Countries with the Least Volcanoes')\n\n# Display the plot\nprint(fig.to_json())"
+        "uuid": "41815648aad919ee5e44373245a46480",
+        "code": "from pyspark.sql import SparkSession\nimport pandas as pd\nimport plotly.express as px\n\n# Start Spark session\nspark = SparkSession.builder.getOrCreate()\n\n# Filter the DataFrame to only include volcanoes in China\ndf_china = df.filter(df['Country'] == 'China')\n\n# Convert the Spark DataFrame to a Pandas DataFrame\ndf_pandas = df_china.toPandas()\n\n# Create a scatter plot of latitude versus longitude\nfig = px.scatter(df_pandas, x='Longitude', y='Latitude', \n                 color='Volcano Name', \n                 title='Scatter plot of latitude versus longitude for volcanoes in China')\n\n# Display the plot\nprint(fig.to_json())"
     },
     {
         "uuid": "67715b39560ad737e9479754f9f57737",

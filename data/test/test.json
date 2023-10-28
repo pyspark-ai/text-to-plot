@@ -483,11 +483,11 @@
         "description": "Boxplot of the elevation distribution of volcanoes."
     },
     {
-        "uuid": "71bda5f69955fb5bc5dc73bb73d034d7",
+        "uuid": "41815648aad919ee5e44373245a46480",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Bar plot of the 5 countries with the least volcanoes listed, showing the number of volcanoes."
+        "description": "Scatter plot of latitude versus longitude for volcanoes in China."
     },
     {
         "uuid": "67715b39560ad737e9479754f9f57737",
