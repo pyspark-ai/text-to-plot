@@ -19,21 +19,22 @@ INCLUDE_KEYS = [
 ]
 
 TRAIN_DATASETS = [
+    "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
-    "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
+    "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
 ]
 
 TEST_DATASETS = [
-    "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
-    "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
     "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+    "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
+
 ]
 
 
@@ -392,7 +393,6 @@ def gen_test_case(dataset, mode="train"):
             "Comparison of the number of volcanoes in the top 5 countries.",
             "Trend of volcano elevations in the 5 highest volcanoes in Mexico.",
             "Volcanoes with elevations above 4000.",
-            "Breakdown of volcano status in the United States.",
         ]
     else:
         raise ValueError("No automation of test cases curation for the given dataset.")
