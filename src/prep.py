@@ -12,7 +12,7 @@ from pyspark_ai import SparkAI
 
 # Constants
 INCLUDE_KEYS = [
-    "x", "y", "xaxis", "yaxis", "type", "orientation",
+    "x", "y", "xaxis", "yaxis", "type",
     "lat", "lon", "z",  # density_mapbox
     "domain", "labels", "values",  # pie
     "xbingroup", "ybingroup",  # bin
@@ -64,7 +64,6 @@ def filter_golden_json_data(json_string, include_keys=None):
         plot_type = None
         xaxis = None
         yaxis = None
-        orientation = None
 
         for item in data_dict['data']:
             if 'x' in item:
@@ -77,8 +76,6 @@ def filter_golden_json_data(json_string, include_keys=None):
                 xaxis = item['xaxis']
             if yaxis is None and 'yaxis' in item:
                 yaxis = item['yaxis']
-            if orientation is None and 'orientation' in item:
-                orientation = item['orientation']
 
         filtered_data = {
             'x': x_values,
@@ -86,7 +83,6 @@ def filter_golden_json_data(json_string, include_keys=None):
             'type': plot_type,
             'xaxis': xaxis,
             'yaxis': yaxis,
-            'orientation': orientation
         }
 
     return {'data': filtered_data}
@@ -299,7 +295,10 @@ def gen_test_case(dataset, mode="train"):
             "Histogram of the distribution of national election turnouts for Central/Eastern region countries.",
             "Boxplot of the variation in European election turnouts for Western region countries.",
             "Pie plot of the proportion of population for Central/Eastern region countries.",
-            "Mapbox density plot across Mediterranean region based on European election turnouts.",
+            "Bar plot of population for Western region countries.",
+            "Bar plot of European election turnouts for Western region countries.",
+            "Scatter plot of the population against European election turnouts for Central/Eastern region countries.",
+            "Pie plot of the distribution of countries based on their region.",
             "Pie chart of populations in Central/Eastern region countries."
         ]
         hard_descriptions = [
@@ -316,6 +315,9 @@ def gen_test_case(dataset, mode="train"):
             "Pie plot representing the proportion of vehicles based on their horsepower, focusing on the top 5 horsepower values.",
             "Boxplot of the distribution of acceleration values for the vehicles with the model year 70.",
             "Area plot of the count of cars across model years.",
+            "Area plot of the cumulative count of cars across model years.",
+            "Boxplot of the distribution of horsepower.",
+            "Pie plot of the proportion of vehicles based on their cylinders.",
             "Hexagonal bin plot of cylinders versus acceleration for vehicles with 25 miles per gallon.",
         ]
         hard_descriptions = [
@@ -328,7 +330,14 @@ def gen_test_case(dataset, mode="train"):
             "Pie plot of number of countries breakdown by continent.",
             "Scatter plot of population versus GDP in 10 African nations with the lowest GDP.",
             "Scatter plot of life expectancy versus population for 10 European countries with the highest GDP.",
-            "Histogram of GDP values in 10,000 intervals for Asian countries.",
+            "Scatter plot of life expectancy versus population for 5 Asian countries with the highest GDP.",
+            "Box plot of population distribution for African countries.",
+            "Bar plot of life expectancy of China, India and Japan.",
+            "Pie plot of proportion of population based on countries in Asia.",
+            "Bar plot of population of United States, Brazil and Mexico.",
+            "Box plot of population distribution for countries in Asia.",
+            "Histogram of population for 5 Asian countries with the highest GDP.",
+            "Pie plot of population breakdown for 4 European countries with the highest GDP.",
             "Box plot of life expectancy distribution for Asian countries.",
             "Bar plot of population of top 5 European nations.",
         ]
@@ -368,6 +377,13 @@ def gen_test_case(dataset, mode="train"):
             "Mapbox density map of the concentration of volcanoes in Mexico.",
             "Pie plot of the distribution of volcano types in China.",
             "Pie plot of the distribution of volcano status.",
+            "Scatter plot of latitude versus longitude for volcanoes in France.",
+            "Pie plot of volcano types breakdown in Turkey.",
+            "Pie plot of the distribution of volcano status in China.",
+            "Boxplot of the elevation distribution of volcanoes.",
+            "Scatter plot of latitude versus longitude for volcanoes in China.",
+            "Mapbox density map showing the 5 lowest volcanoes in China.",
+            "Mapbox density map of the 5 lowest volcanoes in the United States."
         ]
         hard_descriptions = [
             "Breakdown of volcano types in the United States.",

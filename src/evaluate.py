@@ -9,16 +9,18 @@ import pandas as pd
 from pyspark.sql import SparkSession
 from pyspark_ai import SparkAI
 
+# ---------------------- Constants ----------------------
+
 # Set up logging configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
                     handlers=[logging.FileHandler('app.log'), logging.StreamHandler()])
 
 # Mapping of plot type to fields for comparison
 plot_type_fields = {
-    'scatter': {'x', 'y', 'orientation', 'xaxis', 'yaxis', 'type'},
-    'bar': {'x', 'y', 'orientation', 'xaxis', 'yaxis', 'type'},
-    'histogram': {'x', 'y', 'orientation', 'xaxis', 'yaxis', 'type'},
-    'box': {'x', 'y', 'orientation', 'xaxis', 'yaxis', 'type'},
+    'scatter': {'x', 'y', 'xaxis', 'yaxis', 'type'},
+    'bar': {'x', 'y', 'xaxis', 'yaxis', 'type'},
+    'histogram': {'x', 'y', 'xaxis', 'yaxis', 'type'},
+    'box': {'x', 'y', 'xaxis', 'yaxis', 'type'},
     'histogram2d': {'x', 'y', 'xbingroup', 'xaxis', 'ybingroup', 'yaxis', 'type'},
     'histogram2dcontour': {'x', 'y', 'xaxis', 'yaxis', 'type'},
     'scattergl': {'x', 'y', 'xaxis', 'yaxis', 'type'},
@@ -28,11 +30,28 @@ plot_type_fields = {
 }
 
 
+# ---------------------- Utility Functions ----------------------
+
 def substitute_show_to_json(string):
+    """
+    Replace .show() method calls with print statements to output JSON.
+    """
     return re.sub(r'(\w+)\.show\(\)', r'print(\1.to_json())', string)
 
 
 def eq(golden_obj, predict_obj):
+    """
+    Custom equality check for various data types.
+
+    Behavior:
+    - For numeric types (int, float, complex):
+      Compares the rounded values (up to 2 decimal places) of both objects.
+    - For strings:
+      Performs a case-insensitive containment check, i.e., checks if the string representation
+      of `golden_obj` is contained within `predict_obj`.
+    - For other types:
+      Uses the default equality check.
+    """
     if (isinstance(golden_obj, (int, float, complex)) and \
             isinstance(predict_obj, (int, float, complex))):
         return round(golden_obj, 2) == round(predict_obj, 2)
@@ -42,39 +61,46 @@ def eq(golden_obj, predict_obj):
 
 
 def items_equal(dict1, dict2):
-    if len(dict1) != len(dict2):
+    """
+    Check if two dictionaries have the same items using the custom eq function.
+    """
+    # If the dictionaries have different keys, they are not equal
+    if set(dict1.keys()) != set(dict2.keys()):
         return False
-    for k1, v1 in dict1.items():
-        if k1 not in dict2:
-            return False
-        if not eq(v1, dict2[k1]):
-            return False
-    return True
 
+    # Check if all key-value pairs are equal using the custom eq function
+    return all(eq(v1, dict2[k1]) for k1, v1 in dict1.items())
+
+
+# ---------------------- Mapping Comparison Functions ----------------------
 
 def is_same_mapping(golden_keys, golden_values, predicted_keys, predicted_values):
     """
-    Compares two key-value mappings. If the keys in the golden mapping are strings,
-    they are matched in a case-insensitive manner to keys in the predicted mapping.
+    Compares two key-value mappings.
     """
+    if golden_keys is None and predicted_keys is not None:
+        return False
 
-    # Convert the key-value lists to dictionaries
-    golden_dict = {key: value for key, value in zip(golden_keys, golden_values)}
-    predicted_dict = {key: value for key, value in zip(predicted_keys, predicted_values)}
+    if golden_values is None and predicted_values is not None:
+        return False
 
-    # For each key in the golden dictionary, we need to ensure:
-    # 1. There's a corresponding key in the predicted dictionary
-    # 2. The values match for these keys.
-    for g_key, g_value in golden_dict.items():
-        matched = False
+    if golden_keys is not None and golden_values is not None:
+        golden_dict = {key: value for key, value in zip(golden_keys, golden_values)}
+        predicted_dict = {key: value for key, value in zip(predicted_keys, predicted_values)}
 
-        for p_key, p_value in predicted_dict.items():
-            if eq(g_key, p_key) and eq(g_value, p_value):
-                matched = True
-                break
+        # For each key in the golden dictionary, we need to ensure:
+        # 1. There's a corresponding key in the predicted dictionary
+        # 2. The values match for these keys.
+        for g_key, g_value in golden_dict.items():
+            matched = False
 
-        if not matched:
-            return False
+            for p_key, p_value in predicted_dict.items():
+                if eq(g_key, p_key) and eq(g_value, p_value):
+                    matched = True
+                    break
+
+            if not matched:
+                return False
 
     return True
 
@@ -82,7 +108,7 @@ def is_same_mapping(golden_keys, golden_values, predicted_keys, predicted_values
 def is_same_mapping_3(golden_keys1, golden_keys2, golden_values, predicted_keys1, predicted_keys2,
                       predicted_values):
     """
-    Compare two sets of triple key-value mappings for exact matches, disregarding the order of keys.
+    Compare two sets of triple key-value mappings.
     """
     golden_dict = {(k1, k2): v for k1, k2, v in zip(golden_keys1, golden_keys2, golden_values)}
     predicted_dict = {(k1, k2): v for k1, k2, v in
@@ -98,24 +124,28 @@ def evaluate(golden, predicted, is_hard=False):
     This function performs a series of checks to determine if the predicted plot metadata
     matches the golden standard. Specifically, it checks:
     1. If the plot types match.
-    2. For the 'densitymapbox' plot type, it checks if 'lat', 'lon', and 'z' fields match.
+    2. For the 'densitymapbox' plot type, it checks only if 'lat', 'lon', and 'z' fields match.
     3. For other plot types, it verifies 'x', 'y', 'lat', 'lon', 'labels', and 'values' fields if any.
     4. It also checks other fields specified in plot_type_fields for exact match.
     """
     golden_type = golden['type']
 
     def fields_match(field1, field2):
+        golden_field1 = golden.get(field1)
+        golden_field2 = golden.get(field2)
+        predicted_field1 = predicted.get(field1)
+        predicted_field2 = predicted.get(field2)
         direct_match = set([field1, field2]).issubset(plot_type_fields[golden_type]) and \
-                       is_same_mapping(golden[field1], golden[field2], predicted[field1],
-                                       predicted[field2])
+                       is_same_mapping(golden_field1, golden_field2, predicted_field1,
+                                       predicted_field2)
 
         if direct_match:
             return True
 
         # Check for swapped values
         if field1 == 'x' and field2 == 'y':
-            return is_same_mapping(golden[field1], golden[field2], predicted[field2],
-                                   predicted[field1])
+            return is_same_mapping(golden_field1, golden_field2, predicted_field2,
+                                   predicted_field1)
 
         return False
 
@@ -149,6 +179,53 @@ def evaluate(golden, predicted, is_hard=False):
 
         return check_additional_fields()
 
+
+def filter_json_data(json_string, include_keys=None):
+    """
+    Filter the JSON data to extract relevant plot information.
+    """
+    data_dict = json.loads(json_string)
+
+    if 'data' not in data_dict:
+        raise ValueError("'data' field does not exist in the provided JSON string.")
+
+    if len(data_dict['data']) == 1:
+        data_content = data_dict['data'][0]
+        if include_keys is None:
+            filtered_data = {key: data_content[key] for key in data_content}
+        else:
+            filtered_data = {key: data_content[key] for key in include_keys if key in data_content}
+    else:
+        x_values = []
+        y_values = []
+        plot_type = None
+        xaxis = None
+        yaxis = None
+
+        for item in data_dict['data']:
+            if 'x' in item:
+                x_values.extend(item['x'])
+            if 'y' in item:
+                y_values.extend(item['y'])
+            if plot_type is None and 'type' in item:
+                plot_type = item['type']
+            if xaxis is None and 'xaxis' in item:
+                xaxis = item['xaxis']
+            if yaxis is None and 'yaxis' in item:
+                yaxis = item['yaxis']
+
+        filtered_data = {
+            'x': x_values,
+            'y': y_values,
+            'type': plot_type,
+            'xaxis': xaxis,
+            'yaxis': yaxis,
+        }
+
+    return {'data': filtered_data}
+
+
+# ---------------------- Main Execution ----------------------
 
 @click.command()
 @click.option("--test-id", type=str, default=None, help="UUID of the test")
@@ -210,8 +287,8 @@ def main(test_id, dataset_url, complexity, mode):
                 logging.info(golden_plots[uuid]['data'])
                 err_cnt += 1
 
-        except Exception as e:
-            logging.error(f"An error occurred while processing test case {uuid}: {str(e)}")
+        except Exception:
+            logging.error(f"An error occurred while processing test case {uuid}", exc_info=True)
             err_cnt += 1
 
     buffer.close()
@@ -225,52 +302,6 @@ def main(test_id, dataset_url, complexity, mode):
     if complexity:
         desc += f'{complexity} | '
     logging.info(f"{desc}Pass rate: {pass_rate:.2f}%")
-
-
-def filter_json_data(json_string, include_keys=None):
-    data_dict = json.loads(json_string)
-
-    if 'data' not in data_dict:
-        raise ValueError("'data' field does not exist in the provided JSON string.")
-
-    if len(data_dict['data']) == 1:
-        data_content = data_dict['data'][0]
-        if include_keys is None:
-            filtered_data = {key: data_content[key] for key in data_content}
-        else:
-            filtered_data = {key: data_content[key] for key in include_keys if key in data_content}
-    else:
-        x_values = []
-        y_values = []
-        plot_type = None
-        xaxis = None
-        yaxis = None
-        orientation = None
-
-        for item in data_dict['data']:
-            if 'x' in item:
-                x_values.extend(item['x'])
-            if 'y' in item:
-                y_values.extend(item['y'])
-            if plot_type is None and 'type' in item:
-                plot_type = item['type']
-            if xaxis is None and 'xaxis' in item:
-                xaxis = item['xaxis']
-            if yaxis is None and 'yaxis' in item:
-                yaxis = item['yaxis']
-            if orientation is None and 'orientation' in item:
-                orientation = item['orientation']
-
-        filtered_data = {
-            'x': x_values,
-            'y': y_values,
-            'type': plot_type,
-            'xaxis': xaxis,
-            'yaxis': yaxis,
-            'orientation': orientation
-        }
-
-    return {'data': filtered_data}
 
 
 if __name__ == '__main__':

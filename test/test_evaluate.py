@@ -24,9 +24,9 @@ class TestPlotEvaluation(unittest.TestCase):
                                            ['lat1', 'lat3'], ['lon1', 'lon2'], ['z1', 'z2']))
 
     def test_evaluate(self):
-        golden = {'type': 'scatter', 'x': ['x1', 'x2'], 'y': ['y1', 'y2'], 'orientation': 'v',
+        golden = {'type': 'scatter', 'x': ['x1', 'x2'], 'y': ['y1', 'y2'],
                   'xaxis': 'x', 'yaxis': 'y'}
-        predicted = {'type': 'scatter', 'x': ['x1', 'x2'], 'y': ['y1', 'y2'], 'orientation': 'v',
+        predicted = {'type': 'scatter', 'x': ['x1', 'x2'], 'y': ['y1', 'y2'],
                      'xaxis': 'x', 'yaxis': 'y'}
         self.assertTrue(evaluate(golden, predicted))
 
@@ -37,7 +37,7 @@ class TestPlotEvaluation(unittest.TestCase):
 
         # Test missing fields
         predicted_missing_field = predicted.copy()
-        del predicted_missing_field['orientation']
+        del predicted_missing_field['x']
         self.assertFalse(evaluate(golden, predicted_missing_field))
 
         # Test densitymapbox type

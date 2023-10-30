@@ -21,11 +21,32 @@
         "description": "Pie plot of the proportion of population for Central/Eastern region countries."
     },
     {
-        "uuid": "5690628120a45b219fed3b9c25f470d9",
+        "uuid": "4e4cb46f45ac6b4ad1657d95105732e6",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Mapbox density plot across Mediterranean region based on European election turnouts."
+        "description": "Bar plot of population for Western region countries."
+    },
+    {
+        "uuid": "5388ec90576ed2c04222b89b642f0ed0",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of European election turnouts for Western region countries."
+    },
+    {
+        "uuid": "13e890746e6272be0a4d1265ee8eef1a",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of the population against European election turnouts for Central/Eastern region countries."
+    },
+    {
+        "uuid": "f122a485004508c8447e123a8868fde7",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of the distribution of countries based on their region."
     },
     {
         "uuid": "15956a908c59445bbf4992ef3f55698a",
@@ -105,6 +126,27 @@
         "description": "Area plot of the count of cars across model years."
     },
     {
+        "uuid": "a3df096615fd32644b3648b6aaba1888",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Area plot of the cumulative count of cars across model years."
+    },
+    {
+        "uuid": "18cd554f41627b50b95dd07b62b7fbbd",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of the distribution of horsepower."
+    },
+    {
+        "uuid": "21203369b9aaaa1a7bb99a96ee139ba8",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of the proportion of vehicles based on their cylinders."
+    },
+    {
         "uuid": "e3e611c3b77094e91c258c3e722d884b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
@@ -154,11 +196,60 @@
         "description": "Scatter plot of life expectancy versus population for 10 European countries with the highest GDP."
     },
     {
-        "uuid": "c7d0799261278e49d6dc6382a14893a8",
+        "uuid": "a197ad507eeb76f61ec72dd08dd7f4b4",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
         "complexity": "easy",
-        "description": "Histogram of GDP values in 10,000 intervals for Asian countries."
+        "description": "Scatter plot of life expectancy versus population for 5 Asian countries with the highest GDP."
+    },
+    {
+        "uuid": "b64d57c3940f467db7c050ee8df651d9",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Box plot of population distribution for African countries."
+    },
+    {
+        "uuid": "f691b585aabaed6f5b1256e6d2c3adb2",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of life expectancy of China, India and Japan."
+    },
+    {
+        "uuid": "648abc259f9d642dea61c3e5accba19e",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of proportion of population based on countries in Asia."
+    },
+    {
+        "uuid": "2d75e4e08f5d120c1774003e83fe73ef",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of population of United States, Brazil and Mexico."
+    },
+    {
+        "uuid": "7af25dfe4a8cced137336357adf62fbc",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Box plot of population distribution for countries in Asia."
+    },
+    {
+        "uuid": "e27ae1591d9b680fef733f5c792b27d4",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram of population for 5 Asian countries with the highest GDP."
+    },
+    {
+        "uuid": "f9344e7169fa2ab7934ea057b2d4a4cf",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of population breakdown for 4 European countries with the highest GDP."
     },
     {
         "uuid": "aa8596d0908727281f7ae7acdbcdfffd",
@@ -362,6 +453,55 @@
         "language": "English",
         "complexity": "easy",
         "description": "Pie plot of the distribution of volcano status."
+    },
+    {
+        "uuid": "18b11a17d6a1aec8965c0a78a81c83a3",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of latitude versus longitude for volcanoes in France."
+    },
+    {
+        "uuid": "d7f745254e7841f6da6d5bd9bed0093b",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of volcano types breakdown in Turkey."
+    },
+    {
+        "uuid": "6c6e8d9bea0cc9361370897035d39202",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of the distribution of volcano status in China."
+    },
+    {
+        "uuid": "84cafe5df2beab045a5a0805b9696e8c",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of the elevation distribution of volcanoes."
+    },
+    {
+        "uuid": "41815648aad919ee5e44373245a46480",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of latitude versus longitude for volcanoes in China."
+    },
+    {
+        "uuid": "67715b39560ad737e9479754f9f57737",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Mapbox density map showing the 5 lowest volcanoes in China."
+    },
+    {
+        "uuid": "402b5a1b1aa1d3592eccbd58e68bec74",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Mapbox density map of the 5 lowest volcanoes in the United States."
     },
     {
         "uuid": "208b9e8526928ad817eeae0b9ab060a0",

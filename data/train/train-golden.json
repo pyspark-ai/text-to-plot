@@ -95,8 +95,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -192,8 +191,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -231,8 +229,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -432,8 +429,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -457,8 +453,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -504,8 +499,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -571,8 +565,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -3576,8 +3569,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -3605,8 +3597,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -3642,8 +3633,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -3667,8 +3657,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -3746,8 +3735,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -3875,8 +3863,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -4006,8 +3993,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -4076,8 +4062,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -4207,8 +4192,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -4216,7 +4200,6 @@
     "uuid": "7dd17e5e451423420d80adb4563282c0",
     "plot_json": {
       "data": {
-        "orientation": "v",
         "xaxis": "x",
         "y": [
           32.89595056,
@@ -4589,8 +4572,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -4988,8 +4970,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -5359,8 +5340,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -5520,8 +5500,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -5545,8 +5524,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -5608,8 +5586,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -5671,8 +5648,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -5750,8 +5726,7 @@
         ],
         "type": "scatter",
         "xaxis": "x",
-        "yaxis": "y",
-        "orientation": "v"
+        "yaxis": "y"
       }
     }
   },
@@ -5781,8 +5756,7 @@
         ],
         "type": "scatter",
         "xaxis": "x",
-        "yaxis": "y",
-        "orientation": "v"
+        "yaxis": "y"
       }
     }
   },
@@ -5850,8 +5824,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -5931,8 +5904,7 @@
         ],
         "type": "scatter",
         "xaxis": "x",
-        "yaxis": "y",
-        "orientation": "v"
+        "yaxis": "y"
       }
     }
   },
@@ -5956,8 +5928,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -5987,8 +5958,7 @@
         ],
         "type": "scatter",
         "xaxis": "x",
-        "yaxis": "y",
-        "orientation": "v"
+        "yaxis": "y"
       }
     }
   },
@@ -6082,8 +6052,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -6139,8 +6108,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -6164,8 +6132,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -6189,8 +6156,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -6214,8 +6180,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -6481,8 +6446,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -6624,8 +6588,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -6705,8 +6668,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -6786,8 +6748,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -16905,8 +16866,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -16986,8 +16946,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -17067,8 +17026,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -17148,8 +17106,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -17229,8 +17186,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -17344,8 +17300,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -17421,8 +17376,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -27576,8 +27530,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -27623,8 +27576,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -27640,8 +27592,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -27721,8 +27672,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -27768,8 +27718,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -27849,8 +27798,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -27870,8 +27818,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -27927,8 +27874,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -27954,8 +27900,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -27975,8 +27920,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -28104,8 +28048,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -28149,8 +28092,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -28170,8 +28112,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -28197,8 +28138,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -28220,8 +28160,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -28421,8 +28360,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -28474,8 +28412,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -28801,8 +28738,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -28900,8 +28836,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -28977,8 +28912,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -29044,8 +28978,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -29067,8 +29000,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -29196,8 +29128,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -29221,8 +29152,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -29336,8 +29266,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -29437,8 +29366,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -29491,8 +29419,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -29522,8 +29449,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -29545,8 +29471,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -29566,8 +29491,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -29597,8 +29521,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -29703,8 +29626,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -29730,8 +29652,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -29927,8 +29848,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -30286,8 +30206,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -30311,8 +30230,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -30447,8 +30365,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -30474,8 +30391,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -30501,8 +30417,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -30742,8 +30657,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -30756,8 +30670,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -31055,8 +30968,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -31112,8 +31024,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -31196,8 +31107,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -31235,8 +31145,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -31258,8 +31167,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -31281,8 +31189,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -31311,8 +31218,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -31352,8 +31258,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -31401,8 +31306,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -31426,8 +31330,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -31451,8 +31354,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -31468,8 +31370,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -31617,8 +31518,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -31635,8 +31535,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "histogram",
-        "orientation": "v"
+        "type": "histogram"
       }
     }
   },
@@ -31652,8 +31551,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -31703,8 +31601,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -31721,8 +31618,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -31746,8 +31642,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -31795,8 +31690,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -31825,8 +31719,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "box",
-        "orientation": "v"
+        "type": "box"
       }
     }
   },
@@ -31860,8 +31753,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -32008,8 +31900,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -32045,8 +31936,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   },
@@ -32062,8 +31952,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "scatter",
-        "orientation": "v"
+        "type": "scatter"
       }
     }
   },
@@ -32119,8 +32008,7 @@
         ],
         "xaxis": "x",
         "yaxis": "y",
-        "type": "bar",
-        "orientation": "v"
+        "type": "bar"
       }
     }
   }
