@@ -7,7 +7,8 @@ A tool designed to evaluate the capability of systems to generate plots based on
 The **Text-to-Plot** benchmark encompasses datasets from diverse categories such as retail, aviation, agriculture,
 public safety, maritime, viticulture, and urban demographics. The benchmark consists of **232** test cases, split
 between **149** training cases and **83** testing cases. The test cases are further categorized into easy and hard
-levels, with the hard cases constituting 25% of the total.
+levels, with the hard cases constituting 25% of the total. In easy test cases, we specify the plot type, while in
+hard test cases, we let the LLM decide.
 
 ## Datasets
 
