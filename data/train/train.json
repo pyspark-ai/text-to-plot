@@ -1,5 +1,89 @@
 [
     {
+        "uuid": "f0f63c49d0aa944b7cd443694d74f244",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram of the distribution of national election turnouts for Central/Eastern region countries."
+    },
+    {
+        "uuid": "40bd3ede9950603b4e334e9cfaad3cd9",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of the variation in European election turnouts for Western region countries."
+    },
+    {
+        "uuid": "80082e5f6ccad0458c63c5bc3e5b2213",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of the proportion of population for Central/Eastern region countries."
+    },
+    {
+        "uuid": "4e4cb46f45ac6b4ad1657d95105732e6",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of population for Western region countries."
+    },
+    {
+        "uuid": "5388ec90576ed2c04222b89b642f0ed0",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of European election turnouts for Western region countries."
+    },
+    {
+        "uuid": "13e890746e6272be0a4d1265ee8eef1a",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Scatter plot of the population against European election turnouts for Central/Eastern region countries."
+    },
+    {
+        "uuid": "f122a485004508c8447e123a8868fde7",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of the distribution of countries based on their region."
+    },
+    {
+        "uuid": "15956a908c59445bbf4992ef3f55698a",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie chart of populations in Central/Eastern region countries."
+    },
+    {
+        "uuid": "b9fe7090d93a09847c5e64806d786063",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "National turnouts comparison for Western region countries."
+    },
+    {
+        "uuid": "985bab0ef7790a4c89b11350af17302a",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Countries with a greater population than Austria's."
+    },
+    {
+        "uuid": "d230fdb5dc0ae99ddabf2696f0ddc1ba",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "List population size for Central/Eastern countries."
+    },
+    {
+        "uuid": "42a59ce425f642c541bc4b15071cc9de",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Number of countries breakdown by region."
+    },
+    {
         "uuid": "78abf1b72867cb3ca62f3b404327b1c1",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
@@ -293,7 +377,7 @@
         "complexity": "easy",
         "description": "Hexagonal bin plot showing the density of beef versus poultry exports for 8 states with the highest combined beef and poultry exports."
     },
-      {
+    {
         "uuid": "ef688c3065b9877e47006ea8fef4e2eb",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
@@ -530,209 +614,6 @@
         "language": "English",
         "complexity": "hard",
         "description": "Cumulative incidents from 2000 to 2005."
-    },
-    {
-        "uuid": "b20df99eaed1a254565541c739cdfc2a",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Bar plot showing the number of passengers in each class."
-    },
-    {
-        "uuid": "0c2938bdf3aeaad805de147ab0d28422",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Histogram showcasing the age distribution of passengers."
-    },
-    {
-        "uuid": "541e1c9630256d86663b9575ec8577f6",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Pie chart representing the gender distribution aboard the Titanic."
-    },
-    {
-        "uuid": "d801fb18092e3871e5bb13fc99c9d63f",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Bar plot indicating the number of survivors and non-survivors."
-    },
-    {
-        "uuid": "ddd22e2820fc2be79e68a03daf53f5a9",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Area plot illustrating the fare distribution over different passenger classes."
-    },
-    {
-        "uuid": "546c0ade2ca7760710cf80225e2adfca",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Scatter plot of age (ranging from 35 to 40) against fare."
-    },
-    {
-        "uuid": "58d14c4cdc071c0fd2e63548a63b2c8f",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Bar plot showing the number of passengers boarding from each embarkation port."
-    },
-    {
-        "uuid": "75f28ca202f7d93704794c1f8b751c25",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Histogram displaying the distribution of fares paid by passengers."
-    },
-    {
-        "uuid": "1bea5b4e9813527a893ac13c365487c7",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Pie chart showcasing the distribution of passengers in lifeboats."
-    },
-    {
-        "uuid": "e9289de414dc300a8ce482595ab3a503",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Bar plot indicating the number of siblings/spouses each passenger had aboard."
-    },
-    {
-        "uuid": "7d2ce282c025f10b43947f4c47abe365",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Boxplot showing the fare distribution for male and female passengers."
-    },
-    {
-        "uuid": "d3937c25fd1e9754d4470b1a4e37b77f",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Area plot representing the age distribution of survivors and non-survivors."
-    },
-    {
-        "uuid": "970e3a6d13dae80b46f35f3f26e1486f",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Scatter plot of age (ranging from 0 to 10) against fare."
-    },
-    {
-        "uuid": "d9088e91a9eff3c2edc812a72c866ede",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Pie plot showcasing the number of females in each class."
-    },
-    {
-        "uuid": "3adde3cbc94e43206c4f06eb43a31456",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Pie chart representing the distribution of passengers based on their embarkation port."
-    },
-    {
-        "uuid": "d09fa23d31efdf31329ff331806da15d",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Bar plot showing the survival rate for each gender."
-    },
-    {
-        "uuid": "6664f0f208e6bd2e55c52181e322e85f",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Boxplot displaying the age distribution for survivors."
-    },
-    {
-        "uuid": "97217dfee3e96a76a71b4cf6cc10d04f",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Area plot illustrating the fare distribution over different embarkation ports."
-    },
-    {
-        "uuid": "1c56ef705aede7b0ba64521780792ba7",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Scatter plot of age against the number of siblings/spouses."
-    },
-    {
-        "uuid": "ac56f416752889cc3ceab6bb761ad31f",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Bar plot indicating the number of parents/children each passenger had aboard."
-    },
-    {
-        "uuid": "41a1f6b3aa3dbbfe83aeba68a7df43ea",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Boxplot displaying the age distribution for non-survivors."
-    },
-    {
-        "uuid": "a218fdbb97d1e1d12dee83f815ed3f2c",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Pie chart representing the survival rate for each passenger class."
-    },
-    {
-        "uuid": "3b57bdf4cf7e0414a714d4a6d3f6437d",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "easy",
-        "description": "Bar plot showing the number of passengers in each lifeboat."
-    },
-    {
-        "uuid": "187ada0c20a0449eedee6fbe1a1c5a27",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "hard",
-        "description": "Distribution of age for survivors and non-survivors."
-    },
-    {
-        "uuid": "4ebf16febfae5fcf4d0d51b8883b5ee8",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "hard",
-        "description": "Trend of average fare over age groups."
-    },
-    {
-        "uuid": "0687dcd9898b79c12363c87a1efea59b",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "hard",
-        "description": "Number of survivors from each embarkation port."
-    },
-    {
-        "uuid": "1d5102a6958b13542ba6914572cfd05e",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "hard",
-        "description": "Fare variability across ticket classes."
-    },
-    {
-        "uuid": "1e096e8f7ea22580325c9c1afa0b8a89",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "hard",
-        "description": "Cumulative number of passengers across age groups."
-    },
-    {
-        "uuid": "59521074144a12e252a1f58d8511b8c1",
-        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
-        "language": "English",
-        "complexity": "hard",
-        "description": "Proportion of passengers by ticket class."
     },
     {
         "uuid": "9a989593be80fd67dd0eeed386a7de53",
@@ -1076,5 +957,89 @@
         "language": "English",
         "complexity": "hard",
         "description": "Population comparison of cities in South Carolina and Nevada"
+    },
+    {
+        "uuid": "93da7c6b4b0eb8bfdb22ffe31cc50158",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar plot of average total payments for California's top 8 hospitals by average total payments."
+    },
+    {
+        "uuid": "5b78a7fa7d68663547aa97dcd7665b8e",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram showing the distribution of reimbursement rates for California hospitals."
+    },
+    {
+        "uuid": "32bf3fb592c9e2c527e96f0211528e60",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of average total payments across California hospitals."
+    },
+    {
+        "uuid": "1f97c28534939f7a2a4bf23fe91ac9ca",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Pie plot of hospital proportions in the top 5 states by average total payments."
+    },
+    {
+        "uuid": "fee98b8102100a5effbbee64e6d603ea",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Bar chart of medical record counts in California vs. Texas."
+    },
+    {
+        "uuid": "d6b0a172533f76983d33081263c9969d",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Histogram showing the distribution of number of providers across California cities."
+    },
+    {
+        "uuid": "ab58fd97c40edd68fece25203ed86f1f",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "easy",
+        "description": "Boxplot of average covered charges across Texas hospitals"
+    },
+    {
+        "uuid": "56b60ea661dae09fd826948bbfc2ffb4",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Average total payment comparison across Wisconsin hospitals."
+    },
+    {
+        "uuid": "69bcbf6e3f16621a2d5c5349f1748783",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Breakdown of record count by medical classification."
+    },
+    {
+        "uuid": "f5baa2b6f221b37cb3b43d91a6536d18",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "List how many times each provider has a reimbursement rate greater than 1."
+    },
+    {
+        "uuid": "12617b723a019f944da00a16ad5597bd",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Proportion of 'Alcohol and Drug Use' records in top 5 states, based on the number of hospitals."
+    },
+    {
+        "uuid": "91215b07f0670529164a5ec147efd12b",
+        "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
+        "language": "English",
+        "complexity": "hard",
+        "description": "Number of Alcohol and Drug Use records comparison in California vs. Texas."
     }
 ]
