@@ -1,4 +1,4 @@
-# Text-to-Plot Benchmark Tool
+# Text-to-Plot Benchmark
 
 A tool designed to evaluate the capability of systems to generate plots based on textual descriptions.
 
@@ -43,4 +43,4 @@ specify the plot type, while in WithoutPlotType test cases, we let the LLM decid
 ## Scripts
 
 - **`src/prep.py`**: Generates test cases and saves golden plots in JSON.
-- **`src/evaluate.py`**: Evaluates test cases against golden plots.
+- **`src/evaluate.py`**: Evaluates test cases against golden plots and output accuracy.
