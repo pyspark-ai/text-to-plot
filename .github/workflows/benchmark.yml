@@ -27,3 +27,9 @@ jobs:
 
       - name: Evaluate Train | WithoutPlotType
         run: python src/evaluate.py --complexity WithoutPlotType --mode train
+
+      - name: Evaluate Test | WithPlotType
+        run: python src/evaluate.py --complexity WithPlotType --mode test
+
+      - name: Evaluate Test | WithoutPlotType
+        run: python src/evaluate.py --complexity WithoutPlotType --mode test
