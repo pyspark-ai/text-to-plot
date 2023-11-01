@@ -19,8 +19,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Set Environment Variable (Not Recommended)
-        run: echo "OPENAI_API_KEY=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" >> $GITHUB_ENV
+      - name: Set Environment Variable Using Secret
+        run: echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
 
       - name: Evaluate Train | WithPlotType
         run: python src/evaluate.py --complexity WithPlotType --mode train
