@@ -3,581 +3,581 @@
         "uuid": "52fcf5d3c22208abaa31b8cc30022a06",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Line plot of the progression of average miles per gallon across distinct model years"
     },
     {
         "uuid": "ec73adc6934ff4f4cff10edd5e5c1b17",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar chart comparing the average horsepower across unique cylinder configurations."
     },
     {
         "uuid": "34e87e52e74581a8990985e605e37ad9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of the relationship between a vehicle's weight and its miles per gallon for the model year 80."
     },
     {
         "uuid": "ddf74488a1fce4a6dfdafde276eda711",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot representing the proportion of vehicles based on their horsepower, focusing on the top 5 horsepower values."
     },
     {
         "uuid": "8e9da47ee132852084c40ac9765d3bcd",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of the distribution of acceleration values for the vehicles with the model year 70."
     },
     {
         "uuid": "2a246a32815bf6054eec04f118940efa",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot of the count of cars across model years."
     },
     {
         "uuid": "a3df096615fd32644b3648b6aaba1888",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot of the cumulative count of cars across model years."
     },
     {
         "uuid": "18cd554f41627b50b95dd07b62b7fbbd",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of the distribution of horsepower."
     },
     {
         "uuid": "21203369b9aaaa1a7bb99a96ee139ba8",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of the proportion of vehicles based on their cylinders."
     },
     {
         "uuid": "e3e611c3b77094e91c258c3e722d884b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Hexagonal bin plot of cylinders versus acceleration for vehicles with 25 miles per gallon."
     },
     {
         "uuid": "69cd29f7676e8f43281d20c55e558453",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Proportion of vehicles by cylinder configurations."
     },
     {
         "uuid": "0c8cb74c8ddbd3c1eda2208f9bb88fc1",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Trend of average vehicle weight over distinct model years."
     },
     {
         "uuid": "95de169b1baceeaa1162a026276ff3dc",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/mpg.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Relationship between individual miles per gallon and acceleration capabilities for vehicles from the 80 model year."
     },
     {
         "uuid": "10f3262cf38b852376d89c3b60b5937d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of number of countries breakdown by continent."
     },
     {
         "uuid": "d38386edacc0f2071ced78d9ef74099b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of population versus GDP in 10 African nations with the lowest GDP."
     },
     {
         "uuid": "7c1f9d4e8eea35ad7119b1e74fe1e432",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of life expectancy versus population for 10 European countries with the highest GDP."
     },
     {
         "uuid": "a197ad507eeb76f61ec72dd08dd7f4b4",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of life expectancy versus population for 5 Asian countries with the highest GDP."
     },
     {
         "uuid": "b64d57c3940f467db7c050ee8df651d9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Box plot of population distribution for African countries."
     },
     {
         "uuid": "f691b585aabaed6f5b1256e6d2c3adb2",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of life expectancy of China, India and Japan."
     },
     {
         "uuid": "648abc259f9d642dea61c3e5accba19e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of proportion of population based on countries in Asia."
     },
     {
         "uuid": "2d75e4e08f5d120c1774003e83fe73ef",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of population of United States, Brazil and Mexico."
     },
     {
         "uuid": "7af25dfe4a8cced137336357adf62fbc",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Box plot of population distribution for countries in Asia."
     },
     {
         "uuid": "e27ae1591d9b680fef733f5c792b27d4",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram of population for 5 Asian countries with the highest GDP."
     },
     {
         "uuid": "f9344e7169fa2ab7934ea057b2d4a4cf",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of population breakdown for 4 European countries with the highest GDP."
     },
     {
         "uuid": "aa8596d0908727281f7ae7acdbcdfffd",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Box plot of life expectancy distribution for Asian countries."
     },
     {
         "uuid": "10b262adf02fadf8943ee74d78aed733",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of population of top 5 European nations."
     },
     {
         "uuid": "f15f25520b76179b859e72e04b6bb94e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Population comparison for the 5 most populous countries"
     },
     {
         "uuid": "beebd4e77842206db87034cae7d3074a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Population breakdown by continent."
     },
     {
         "uuid": "e9fadf2db6491f9f663a151b11a34abd",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Top eight countries by GDP."
     },
     {
         "uuid": "8992063e1128109a5747800723a68c1e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Trend of average life expectancy across continents"
     },
     {
         "uuid": "a0e8593c8be15334f65562d335b12d14",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Relationship between GDP and life expectancy in 5 Americas countries with the lowest GDP"
     },
     {
         "uuid": "9384e18dc2100b4e1372d13f2380ff21",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Density of European countries based on GDP and population"
     },
     {
         "uuid": "9d9033683d033462b41aa2170bbf1dbf",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of the 5 countries with the most volcanoes listed."
     },
     {
         "uuid": "d4134bb91a4b8bb73378abc4a018a5fd",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Line plot showing the elevation trend of the 8 highest volcanoes in Japan."
     },
     {
         "uuid": "dc75a9216f65bf1642e27181ddf79f06",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram of the distribution of volcano elevations for volcanoes in China."
     },
     {
         "uuid": "f7ed0b0b21f2e3f870b94e46090312b0",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of the elevation distribution of volcanoes in the United States."
     },
     {
         "uuid": "d1dd56ec1aac7e419c34db69401bca19",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot of the elevation progression of the 8 highest volcanoes in Russia."
     },
     {
         "uuid": "b1e7a0df0e30a0a2cd487b8ad96cbb6b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of latitude versus longitude for volcanoes in Peru."
     },
     {
         "uuid": "0a631ab7a5a2e0b7b511fa39270c0f51",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Mapbox density map of the concentration of volcanoes in Mexico."
     },
     {
         "uuid": "5a43048f0d2064558debc4933bbc521d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of the distribution of volcano types in China."
     },
     {
         "uuid": "ecb89636cd86865c9b57bab5dd670440",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of the distribution of volcano status."
     },
     {
         "uuid": "18b11a17d6a1aec8965c0a78a81c83a3",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of latitude versus longitude for volcanoes in France."
     },
     {
         "uuid": "d7f745254e7841f6da6d5bd9bed0093b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of volcano types breakdown in Turkey."
     },
     {
         "uuid": "6c6e8d9bea0cc9361370897035d39202",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of the distribution of volcano status in China."
     },
     {
         "uuid": "84cafe5df2beab045a5a0805b9696e8c",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of the elevation distribution of volcanoes."
     },
     {
         "uuid": "41815648aad919ee5e44373245a46480",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of latitude versus longitude for volcanoes in China."
     },
     {
         "uuid": "67715b39560ad737e9479754f9f57737",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Mapbox density map showing the 5 lowest volcanoes in China."
     },
     {
         "uuid": "402b5a1b1aa1d3592eccbd58e68bec74",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Mapbox density map of the 5 lowest volcanoes in the United States."
     },
     {
         "uuid": "208b9e8526928ad817eeae0b9ab060a0",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Breakdown of volcano types in the United States."
     },
     {
         "uuid": "9eb1889d22d91b67db0a00a5a5adc502",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Distribution of volcano elevations in Mexico."
     },
     {
         "uuid": "ccff80f7966bfba8b9f3e7f38a8cf05e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Relationship between latitude and elevation for the 5 southernmost volcanoes."
     },
     {
         "uuid": "42d090ca01f86f45a77bbfdfdc6ba56a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Comparison of the number of volcanoes in the top 5 countries."
     },
     {
         "uuid": "389e4875f5a7851b30abbd9c78203584",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Trend of volcano elevations in the 5 highest volcanoes in Mexico."
     },
     {
         "uuid": "865010d949ec55e10ed3f72793271609",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/volcano_db.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Volcanoes with elevations above 4000."
     },
     {
         "uuid": "b20df99eaed1a254565541c739cdfc2a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot showing the number of passengers in each class."
     },
     {
         "uuid": "0c2938bdf3aeaad805de147ab0d28422",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram showcasing the age distribution of passengers."
     },
     {
         "uuid": "541e1c9630256d86663b9575ec8577f6",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart representing the gender distribution aboard the Titanic."
     },
     {
         "uuid": "d801fb18092e3871e5bb13fc99c9d63f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot indicating the number of survivors and non-survivors."
     },
     {
         "uuid": "ddd22e2820fc2be79e68a03daf53f5a9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot illustrating the fare distribution over different passenger classes."
     },
     {
         "uuid": "546c0ade2ca7760710cf80225e2adfca",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of age (ranging from 35 to 40) against fare."
     },
     {
         "uuid": "58d14c4cdc071c0fd2e63548a63b2c8f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot showing the number of passengers boarding from each embarkation port."
     },
     {
         "uuid": "75f28ca202f7d93704794c1f8b751c25",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram displaying the distribution of fares paid by passengers."
     },
     {
         "uuid": "1bea5b4e9813527a893ac13c365487c7",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart showcasing the distribution of passengers in lifeboats."
     },
     {
         "uuid": "e9289de414dc300a8ce482595ab3a503",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot indicating the number of siblings/spouses each passenger had aboard."
     },
     {
         "uuid": "7d2ce282c025f10b43947f4c47abe365",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot showing the fare distribution for male and female passengers."
     },
     {
         "uuid": "d3937c25fd1e9754d4470b1a4e37b77f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot representing the age distribution of survivors and non-survivors."
     },
     {
         "uuid": "970e3a6d13dae80b46f35f3f26e1486f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of age (ranging from 0 to 10) against fare."
     },
     {
         "uuid": "d9088e91a9eff3c2edc812a72c866ede",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot showcasing the number of females in each class."
     },
     {
         "uuid": "3adde3cbc94e43206c4f06eb43a31456",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart representing the distribution of passengers based on their embarkation port."
     },
     {
         "uuid": "d09fa23d31efdf31329ff331806da15d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot showing the survival rate for each gender."
     },
     {
         "uuid": "6664f0f208e6bd2e55c52181e322e85f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot displaying the age distribution for survivors."
     },
     {
         "uuid": "97217dfee3e96a76a71b4cf6cc10d04f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot illustrating the fare distribution over different embarkation ports."
     },
     {
         "uuid": "1c56ef705aede7b0ba64521780792ba7",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of age against the number of siblings/spouses."
     },
     {
         "uuid": "ac56f416752889cc3ceab6bb761ad31f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot indicating the number of parents/children each passenger had aboard."
     },
     {
         "uuid": "41a1f6b3aa3dbbfe83aeba68a7df43ea",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot displaying the age distribution for non-survivors."
     },
     {
         "uuid": "a218fdbb97d1e1d12dee83f815ed3f2c",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart representing the survival rate for each passenger class."
     },
     {
         "uuid": "3b57bdf4cf7e0414a714d4a6d3f6437d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot showing the number of passengers in each lifeboat."
     },
     {
         "uuid": "187ada0c20a0449eedee6fbe1a1c5a27",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Distribution of age for survivors and non-survivors."
     },
     {
         "uuid": "4ebf16febfae5fcf4d0d51b8883b5ee8",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Trend of average fare over age groups."
     },
     {
         "uuid": "0687dcd9898b79c12363c87a1efea59b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Number of survivors from each embarkation port."
     },
     {
         "uuid": "1d5102a6958b13542ba6914572cfd05e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Fare variability across ticket classes."
     },
     {
         "uuid": "1e096e8f7ea22580325c9c1afa0b8a89",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Cumulative number of passengers across age groups."
     },
     {
         "uuid": "59521074144a12e252a1f58d8511b8c1",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Proportion of passengers by ticket class."
     }
 ]
