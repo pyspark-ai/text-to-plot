@@ -3,1043 +3,1043 @@
         "uuid": "f0f63c49d0aa944b7cd443694d74f244",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram of the distribution of national election turnouts for Central/Eastern region countries."
     },
     {
         "uuid": "40bd3ede9950603b4e334e9cfaad3cd9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of the variation in European election turnouts for Western region countries."
     },
     {
         "uuid": "80082e5f6ccad0458c63c5bc3e5b2213",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of the proportion of population for Central/Eastern region countries."
     },
     {
         "uuid": "4e4cb46f45ac6b4ad1657d95105732e6",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of population for Western region countries."
     },
     {
         "uuid": "5388ec90576ed2c04222b89b642f0ed0",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of European election turnouts for Western region countries."
     },
     {
         "uuid": "13e890746e6272be0a4d1265ee8eef1a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of the population against European election turnouts for Central/Eastern region countries."
     },
     {
         "uuid": "f122a485004508c8447e123a8868fde7",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of the distribution of countries based on their region."
     },
     {
         "uuid": "15956a908c59445bbf4992ef3f55698a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart of populations in Central/Eastern region countries."
     },
     {
         "uuid": "b9fe7090d93a09847c5e64806d786063",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "National turnouts comparison for Western region countries."
     },
     {
         "uuid": "985bab0ef7790a4c89b11350af17302a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Countries with a greater population than Austria's."
     },
     {
         "uuid": "d230fdb5dc0ae99ddabf2696f0ddc1ba",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "List population size for Central/Eastern countries."
     },
     {
         "uuid": "42a59ce425f642c541bc4b15071cc9de",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/european_turnout.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Number of countries breakdown by region."
     },
     {
         "uuid": "78abf1b72867cb3ca62f3b404327b1c1",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Line plot displaying the number of Walmart stores opened each year from 1962 to 2006."
     },
     {
         "uuid": "2ea6f698cd6e18c480492692a1978555",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot showing the count of Walmart stores by state."
     },
     {
         "uuid": "575fe48f0a7ee8f1097b621e59a6f63e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram illustrating the distribution of store openings by month."
     },
     {
         "uuid": "7431528079c3f98ca97077eb99346ed8",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Density plot showcasing the distribution of Walmart store openings over the years."
     },
     {
         "uuid": "2e1cbcab79cf11f102daf50f2c5890de",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot highlighting the cumulative number of Walmart stores opened from 1962 to 2006."
     },
     {
         "uuid": "527deec4702c92cb015b2905eb8a7553",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of Walmart store opened in 1969 using latitude and longitude."
     },
     {
         "uuid": "9cc1c15b64b427df4c8e5908c4d2407c",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart showing the proportion of different types of Walmart stores."
     },
     {
         "uuid": "89263443d49da5bd33a6bf02afaccba7",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot representing the number of Walmart stores opened each month."
     },
     {
         "uuid": "c58ba5f7f97b00d47baaa21382c5007e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "A hexagonal bin plot visualizes the density of Walmart stores opened in August 1984 based on their latitude and longitude."
     },
     {
         "uuid": "ff776c3009bc2d7a4ce8125489ccdcf9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot illustrating Walmart stores in CA that opened in 1990, plotted using latitude and longitude."
     },
     {
         "uuid": "e61b8fa799b49e019f302cd2864c9d64",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of the distribution of store location latitudes."
     },
     {
         "uuid": "ac6500a0a4a37c80d3f9fd335bb1bf67",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot representing the cumulative number of Walmart stores from 2000 to 2006."
     },
     {
         "uuid": "c298ebba2c257a692bbd672b638fc2a2",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Yearly trend of Walmart store openings from 1996 to 2006."
     },
     {
         "uuid": "b8d94f407b88c0613290a6085e14444b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Top 5 states with the highest number of Walmart store openings."
     },
     {
         "uuid": "7f2200854b910cb7495fa929dd21c1bc",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Proportion of stores by type after 2000."
     },
     {
         "uuid": "c869d7a7da2dbb8768abb23880f58242",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Proportion of stores by type before 2000."
     },
     {
         "uuid": "92ff1ea853e6927e3bd4076bb39ad8d7",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/1962_2006_walmart_store_openings.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Distribution of the number of stores opened each year after 2000."
     },
     {
         "uuid": "f0e434506c53e72525415ff4fed322b5",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plots showcasing the frequency of AA flights from different starting airports."
     },
     {
         "uuid": "53c0a58f938c04a828fcf07d869ce228",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plots representing the distribution of ending airport for AA flights."
     },
     {
         "uuid": "181d553ea8b968026dbeaa6523024243",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram illustrating the common starting longitudes for the flights."
     },
     {
         "uuid": "87149b55223eb3926b556154ae0d1c63",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram depicting the popular ending latitudes for AA flights."
     },
     {
         "uuid": "7dd17e5e451423420d80adb4563282c0",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot summarizing the range of starting latitudes for all AA flights."
     },
     {
         "uuid": "670ffe7c740328c5139f185d771750cf",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot visualizing the range of ending longitudes for these flights."
     },
     {
         "uuid": "d5c2ae805fc3cc95729b3c2e247d615a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Density plots highlighting the concentration of starting locations."
     },
     {
         "uuid": "79f28ce94edf5b92f7e427746510703d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Density plots emphasizing the concentration of ending locations."
     },
     {
         "uuid": "609e2269bc7133058cf3a0f324366f0e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plots representing the five most frequent starting airports."
     },
     {
         "uuid": "984dfb990989236454e16e26e226edaf",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plots visualizing the correlation between starting and ending locations for the flights."
     },
     {
         "uuid": "924fa6a9f82390f82392c7229c3cdea2",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plots representing the proportion of flights based on their starting airports."
     },
     {
         "uuid": "14f29b8efe02540e2456c1f12610fd36",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Top 5 airports with the highest number of arrivals."
     },
     {
         "uuid": "c7e2a693998e0e836e5fb4c21a82aa5d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Top 5 airports with the highest number of departure."
     },
     {
         "uuid": "927cd9952fda5b05d637ae2bb38dbadb",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_february_aa_flight_paths.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Proportion of top 5 flights based on their starting airports."
     },
     {
         "uuid": "04b62709691092e8d81dd855e2d16d8d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar chart comparing beef exports across 8 states with the highest poultry exports."
     },
     {
         "uuid": "27088b4ae28469078a0b2ed35530b7c0",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot representing the spread of dairy exports."
     },
     {
         "uuid": "4cef45b8c7415e7435a14ad550dca0a9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of the proportion of top 5 states based on corn exports."
     },
     {
         "uuid": "3e64143768134b9d6187f23641ce21d5",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area chart of cumulative exports of fresh and processed fruits for 8 states with the highest fruit exports."
     },
     {
         "uuid": "761e39592bd1b7511f2323991746b116",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot depicting the relationship between beef and pork exports for 8 states with the highest total exports."
     },
     {
         "uuid": "30ea96f39e805cf8199259662a2443aa",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart representing the share of beef exports among 8 states with the highest beef exports."
     },
     {
         "uuid": "390fe5ec42505e81681b0f12bd82349b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Line plot tracing the trend of total vegetable exports across 8 states with the highest vegetable exports."
     },
     {
         "uuid": "799b28f0b8e9272d9116ee7b25dfd687",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of the correlation between dairy and beef exports for states with total exports over 1000."
     },
     {
         "uuid": "cab3320e8142e774ab335800a8aa64e5",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of top 5 states based on total exports."
     },
     {
         "uuid": "db02a88f3a9614e28c27a187bb213526",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot illustrating the relationship between fresh vegetable and processed vegetable exports for 8 states with the highest vegetable exports."
     },
     {
         "uuid": "b4a958cc1ead3872095ae669b2955edc",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Hexagonal bin plot showing the density of beef versus poultry exports for 8 states with the highest combined beef and poultry exports."
     },
     {
         "uuid": "ef688c3065b9877e47006ea8fef4e2eb",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of the distribution of total exports."
     },
     {
         "uuid": "ccd5c4d39b13f10349a319589cc33bb4",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of the proportion of top 5 states based on total exports."
     },
     {
         "uuid": "2f086afb5bd2c0a0b29e5ad12e186ba8",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar chart of the top 5 states by their poultry exports."
     },
     {
         "uuid": "3a48815e403487a3d32c7f3beabd427c",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Line plot tracing the trend of total vegetable exports across 5 states with the highest total exports."
     },
     {
         "uuid": "7e14ea424874459b91bb56e49e45ea75",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Line plot tracing the trend of total exports across 5 states with the highest corn exports."
     },
     {
         "uuid": "f8c1a8d7f6024475ce53701bf58c1697",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Dairy earnings for the top 5 states."
     },
     {
         "uuid": "8dd01a484552964a4b01310a26b2bc11",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Meat revenue breakdown for New York state."
     },
     {
         "uuid": "e3056411d3a6749bc03dd8765b039f2c",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Proportion of the export market for fresh versus processed fruits."
     },
     {
         "uuid": "66999ed46bceb52cbec0ba9239c02079",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Relationship between beef revenue and poultry revenue among states: Texas, California, Florida, New York, and Illinois."
     },
     {
         "uuid": "0abd204295610f9053cc66b84fba4b0b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Proportion of meat revenue components for Texas."
     },
     {
         "uuid": "a0ee2b6defe4c06eb47b6bbd8e0b5701",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot showing the number of incidents per state."
     },
     {
         "uuid": "c61f1618c129b5a63faab083fd130d07",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Line plot showing the trend of incidents over the years."
     },
     {
         "uuid": "cd14a7679b09d9a3c224e5d28c6fe895",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram of the number of incidents per year."
     },
     {
         "uuid": "865a96da2186c78c6545bf49231db9cb",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart representing the distribution of causes of incidents."
     },
     {
         "uuid": "733b09055520825a21e8061ecac17c87",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of latitude versus longitude to visualize the locations of incidents."
     },
     {
         "uuid": "8a625528fe8c1567c0668f72f4d5318b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot showing the number of incidents involving canines."
     },
     {
         "uuid": "dbe427cb2c7f5f3f4d01b92b0b927569",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot indicating the number of incidents over the years."
     },
     {
         "uuid": "bf914b84f2d4526ef6cbadce9891ddab",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of incidents per year to visualize the distribution."
     },
     {
         "uuid": "2d41bb17fbfca8af861a97343f3325c6",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram showing the distribution of incidents based on cause."
     },
     {
         "uuid": "edafa66d967441a491701314f36495b2",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot showing the number of incidents for each cause in short form."
     },
     {
         "uuid": "284f9d95e8baee2cd833b4ad090708bb",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot showing the distribution of incidents based on latitude and longitude."
     },
     {
         "uuid": "4c4c59d9f27d6e4c16e1645664c0097f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot representing the number of incidents involving canines over the years."
     },
     {
         "uuid": "c166ceaa0b15d61e5772b55ed2aa8616",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Hexagonal bin plot of latitude versus longitude to visualize incident density."
     },
     {
         "uuid": "12bbafcda588f6792758fffd070502d3",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart representing the distribution of incidents based on whether it involved a canine or not."
     },
     {
         "uuid": "57691c7622da2e09fb5b8710f1231eee",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram showing the distribution of incidents based on state."
     },
     {
         "uuid": "f1f4bb7a302ec08e2cb3a28e7dbb426a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Line plot indicating the trend of incidents because of 'Struck by vehicle' over the years following 2000."
     },
     {
         "uuid": "48460af82e836e50c15ca259570c8cf5",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot showing the distribution of incidents in different states based on latitude and longitude."
     },
     {
         "uuid": "8af151f73421e1bf246e5bcc28da6273",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot showing the distribution of incidents based on cause."
     },
     {
         "uuid": "4fa22e5ece43d96c043e2ea05ab44574",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot representing the cumulative number of incidents over the years following 2000."
     },
     {
         "uuid": "4133ed43c50977ac645bcaa9465ae55a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Yearly trend of incidents."
     },
     {
         "uuid": "d954e4304593478b9088ac866939ff56",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Top 3 departments with the highest incidents in 2001."
     },
     {
         "uuid": "134e44c38a311e39866cde77c0387d23",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Proportion of incidents by top 5 casuse of death."
     },
     {
         "uuid": "9ecde33820e7e39d7a38956fe5137b25",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Top 5 casuse of death in 2001."
     },
     {
         "uuid": "c310d8f6150e133cae5e4c98e1e6713e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/US-shooting-incidents.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Cumulative incidents from 2000 to 2005."
     },
     {
         "uuid": "9a989593be80fd67dd0eeed386a7de53",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram of alcohol percentages in the wine samples."
     },
     {
         "uuid": "927b21ef40f6e47f6d4fdb97225f0f86",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of average salt content in different quality wines."
     },
     {
         "uuid": "51213e047d95639ca3d684cd86e47f65",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot representing the amount of residual sugar across different wine samples."
     },
     {
         "uuid": "1f23c327b441b77171638e87f20c6446",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart showing the proportion of wines with top 5 pH."
     },
     {
         "uuid": "6191b86230e7b0dfdcee47719362d3f7",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram showcasing the distribution of sulfur dioxide levels."
     },
     {
         "uuid": "3aa98e8b487d5d9ab873553e791a6e3b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot indicating the average citric acid content in wines of varying quality."
     },
     {
         "uuid": "e82efeee4cad83c973365cecc5e8e949",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot representing the distribution of top 5 sulphate across wine samples."
     },
     {
         "uuid": "07dea19627a24a243b81fac551f3b729",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart illustrating the proportion of wines in each quality category."
     },
     {
         "uuid": "b48be6285b2d0d285b73432269216fbc",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram of the distribution of pH values in the wine samples."
     },
     {
         "uuid": "16a6708523bfb76f91778ae5b8b91e67",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot showing average alcohol content for each wine quality score."
     },
     {
         "uuid": "64d7c93d590c16aab832c563a7f26fbb",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot comparing salt content with wine quality scores."
     },
     {
         "uuid": "56c007f55ef2354137808928427443b1",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart representing the proportion of wines with different levels of fixed acidity."
     },
     {
         "uuid": "f8089b45bb6010324d62209987fdebc5",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of average volatile acidity levels for different wine quality scores."
     },
     {
         "uuid": "9dc6a73489f583c0d5f4631132227de1",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot showing the range of residual sugar levels in the wine samples."
     },
     {
         "uuid": "0724d9d2c5ec6128c81c6f12c62dfedf",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart showing the proportion of wines with varying levels of citric acid."
     },
     {
         "uuid": "e923344dbf8001477c9169ce9971e70d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram illustrating the distribution of sulphate level [0.4, 0.6]"
     },
     {
         "uuid": "b746bd6b12bb2c98a9ea606f27beeff6",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot comparing fixed acidity 12-14 with volatile acidity [0.2, 0.4]"
     },
     {
         "uuid": "50c660a180b19c544e2eddf0ddec1a42",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot representing the distribution of total sulfur dioxide levels [30, 50]"
     },
     {
         "uuid": "b726c2eb27d8441ba3abf8c6d631b11c",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram of the distribution of density values above 1 in the wine samples"
     },
     {
         "uuid": "494e51ddd400b8b9500cfd783f162ce6",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot comparing residual sugar content from 6 to 8 with alcohol percentages from 9 to 10"
     },
     {
         "uuid": "e2dbd61691f1e075583160018cad9fa9",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Trend of average fixed acidity levels for wines rated from 3 to 6"
     },
     {
         "uuid": "2b5f6df7a9a79be34c8c0a8f977b217e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Trend of average volatile acidity levels for wines rated from 3 to 6"
     },
     {
         "uuid": "3f2e3807ac5cf23f4747dbf6deca0c72",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Distribution of density for wines rated 8."
     },
     {
         "uuid": "d11a07940a34109063910c8043e2adf3",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Distribution of pH levels for wines rated 8."
     },
     {
         "uuid": "a7d90fecb3a81028bb58eda95fa4b002",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/winequality-red.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Distribution of citric acid levels for wines rated 8."
     },
     {
         "uuid": "8f8538bc9da384211f7073fe1f683d80",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of the top 5 most populous cities"
     },
     {
         "uuid": "2c4fe6f59d5a33e07cea1a8a4856d164",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot of populations for the top 5 cities"
     },
     {
         "uuid": "991009090107bca3410f289dd54eb971",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of latitude versus longitude for top 5 most populous cities"
     },
     {
         "uuid": "223948757000fc199ad2eac5b408d97e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart showing the population distribution of the top 5 cities"
     },
     {
         "uuid": "0bbaa8fc7030d01f1249a2615ce9d06d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of the number of cities in each state"
     },
     {
         "uuid": "9f77b74c823fc62f584e2cc476321878",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram of latitudes of the top 5 most populous cities"
     },
     {
         "uuid": "4516966426c5ae676842df2ae0dd8308",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Scatter plot of population versus latitude for the top 10 most populous cities"
     },
     {
         "uuid": "7b860b4b2f75d8254f3a04f379b4ae6f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Hexagonal bin plot of latitude versus longitude for the top 5 most populous cities"
     },
     {
         "uuid": "da0a49e0c0caab7075294b5eb4c458b5",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot showing populations of the top 5 most populous cities in California"
     },
     {
         "uuid": "52faa13a37663e3c9aa9b6edc8be77eb",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of populations for the top 5 most populous cities in Texas"
     },
     {
         "uuid": "be05f57767fd0ada7577c996af773a9d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot of populations for the top 5 most populous cities in Florida"
     },
     {
         "uuid": "1c5807c72a68814699e2fa8ea09ed592",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart of the number of cities in the top 5 states"
     },
     {
         "uuid": "37404fec67c0bb6638000e894fddb6d7",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of the least populous 8 cities"
     },
     {
         "uuid": "a7e6fdfcb15c7b2ae7149f5d1ea06bf6",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of latitudes for cities in New York state"
     },
     {
         "uuid": "2356b7471d4ea0e3cb820212a0e8d364",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Area plot of populations for the bottom 10 cities"
     },
     {
         "uuid": "cb2210b6af5e4630178766ac0c815c8d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Hexagonal bin plot of population versus latitude for the top 5 most populous cities"
     },
     {
         "uuid": "8e168c98f3c64ccc7e6928f5eb434994",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Mapbox density map showing the top 10 most populous cities"
     },
     {
         "uuid": "676b2b6aab147c7252209f98e1a36f8d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Mapbox density map showing the top 5 most populous cities in California"
     },
     {
         "uuid": "dac34e39533e967da9ffad96913afc81",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie chart showing the population distribution of most populous city in each of the top 5 states"
     },
     {
         "uuid": "a61e0d15d3a9a6a3020b291cbe748f1b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Top 10 cities by population"
     },
     {
         "uuid": "de72ff1a43b1d1df234632e90d4eefbf",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Population distribution of cities in Oklahoma"
     },
     {
         "uuid": "19b0f310e99e7334397af66fce0d68c3",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Relationship between latitude and population for top 10 cities by population"
     },
     {
         "uuid": "7a1808297ee75b9d2f9d86938c4f8359",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Cities with a population greater than 1 million"
     },
     {
         "uuid": "07a48920abb45632ee5c977bfd1f141a",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Population comparison of cities in South Carolina and Nevada"
     },
     {
         "uuid": "93da7c6b4b0eb8bfdb22ffe31cc50158",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar plot of average total payments for California's top 8 hospitals by average total payments."
     },
     {
         "uuid": "5b78a7fa7d68663547aa97dcd7665b8e",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram showing the distribution of reimbursement rates for California hospitals."
     },
     {
         "uuid": "32bf3fb592c9e2c527e96f0211528e60",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of average total payments across California hospitals."
     },
     {
         "uuid": "1f97c28534939f7a2a4bf23fe91ac9ca",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Pie plot of hospital proportions in the top 5 states by average total payments."
     },
     {
         "uuid": "fee98b8102100a5effbbee64e6d603ea",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Bar chart of medical record counts in California vs. Texas."
     },
     {
         "uuid": "d6b0a172533f76983d33081263c9969d",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Histogram showing the distribution of number of providers across California cities."
     },
     {
         "uuid": "ab58fd97c40edd68fece25203ed86f1f",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "easy",
+        "complexity": "WithPlotType",
         "description": "Boxplot of average covered charges across Texas hospitals"
     },
     {
         "uuid": "56b60ea661dae09fd826948bbfc2ffb4",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Average total payment comparison across Wisconsin hospitals."
     },
     {
         "uuid": "69bcbf6e3f16621a2d5c5349f1748783",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Breakdown of record count by medical classification."
     },
     {
         "uuid": "f5baa2b6f221b37cb3b43d91a6536d18",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "List how many times each provider has a reimbursement rate greater than 1."
     },
     {
         "uuid": "12617b723a019f944da00a16ad5597bd",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Proportion of 'Alcohol and Drug Use' records in top 5 states, based on the number of hospitals."
     },
     {
         "uuid": "91215b07f0670529164a5ec147efd12b",
         "dataset": "https://raw.githubusercontent.com/plotly/datasets/master/medicare.csv",
         "language": "English",
-        "complexity": "hard",
+        "complexity": "WithoutPlotType",
         "description": "Number of Alcohol and Drug Use records comparison in California vs. Texas."
     }
 ]

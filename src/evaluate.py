@@ -117,7 +117,7 @@ def is_same_mapping_3(golden_keys1, golden_keys2, golden_values, predicted_keys1
     return items_equal(golden_dict, predicted_dict)
 
 
-def evaluate(golden, predicted, is_hard=False):
+def evaluate(golden, predicted, is_without_plot_type=False):
     """
     Compare the golden and predicted plot metadata.
 
@@ -164,7 +164,7 @@ def evaluate(golden, predicted, is_hard=False):
                 return False
         return True
 
-    if is_hard:
+    if is_without_plot_type:
         return check_standard_fields()
     else:
         if predicted['type'] != golden_type:
@@ -230,8 +230,8 @@ def filter_json_data(json_string, include_keys=None):
 @click.command()
 @click.option("--test-id", type=str, default=None, help="UUID of the test")
 @click.option("--dataset-url", type=str, default=None, help="URL of the dataset")
-@click.option("--complexity", type=click.Choice(["easy", "hard"]), default=None,
-              help="Test mode (easy, hard)")
+@click.option("--complexity", type=click.Choice(["WithPlotType", "WithoutPlotType"]),
+              default=None, help="Test mode (WithPlotType, WithoutPlotType)")
 @click.option("--mode", type=click.Choice(["train", "test"]), default=None,
               help="Mode (train, test)")
 def main(test_id, dataset_url, complexity, mode):
@@ -263,7 +263,7 @@ def main(test_id, dataset_url, complexity, mode):
         buffer.truncate(0)  # Clear the buffer's contents.
 
         uuid, dataset, plot_desc = test_case['uuid'], test_case['dataset'], test_case['description']
-        is_hard = test_case['complexity'] == "hard"
+        is_without_plot_type = test_case['complexity'] == "WithoutPlotType"
         if "volcano_db.csv" in dataset:
             pdf = pd.read_csv(dataset, encoding='ISO-8859-1')
         else:
@@ -279,7 +279,7 @@ def main(test_id, dataset_url, complexity, mode):
             captured_output = buffer.getvalue()[:-1]
             predicted = filter_json_data(captured_output)
 
-            if not evaluate(golden_plots[uuid]['data'], predicted['data'], is_hard=is_hard):
+            if not evaluate(golden_plots[uuid]['data'], predicted['data'], is_without_plot_type=is_without_plot_type):
                 logging.error(f"[ERROR] {uuid}")
                 logging.info("[PREDICTED]")
                 logging.info(predicted['data'])

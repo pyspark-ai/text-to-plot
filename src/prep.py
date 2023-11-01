@@ -94,7 +94,7 @@ def gen_test_case(dataset, mode="train"):
     Generate test cases with uuid -> test.json
     """
     if "1962_2006_walmart_store_openings.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Line plot displaying the number of Walmart stores opened each year from 1962 to 2006.",
             "Bar plot showing the count of Walmart stores by state.",
             "Histogram illustrating the distribution of store openings by month.",
@@ -112,7 +112,7 @@ def gen_test_case(dataset, mode="train"):
             "Area plot representing the cumulative number of Walmart stores from 2000 to 2006."
         ]
 
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Yearly trend of Walmart store openings from 1996 to 2006.",
             "Top 5 states with the highest number of Walmart store openings.",
             "Proportion of stores by type after 2000.",
@@ -120,7 +120,7 @@ def gen_test_case(dataset, mode="train"):
             "Distribution of the number of stores opened each year after 2000.",
         ]
     elif "2011_february_aa_flight_paths.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             'Bar plots showcasing the frequency of AA flights from different starting airports.',
             'Bar plots representing the distribution of ending airport for AA flights.',
             'Histogram illustrating the common starting longitudes for the flights.',
@@ -134,13 +134,13 @@ def gen_test_case(dataset, mode="train"):
             'Pie plots representing the proportion of flights based on their starting airports.'
         ]
 
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Top 5 airports with the highest number of arrivals.",
             "Top 5 airports with the highest number of departure.",
             "Proportion of top 5 flights based on their starting airports.",
         ]
     elif "2011_us_ag_exports.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Bar chart comparing beef exports across 8 states with the highest poultry exports.",
             "Boxplot representing the spread of dairy exports.",
             "Pie plot of the proportion of top 5 states based on corn exports.",
@@ -159,7 +159,7 @@ def gen_test_case(dataset, mode="train"):
             "Line plot tracing the trend of total exports across 5 states with the highest corn exports.",
         ]
 
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Dairy earnings for the top 5 states.",
             "Meat revenue breakdown for New York state.",
             "Proportion of the export market for fresh versus processed fruits.",
@@ -167,7 +167,7 @@ def gen_test_case(dataset, mode="train"):
             "Proportion of meat revenue components for Texas."
         ]
     elif "US-shooting-incidents.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Bar plot showing the number of incidents per state.",
             "Line plot showing the trend of incidents over the years.",
             "Histogram of the number of incidents per year.",
@@ -188,7 +188,7 @@ def gen_test_case(dataset, mode="train"):
             "Boxplot showing the distribution of incidents based on cause.",
             "Area plot representing the cumulative number of incidents over the years following 2000.",
         ]
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Yearly trend of incidents.",
             "Top 3 departments with the highest incidents in 2001.",
             "Proportion of incidents by top 5 casuse of death.",
@@ -196,7 +196,7 @@ def gen_test_case(dataset, mode="train"):
             "Cumulative incidents from 2000 to 2005.",
         ]
     elif "titanic.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Bar plot showing the number of passengers in each class.",
             "Histogram showcasing the age distribution of passengers.",
             "Pie chart representing the gender distribution aboard the Titanic.",
@@ -222,7 +222,7 @@ def gen_test_case(dataset, mode="train"):
             "Bar plot showing the number of passengers in each lifeboat."
         ]
 
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Distribution of age for survivors and non-survivors.",
             "Trend of average fare over age groups.",
             "Number of survivors from each embarkation port.",
@@ -231,7 +231,7 @@ def gen_test_case(dataset, mode="train"):
             "Proportion of passengers by ticket class."
         ]
     elif "winequality-red.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Histogram of alcohol percentages in the wine samples.",
             "Bar plot of average salt content in different quality wines.",
             "Area plot representing the amount of residual sugar across different wine samples.",
@@ -254,7 +254,7 @@ def gen_test_case(dataset, mode="train"):
             "Scatter plot comparing residual sugar content from 6 to 8 with alcohol percentages from 9 to 10",
         ]
 
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Trend of average fixed acidity levels for wines rated from 3 to 6",
             "Trend of average volatile acidity levels for wines rated from 3 to 6",
             "Distribution of density for wines rated 8.",
@@ -262,7 +262,7 @@ def gen_test_case(dataset, mode="train"):
             "Distribution of citric acid levels for wines rated 8.",
         ]
     elif "us-cities-top-1k.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Bar plot of the top 5 most populous cities",
             "Area plot of populations for the top 5 cities",
             "Scatter plot of latitude versus longitude for top 5 most populous cities",
@@ -284,7 +284,7 @@ def gen_test_case(dataset, mode="train"):
             "Pie chart showing the population distribution of most populous city in each of the top 5 states",
         ]
 
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Top 10 cities by population",
             "Population distribution of cities in Oklahoma",
             "Relationship between latitude and population for top 10 cities by population",
@@ -292,7 +292,7 @@ def gen_test_case(dataset, mode="train"):
             "Population comparison of cities in South Carolina and Nevada"
         ]
     elif "european_turnout.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Histogram of the distribution of national election turnouts for Central/Eastern region countries.",
             "Boxplot of the variation in European election turnouts for Western region countries.",
             "Pie plot of the proportion of population for Central/Eastern region countries.",
@@ -302,14 +302,14 @@ def gen_test_case(dataset, mode="train"):
             "Pie plot of the distribution of countries based on their region.",
             "Pie chart of populations in Central/Eastern region countries."
         ]
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "National turnouts comparison for Western region countries.",
             "Countries with a greater population than Austria's.",
             "List population size for Central/Eastern countries.",
             "Number of countries breakdown by region."
         ]
     elif "mpg.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Line plot of the progression of average miles per gallon across distinct model years",
             "Bar chart comparing the average horsepower across unique cylinder configurations.",
             "Scatter plot of the relationship between a vehicle's weight and its miles per gallon for the model year 80.",
@@ -321,13 +321,13 @@ def gen_test_case(dataset, mode="train"):
             "Pie plot of the proportion of vehicles based on their cylinders.",
             "Hexagonal bin plot of cylinders versus acceleration for vehicles with 25 miles per gallon.",
         ]
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Proportion of vehicles by cylinder configurations.",
             "Trend of average vehicle weight over distinct model years.",
             "Relationship between individual miles per gallon and acceleration capabilities for vehicles from the 80 model year.",
         ]
     elif "gapminder2007.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Pie plot of number of countries breakdown by continent.",
             "Scatter plot of population versus GDP in 10 African nations with the lowest GDP.",
             "Scatter plot of life expectancy versus population for 10 European countries with the highest GDP.",
@@ -342,7 +342,7 @@ def gen_test_case(dataset, mode="train"):
             "Box plot of life expectancy distribution for Asian countries.",
             "Bar plot of population of top 5 European nations.",
         ]
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Population comparison for the 5 most populous countries",
             "Population breakdown by continent.",
             "Top eight countries by GDP.",
@@ -351,7 +351,7 @@ def gen_test_case(dataset, mode="train"):
             "Density of European countries based on GDP and population"
         ]
     elif "medicare.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Bar plot of average total payments for California's top 8 hospitals by average total payments.",
             "Histogram showing the distribution of reimbursement rates for California hospitals.",
             "Boxplot of average total payments across California hospitals.",
@@ -360,7 +360,7 @@ def gen_test_case(dataset, mode="train"):
             "Histogram showing the distribution of number of providers across California cities.",
             "Boxplot of average covered charges across Texas hospitals",
         ]
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Average total payment comparison across Wisconsin hospitals.",
             "Breakdown of record count by medical classification.",
             "List how many times each provider has a reimbursement rate greater than 1.",
@@ -368,7 +368,7 @@ def gen_test_case(dataset, mode="train"):
             "Number of Alcohol and Drug Use records comparison in California vs. Texas."
         ]
     elif "volcano_db.csv" in dataset:
-        easy_descriptions = [
+        with_plot_type_descriptions = [
             "Bar plot of the 5 countries with the most volcanoes listed.",
             "Line plot showing the elevation trend of the 8 highest volcanoes in Japan.",
             "Histogram of the distribution of volcano elevations for volcanoes in China.",
@@ -386,7 +386,7 @@ def gen_test_case(dataset, mode="train"):
             "Mapbox density map showing the 5 lowest volcanoes in China.",
             "Mapbox density map of the 5 lowest volcanoes in the United States."
         ]
-        hard_descriptions = [
+        without_plot_type_descriptions = [
             "Breakdown of volcano types in the United States.",
             "Distribution of volcano elevations in Mexico.",
             "Relationship between latitude and elevation for the 5 southernmost volcanoes.",
@@ -398,22 +398,22 @@ def gen_test_case(dataset, mode="train"):
         raise ValueError("No automation of test cases curation for the given dataset.")
 
     combined_list = []
-    for desc in easy_descriptions:
+    for desc in with_plot_type_descriptions:
         item = {
             "uuid": generate_id(dataset, desc),
             "dataset": dataset,
             "language": "English",
-            "complexity": "easy",
+            "complexity": "WithPlotType",
             "description": desc
         }
         combined_list.append(item)
 
-    for desc in hard_descriptions:
+    for desc in without_plot_type_descriptions:
         item = {
             "uuid": generate_id(dataset, desc),
             "dataset": dataset,
             "language": "English",
-            "complexity": "hard",
+            "complexity": "WithoutPlotType",
             "description": desc
         }
         combined_list.append(item)
