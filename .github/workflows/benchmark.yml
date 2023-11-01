@@ -22,8 +22,8 @@ jobs:
       - name: Set Environment Variable (Not Recommended)
         run: echo "OPENAI_API_KEY=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" >> $GITHUB_ENV
 
-      - name: Evaluate Test | WithPlotType
-        run: python src/evaluate.py --complexity WithPlotType --mode test
+      - name: Evaluate Train | WithPlotType
+        run: python src/evaluate.py --complexity WithPlotType --mode train
 
-      - name: Evaluate Test | WithoutPlotType
-        run: python src/evaluate.py --complexity WithoutPlotType --mode test
+      - name: Evaluate Train | WithoutPlotType
+        run: python src/evaluate.py --complexity WithoutPlotType --mode train
